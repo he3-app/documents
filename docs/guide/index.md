@@ -15,15 +15,7 @@ npm install
 npm run dev
 ```
 
-### Step 3: 登录底座（待优化）
-
-点击右上角的“齿轮”按钮，进入设置界面，登录账户。
-
-![](/guide/login.png)
-
-![](/guide/logged.png)
-
-### Step 4: 创建工具
+### Step 3: 创建工具
 
 ![](/guide/1.png)
 
@@ -35,7 +27,7 @@ npm run dev
 
 ![](/guide/3.png)
 
-### Step 5: 安装工具依赖并开发
+### Step 4: 安装工具依赖并开发
 
 解压 zip 文件，进入工程目录，安装依赖。
 
@@ -49,7 +41,7 @@ npm run dev
 
 ![](/guide/5.png)
 
-### Step 6: 发布工具
+### Step 5: 发布工具
 
 回到工具的工程目录下，通过 npm 来发布工具。
 
@@ -57,7 +49,7 @@ npm run dev
 npm run publish
 ```
 
-### Step 7: 使用工具
+### Step 6: 使用工具
 
 返回 Portal，打开“我的工具”菜单栏，点击工具详情，点击“打开工具”按钮。
 
