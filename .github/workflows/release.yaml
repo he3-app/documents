@@ -1,0 +1,45 @@
+name: Deploy Documents website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: npm run install
+      - name: Build website
+        run: npm run build
+
+      - name: Install coscmd
+        run: pip install coscmd
+
+      - name: Upload Build Static Files to COS
+        run: |
+          coscmd config -a ${{ secrets.TENCENT_SECRET_ID }} -s ${{ secrets.TENCENT_SECRET_KEY }} -b he3-document-1309519128 -r ap-hongkong --retry 5
+          cd docs/.vitepress/dist
+          coscmd upload -r --delete -y . .
+
+      - name: Install tencentcloud cli
+        run: pip install tccli
+
+      - name: Set tencentcloud cli secret
+        run: |
+          tccli configure set secretId ${{ secrets.TENCENT_SECRET_ID }}
+          tccli configure set secretKey ${{ secrets.TENCENT_SECRET_KEY }}
+
+      - name: Refresh cache by cli
+        run: |
+          tccli cdn PurgePathCache \
+          --cli-unfold-argument \
+          --FlushType flush \
+          --Paths https://documents.he3.app/
