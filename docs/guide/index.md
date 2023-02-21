@@ -60,3 +60,5 @@ npm run publish
 ### Step 7: 使用工具
 
 返回 Portal，打开“我的工具”菜单栏，点击工具详情，点击“打开工具”按钮。
+
+![](/guide/use-tools.png)
