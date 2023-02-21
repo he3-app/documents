@@ -6,7 +6,7 @@ hero:
   text: Software Developer Kit Documentation
   tagline: Read to better author your plugins
   image:
-    src: ./assets/logo.svg
+    src: ./logo.svg
     alt: He3
   actions:
     - theme: brand

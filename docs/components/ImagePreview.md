@@ -10,17 +10,13 @@ lang: zh-en
 
 ## 代码演示
 
-<script lang="ts" setup>
-import { base64Image } from './example.ts'
-</script>
-
 <HImagePreview :data="base64Image" mime="image/png" />
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <HImagePreview :data="base64Image" mime="image/png" />
+  <h-image-preview :data="base64Image" mime="image/png" />
 </template>
 
 <script setup lang="ts">

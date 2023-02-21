@@ -16,7 +16,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <HCodeEditor
+  <h-code-editor
     v-model="textInput"
     current-language="TYPESCRIPT"
     lang="TYPESCRIPT"

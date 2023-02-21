@@ -16,7 +16,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <HCodeResult :code="textInput" lang="TYPESCRIPT" />
+  <h-code-result :code="textInput" lang="TYPESCRIPT" />
 </template>
 
 <script setup lang="ts">

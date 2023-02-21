@@ -25,7 +25,7 @@ const page = 'He3 is a free, modern developer toolbox. Check it out: https://he3
 
 ```vue
 <template>
-  <HHighlightInput
+  <h-highlight-input
     v-model="testStr"
     title="标题"
     :highlight-text="matchArray"
