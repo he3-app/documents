@@ -15,7 +15,15 @@ npm install
 npm run dev
 ```
 
-### Step 3: 创建工具
+### Step 3: 登录底座（待优化）
+
+点击右上角的“齿轮”按钮，进入设置界面，登录账户。
+
+![](/guide/login.png)
+
+![](/guide/logged.png)
+
+### Step 4: 创建工具
 
 ![](/guide/1.png)
 
