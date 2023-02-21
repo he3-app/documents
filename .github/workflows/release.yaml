@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload Build Static Files to COS
         run: |
-          coscmd config -a ${{ secrets.TENCENT_SECRET_ID }} -s ${{ secrets.TENCENT_SECRET_KEY }} -b he3-document-1309519128 -r ap-hongkong --retry 5
+          coscmd config -a ${{ secrets.TENCENT_SECRET_ID }} -s ${{ secrets.TENCENT_SECRET_KEY }} -b he3-documents-1309519128 -r ap-nanjing --retry 5
           cd docs/.vitepress/dist
           coscmd upload -r --delete -y . .
 
