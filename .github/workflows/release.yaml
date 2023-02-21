@@ -42,4 +42,4 @@ jobs:
           tccli cdn PurgePathCache \
           --cli-unfold-argument \
           --FlushType flush \
-          --Paths https://documents.he3.app/
+          --Paths https://docs.he3.app/
