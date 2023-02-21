@@ -39,7 +39,7 @@ npm run dev
 
 打开 He3 Client，在“开发工具”菜单里查看编码效果。
 
-![](/guide/4.png)
+![](/guide/5.png)
 
 ### Step 5: 发布工具
 
