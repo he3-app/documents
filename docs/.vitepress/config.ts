@@ -39,6 +39,12 @@ export default {
             { text: 'ImagePreview', link: '/components/ImagePreview.md' },
           ],
         },
+        {
+          text: '通用 Api',
+          items: [
+            { text: 'He3 Api', link: '/components/He3Api.md' },
+          ],
+        },
       ],
     },
   },
