@@ -15,7 +15,6 @@ lang: zh-en
 </template>
 
 <script setup lang="ts">
-import { Transform } from '@/hui'
 import { Ref } from 'vue';
 
 const handleChange = (inputValue: Ref<string>) => {
@@ -38,7 +37,6 @@ const handleMounted = (inputValue: Ref<string>) => {
 </template>
 
 <script setup lang="ts">
-import { Transform } from '@/hui'
 import { Ref } from 'vue';
 
 const handleChange = (inputValue: Ref<string>) => {
@@ -78,3 +76,10 @@ const handleMounted = (inputValue: Ref<string>) => {
 | placeholder |      | string                                             |        |
 | editorLang  |      | [CodeEditorLanguagesUnion](#CodeEditorLanguagesUnion) |        |
 | editorTheme |      | [CodeEditorThemesUnion](#CodeEditorThemesUnion)       |        |
+
+### Slot
+
+| 插槽名      | 说明         | 类型   | 默认值 |
+| ----------- | ------------ | ------ | ------ |
+| left        | 左侧按钮插槽 | Button |        |
+| right       | 右侧按钮插槽 | Button |        |
