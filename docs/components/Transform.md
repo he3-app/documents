@@ -33,19 +33,22 @@ const handleMounted = (inputValue: Ref<string>) => {
 
 ```vue
 <template>
-  <h-transform @change="handleChange" @mounted="handleMounted" />
+  <h-transform @change="transform" @mounted="initTemplate" />
 </template>
 
 <script setup lang="ts">
 import { Ref } from 'vue';
 
-const handleChange = (inputValue: Ref<string>) => {
+const transform = (inputValue: Ref<string>):string => {
   // do something
+  // 将转换结果返回即可在右边进行展示，注意返回结果必须是字符串
   return ''
 }
 
-const handleMounted = (inputValue: Ref<string>) => {
+const initTemplate = (inputValue: Ref<string>) => {
   // Mounted hook
+  // 用于初始化左边编辑器模板
+  inputValue.value = example
 }
 </script>
 
