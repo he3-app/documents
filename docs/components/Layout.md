@@ -56,14 +56,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutHorizontal mode="left" :width="200">
+  <h-layout-horizontal mode="left" :width="200">
     <template #left>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
     <template #right>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </HLayoutHorizontal>
+  </h-layout-horizontal>
 </template>
 
 ```
@@ -85,14 +85,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutHorizontal mode="right" :width="200">
+  <h-layout-horizontal mode="right" :width="200">
     <template #left>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
     <template #right>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </HLayoutHorizontal>
+  </h-layout-horizontal>
 </template>
 
 ```
@@ -116,14 +116,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutVertical mode="middle">
+  <h-layout-vertical mode="middle">
     <template #above>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
     <template #below>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </HLayoutVertical>
+  </h-layout-vertical>
 </template>
 
 ```
@@ -145,14 +145,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutVertical mode="above" :width="200">
+  <h-layout-vertical mode="above" :width="200">
     <template #above>
       <div style="background-color: #7dbcea; height: 100%"></div>
     </template>
     <template #below>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </HLayoutVertical>
+  </h-layout-vertical>
 </template>
 
 ```
@@ -174,14 +174,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutVertical mode="below" :width="200">
+  <h-layout-vertical mode="below" :width="200">
     <template #above>
       <div style="background-color: #7dbcea;"></div>
     </template>
     <template #below>
       <div style="background-color: rgba(16, 142, 233, 1);"></div>
     </template>
-  </HLayoutVertical>
+  </h-layout-vertical>
 </template>
 
 ```
@@ -200,9 +200,9 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutSingle mode="middle" :width="400">
+  <h-layout-single mode="middle" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </HLayoutSingle>
+  </h-layout-single>
 </template>
 
 ```
@@ -219,9 +219,9 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutSingle mode="middle" :width="400">
+  <h-layout-single mode="middle" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </HLayoutSingle>
+  </h-layout-single>
 </template>
 
 ```
@@ -238,9 +238,9 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutSingle mode="middle" :width="400">
+  <h-layout-single mode="middle" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </HLayoutSingle>
+  </h-layout-single>
 </template>
 
 ```
@@ -262,14 +262,14 @@ lang: zh-en
 
 ```vue
 <template>
-  <HLayoutSplitPane>
+  <h-layout-splitPane>
     <template #left>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
     <template #right>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </HLayoutSplitPane>
+  </h-layout-splitPane>
 </template>
 
 ```
@@ -277,6 +277,8 @@ lang: zh-en
 :::
 
 ## API
+
+### Props
 
 | 属性 | 说明               | 类型   | 默认值 |
 | ---- | ------------------ | ------ | ------ |

@@ -47,6 +47,8 @@ const rightRegex = ref('gi')
 
 ## API
 
+### Props
+
 | 属性          | 说明       | 类型   | 默认值 |
 | ------------- | ---------- | ------ | ------ |
 | modelValue    | 绑定文本   | string |        |

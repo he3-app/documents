@@ -18,6 +18,7 @@ export default {
         {
           text: '通用',
           items: [
+            { text: 'Button', link: '/components/Button.md' },
             { text: 'Icon', link: '/components/Icon.md' },
             {
               text: 'Layout',
@@ -30,6 +31,12 @@ export default {
           items: [
             { text: 'CodeEditor', link: '/components/CodeEditor.md' },
             { text: 'HighlightInput', link: '/components/HighlightInput.md' },
+            { text: 'ColorPicker', link: '/components/ColorPicker.md' },
+            { text: 'ColorInput', link: '/components/ColorInput.md' },
+            { text: 'ImagePicker', link: '/components/ImagePicker.md' },
+            { text: 'KVInput', link: '/components/KVInput.md' },
+            { text: 'MultilineInput', link: '/components/MultilineInput.md' },
+            { text: 'Transform', link: '/components/Transform.md' },
           ],
         },
         {
@@ -37,6 +44,10 @@ export default {
           items: [
             { text: 'CodeResult', link: '/components/CodeResult.md' },
             { text: 'ImagePreview', link: '/components/ImagePreview.md' },
+            { text: 'KVResult', link: '/components/KVResult.md' },
+            { text: 'MultilineResult', link: '/components/MultilineResult.md' },
+            { text: 'SinglelineResult', link: '/components/SinglelineResult.md' },
+            { text: 'TerminalView', link: '/components/TerminalView.md' },
           ],
         },
         {

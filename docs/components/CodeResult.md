@@ -29,6 +29,8 @@ const textInput = ref(`console.log('He3')`)
 
 ## API
 
+### Props
+
 | 属性  | 说明                   | 类型   | 默认值 |
 | ----- | ---------------------- | ------ | ------ |
 | title | 展示一段可复制的代码段 | string |        |

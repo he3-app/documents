@@ -10,6 +10,10 @@ lang: zh-en
 
 ## 代码演示
 
+<script lang="ts" setup>
+import { base64Image } from './example.ts'
+</script>
+
 <HImagePreview :data="base64Image" mime="image/png" />
 
 ::: details 查看源代码
@@ -30,6 +34,8 @@ const base64Image = ref(
 :::
 
 ## API
+
+### Props
 
 | 属性 | 说明                                         | 类型   | 默认值    |
 | ---- | -------------------------------------------- | ------ | --------- |

@@ -1,23 +1,29 @@
 {
-  "hash": "f2005abf",
-  "browserHash": "fb2b5b23",
+  "hash": "6a36b953",
+  "browserHash": "d65a0ba1",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a94b2da4",
+      "fileHash": "ed62e376",
       "needsInterop": false
     },
     "@he3-kit/ui": {
-      "src": "../../../../node_modules/@he3-kit/ui/dist/index.js",
+      "src": "../../../../node_modules/.pnpm/@he3-kit+ui@0.0.5/node_modules/@he3-kit/ui/dist/index.js",
       "file": "@he3-kit_ui.js",
-      "fileHash": "839af095",
+      "fileHash": "c4a1ca7a",
+      "needsInterop": false
+    },
+    "ant-design-vue": {
+      "src": "../../../../node_modules/.pnpm/ant-design-vue@3.2.15_vue@3.2.47/node_modules/ant-design-vue/es/index.js",
+      "file": "ant-design-vue.js",
+      "fileHash": "e20fcdae",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-R647EDCJ": {
-      "file": "chunk-R647EDCJ.js"
+    "chunk-SUYGMFRK": {
+      "file": "chunk-SUYGMFRK.js"
     }
   }
 }
