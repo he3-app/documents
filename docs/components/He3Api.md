@@ -97,7 +97,7 @@ $he3.copyText('copy text');
 获取当前的主题，返回 `dark` 或者 `light`
 
 ```js
-console.log()
+console.log($he3.theme)
 ```
 
 ### 订阅主题变化

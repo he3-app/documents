@@ -43,8 +43,9 @@ export default {
           text: '通用 Api',
           items: [
             { text: 'He3 Api', link: '/components/He3Api.md' },
+            { text: '主题和样式', link: '/components/CommonCss.md' },
           ],
-        },
+        }
       ],
     },
   },
