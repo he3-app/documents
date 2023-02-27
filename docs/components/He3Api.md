@@ -17,6 +17,10 @@ lang: zh-en
     * `lang` 当前语言
     * `theme` 当前主题
     * `isDev` 当前是否是开发环境
+    * `openBrowser` 打开浏览器
+    * `isMacOS` 当前设备是否是 Mac
+    * `isWindows` 当前设备是否是 Windows
+    * `isLinux` 当前设备是否是 Linux
 * 内部使用的能力，不对外
     * `getLastClipboard` 获取当前的简体版内容（考虑用户信息安全，确认是否对外暴露）
     * `getToolInfo` 获取工具参数
