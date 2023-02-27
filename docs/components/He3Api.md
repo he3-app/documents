@@ -10,64 +10,64 @@ lang: zh-en
 如下是 api 列表，具体的调用方式请参考下方的演示代码。
 
 * 对外提供
-  * `message` 触发全局的消息提示
-  * `getLastClipboard` 获取当前的简体版内容
-  * `copyText` 复制一段文本
-  * `subscribeThemeChange` 订阅主题变化
-  * `downloadByUrl` 通过url下载文件
-  * `lang` 当前语言
-  * `theme` 当前主题
-  * `isDev` 当前是否是开发环境
+    * `message` 触发全局的消息提示
+    * `copyText` 复制一段文本
+    * `subscribeThemeChange` 订阅主题变化
+    * `downloadByUrl` 通过url下载文件
+    * `lang` 当前语言
+    * `theme` 当前主题
+    * `isDev` 当前是否是开发环境
 * 内部使用的能力，不对外
-  * `getToolInfo` 获取工具参数
-  * `isPublish` 当前工具是否是公开的
-  * `getLang` 异步获取当前语言
-  * `getTheme` 异步获取当前主题
+    * `getLastClipboard` 获取当前的简体版内容（考虑用户信息安全，确认是否对外暴露）
+    * `getToolInfo` 获取工具参数
+    * `isPublish` 当前工具是否是公开的
+    * `getLang` 异步获取当前语言
+    * `getTheme` 异步获取当前主题
 * 非通用能力，不对外，给工具使用
-  * getJwtToken,
-  * SCryptKDF,
-  * PasetoDecode,
-  * LocalPasetoDecode,
-  * generatePaseto,
-  * SCryptVerify,
-  * readFileByUrl,
-  * readFileAsArrayBuffer,
-  * getCurlConverter,
-  * jsonToOther,
-  * jsonToCSType,
-  * detectFileType,
-  * ntlmHash,
-  * decodeToString,
-  * encodeString,
-  * generateRSAKeyPair,
-  * getRSAPublicKeyFromPrivateKey,
-  * idnEncode,
-  * idnDecode,
-  * getBaseNConvertMethod,
-  * getMinifiers,
-  * compareVersion,
-  * semverCompare,
-  * machineIdSync,
-  * whoiser,
-  * getCpuManufacturer,
-  * getOSArch,
-  * domainPing,
-  * domainLookup,
-  * domainResolve,
-  * getSystemHosts,
-  * setSystemHosts,
-  * guessLang,
-  * traceroute,
-  * zipDecode,
-  * zipEncode,
-  * utf7Decode,
-  * utf7Encode,
-  * readExactlyByFile,
-  * getEncoding,
-  * htmlToCsv,
-  * isIP,
-  * formulaParse,
-  * imageResize,
+    * getJwtToken,
+    * SCryptKDF,
+    * PasetoDecode,
+    * LocalPasetoDecode,
+    * generatePaseto,
+    * SCryptVerify,
+    * readFileByUrl,
+    * readFileAsArrayBuffer,
+    * getCurlConverter,
+    * jsonToOther,
+    * jsonToCSType,
+    * detectFileType,
+    * ntlmHash,
+    * decodeToString,
+    * encodeString,
+    * generateRSAKeyPair,
+    * getRSAPublicKeyFromPrivateKey,
+    * idnEncode,
+    * idnDecode,
+    * getBaseNConvertMethod,
+    * getMinifiers,
+    * compareVersion,
+    * semverCompare,
+    * machineIdSync,
+    * whoiser,
+    * getCpuManufacturer,
+    * getOSArch,
+    * domainPing,
+    * domainLookup,
+    * domainResolve,
+    * getSystemHosts,
+    * setSystemHosts,
+    * guessLang,
+    * traceroute,
+    * zipDecode,
+    * zipEncode,
+    * utf7Decode,
+    * utf7Encode,
+    * readExactlyByFile,
+    * getEncoding,
+    * htmlToCsv,
+    * isIP,
+    * formulaParse,
+    * imageResize,
 
 ### 触发全局的消息提示
 
