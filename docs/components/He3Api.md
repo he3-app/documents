@@ -17,7 +17,7 @@ lang: zh-en
     * `lang` 当前语言
     * `theme` 当前主题
     * `isDev` 当前是否是开发环境
-    * `shellOpenExternal` 打开浏览器
+    * `shellOpenExternal` 系统默认的协议打开URL
     * `isMacOS` 当前设备是否是 Mac
     * `isWindows` 当前设备是否是 Windows
     * `isLinux` 当前设备是否是 Linux
