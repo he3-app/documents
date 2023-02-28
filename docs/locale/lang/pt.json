@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "Selecione um documento",
+    "saveAsFile": "Salve como um arquivo",
+    "copySuccess": "Replicação",
+    "copy": "cópia de",
+    "pure": "Cor sólida",
+    "gradient": "Gradiente",
+    "pressC": "C ou",
+    "upload": "Clique ou arraste a imagem para o upload da área",
+    "reselect": "Re -eleição",
+    "clipboardMac": "Detecte a placa de cisalhamento, use comando + v pasta",
+    "clipboardWin": "Detecte a placa de cisalhamento, use pasta Ctrl + V",
+    "choose": "Selecione a imagem",
+    "switchJson": "Mudar para o editor JSON",
+    "switchKV": "Mudar para o editor de pares do valor da chave",
+    "jsonFormat": "Por favor, insira o formato JSON correto",
+    "add": "adicionar à",
+    "read_file": "Leia o arquivo",
+    "chooseTextFile": "Selecione um arquivo de texto",
+    "clear": "Vazio",
+    "clearSuccess": "Claro",
+    "paste": "Colar",
+    "pasteSuccess": "O texto na placa de cisalhamento é colado"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "ドキュメントを選択します",
+    "saveAsFile": "ファイルとして保存します",
+    "copySuccess": "複製",
+    "copy": "コピー",
+    "pure": "ソリッドカラー",
+    "gradient": "勾配",
+    "pressC": "cまたは",
+    "upload": "画像をクリックまたはドラッグして、エリアのアップロードにドラッグします",
+    "reselect": "再選",
+    "clipboardMac": "せん断プレートを検出し、コマンド + Vペーストを使用します",
+    "clipboardWin": "せん断板を検出し、Ctrl + Vペーストを使用します",
+    "choose": "画像を選択します",
+    "switchJson": "JSONエディターに切り替えます",
+    "switchKV": "キー値ペアエディターに切り替えます",
+    "jsonFormat": "正しいJSON形式を入力してください",
+    "add": "追加",
+    "read_file": "ファイルを読み取ります",
+    "chooseTextFile": "テキストファイルを選択してください",
+    "clear": "空",
+    "clearSuccess": "クリア",
+    "paste": "ペースト",
+    "pasteSuccess": "せん断板のテキストは貼り付けられています"
+  }
+}

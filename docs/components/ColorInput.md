@@ -10,7 +10,7 @@ lang: zh-en
 
 ## 代码演示
 
-![1677219045878](image/ColorInput/1677219045878.png)
+<h-color-input />
 
 ::: details 查看源代码
 
@@ -20,6 +20,8 @@ lang: zh-en
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const shadowColor = ref(isDark() ? '#cccccc' : '#6D2ACA')
 </script>
 
@@ -31,6 +33,6 @@ const shadowColor = ref(isDark() ? '#cccccc' : '#6D2ACA')
 
 ### Props
 
-| 属性      | 说明     | 类型   | 默认值 |
-| --------- | -------- | ------ | ------ |
-| pureColor | 颜色绑定 | string |        |
+| 属性              | 说明     | 类型   | 默认值 |
+| ----------------- | -------- | ------ | ------ |
+| v-model:pureColor | 颜色绑定 | string |        |

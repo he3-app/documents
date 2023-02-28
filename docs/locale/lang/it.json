@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "Seleziona un documento",
+    "saveAsFile": "Salvalo come file",
+    "copySuccess": "Replica",
+    "copy": "copia",
+    "pure": "Tinta unita",
+    "gradient": "Pendenza",
+    "pressC": "C o",
+    "upload": "Fare clic o trascinare l'immagine nell'area Carica",
+    "reselect": "Ri -elezione",
+    "clipboardMac": "Rileva la piastra di taglio, usa il comando + v pasta",
+    "clipboardWin": "Rileva la piastra di taglio, usa ctrl + v pasta",
+    "choose": "Seleziona immagine",
+    "switchJson": "Passa a JSON Editor",
+    "switchKV": "Passa all'editor della coppia di valori dei tasti",
+    "jsonFormat": "Inserisci il formato JSON corretto",
+    "add": "aggiungere a",
+    "read_file": "Leggi il file",
+    "chooseTextFile": "Seleziona un file di testo",
+    "clear": "Vuoto",
+    "clearSuccess": "Chiaro",
+    "paste": "Impasto",
+    "pasteSuccess": "Il testo nella piastra di taglio viene incollato"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "选择文件",
+    "saveAsFile": "另存为文件",
+    "copySuccess": "复制成功",
+    "copy": "复制",
+    "pure": "纯色",
+    "gradient": "渐变",
+    "pressC": "按 C 或",
+    "upload": "点击或将图片拖拽到此区域上传",
+    "reselect": "重选",
+    "clipboardMac": "检测到剪切板图片，使用command + v粘贴",
+    "clipboardWin": "检测到剪切板图片，使用ctrl + v粘贴",
+    "choose": "选择图片",
+    "switchJson": "切换到 JSON 编辑器",
+    "switchKV": "切换到键值对编辑器",
+    "jsonFormat": "请输入正确的json格式",
+    "add": "添加",
+    "read_file": "读取文件",
+    "chooseTextFile": "请选择一个文本文件",
+    "clear": "清空",
+    "clearSuccess": "已清空",
+    "paste": "粘贴",
+    "pasteSuccess": "已粘贴剪切板中的文本"
+  }
+}

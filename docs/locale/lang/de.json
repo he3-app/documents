@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "Wählen Sie ein Dokument aus",
+    "saveAsFile": "Speichern Sie es als Datei",
+    "copySuccess": "Reproduzieren",
+    "copy": "Kopieren",
+    "pure": "Einfarbig",
+    "gradient": "Gradient",
+    "pressC": "C oder",
+    "upload": "Klicken Sie auf oder ziehen Sie das Bild in den Bereich des Bereichs Upload",
+    "reselect": "Wiederwahl",
+    "clipboardMac": "Erkennen Sie die Scherplatte und verwenden Sie den Befehl + V einfügen",
+    "clipboardWin": "Erkennen Sie die Scherplatte, verwenden Sie Strg + V -Paste",
+    "choose": "Bild auswählen",
+    "switchJson": "Wechseln Sie zu JSON -Editor",
+    "switchKV": "Wechseln Sie zum Key Value -Paar -Editor",
+    "jsonFormat": "Bitte geben Sie das richtige JSON -Format ein",
+    "add": "ergänzen",
+    "read_file": "Datei lesen",
+    "chooseTextFile": "Bitte wählen Sie eine Textdatei aus",
+    "clear": "Leer",
+    "clearSuccess": "Klar",
+    "paste": "Paste",
+    "pasteSuccess": "Der Text in der Scherplatte wird eingefügt"
+  }
+}

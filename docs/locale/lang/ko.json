@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "문서를 선택하십시오",
+    "saveAsFile": "파일로 저장하십시오",
+    "copySuccess": "복제",
+    "copy": "복사",
+    "pure": "단색",
+    "gradient": "구배",
+    "pressC": "C 또는",
+    "upload": "사진을 클릭하거나 영역 업로드로 드래그하십시오",
+    "reselect": "재 선거",
+    "clipboardMac": "전단 판을 감지하고 명령 + V 페이스트 사용",
+    "clipboardWin": "전단 플레이트 감지, Ctrl + V 페이스트 사용",
+    "choose": "이미지를 선택하십시오",
+    "switchJson": "JSON 편집기로 전환하십시오",
+    "switchKV": "키 값 쌍 편집기로 전환하십시오",
+    "jsonFormat": "올바른 JSON 형식을 입력하십시오",
+    "add": "추가",
+    "read_file": "파일 읽기",
+    "chooseTextFile": "텍스트 파일을 선택하십시오",
+    "clear": "비어 있는",
+    "clearSuccess": "분명한",
+    "paste": "반죽",
+    "pasteSuccess": "전단 플레이트의 텍스트가 붙여 넣습니다"
+  }
+}

@@ -20,7 +20,7 @@ import {
   cloneVNode,
   compatUtils,
   compile,
-  computed,
+  computed2 as computed,
   createApp,
   createBaseVNode,
   createBlock,
@@ -145,7 +145,7 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-SUYGMFRK.js";
+} from "./chunk-IWMFQYWG.js";
 export {
   BaseTransition,
   Comment,

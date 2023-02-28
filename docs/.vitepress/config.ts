@@ -1,3 +1,5 @@
+import { mdPlugin } from './config/plugins';
+
 export default {
   title: 'He3SDK',
   description: 'Component from He3 help you create your own plugin fast',
@@ -5,6 +7,7 @@ export default {
     nav: [
       { text: 'Guide', link: '/guide/index.md' },
       { text: 'Components', link: '/components/index.md' },
+      { text: 'API', link: '/api/He3Api.md' },
       { text: 'Changelog', link: 'https://he3.app/' },
     ],
     sidebar: {
@@ -46,18 +49,29 @@ export default {
             { text: 'ImagePreview', link: '/components/ImagePreview.md' },
             { text: 'KVResult', link: '/components/KVResult.md' },
             { text: 'MultilineResult', link: '/components/MultilineResult.md' },
-            { text: 'SinglelineResult', link: '/components/SinglelineResult.md' },
+            {
+              text: 'SinglelineResult',
+              link: '/components/SinglelineResult.md',
+            },
             { text: 'TerminalView', link: '/components/TerminalView.md' },
           ],
         },
         {
-          text: '通用 Api',
+          text: '主题',
           items: [
-            { text: 'He3 Api', link: '/components/He3Api.md' },
             { text: '主题和样式', link: '/components/CommonCss.md' },
           ],
-        }
+        },
+      ],
+      '/api': [
+        {
+          text: 'API',
+          items: [{ text: 'He3 API', link: '/api/He3Api.md' }],
+        },
       ],
     },
   },
-}
+  markdown: {
+    config: (md) => mdPlugin(md),
+  },
+};

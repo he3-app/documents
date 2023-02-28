@@ -219,7 +219,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <h-layout-single mode="middle" :width="400">
+  <h-layout-single mode="left" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
   </h-layout-single>
 </template>
@@ -238,7 +238,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <h-layout-single mode="middle" :width="400">
+  <h-layout-single mode="right" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
   </h-layout-single>
 </template>
@@ -280,7 +280,7 @@ lang: zh-en
 
 ### Props
 
-| 属性 | 说明               | 类型   | 默认值 |
-| ---- | ------------------ | ------ | ------ |
-| mode | icones上的图标字段 | string |        |
-| size | 图标大小           | number | 20     |
+| 属性  | 说明         | 类型                     | 默认值 |
+| ----- | ------------ | ------------------------ | ------ |
+| mode  | 模式选择     | left\| middle \| right | middle |
+| width | 固定局部宽度 | number                   | 300    |

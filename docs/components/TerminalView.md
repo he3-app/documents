@@ -10,15 +10,12 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <template>
-  <h-terminal-view :result="screen" />
-</template>
+<h-terminal-view :result="screen" />
 
 <script setup lang="ts">
-const screen = ref('请输入多行文本')
-</script> -->
-
-![1677219233267](image/TerminalView/1677219233267.png)
+import { ref } from 'vue'
+const screen = ref('He3')
+</script>
 
 ::: details 查看源代码
 
@@ -28,6 +25,7 @@ const screen = ref('请输入多行文本')
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 const screen = ref('请输入多行文本')
 </script>
 

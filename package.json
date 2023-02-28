@@ -11,6 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@he3-kit/ui": "^0.0.5",
-    "vitepress": "1.0.0-alpha.46"
+    "ant-design-vue": "^3.2.15",
+    "markdown-it": "^13.0.1",
+    "vitepress": "1.0.0-alpha.46",
+    "vue": "^3.2.47",
+    "vue-i18n": "^9.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "markdown-it-container": "^3.0.0"
   }
 }

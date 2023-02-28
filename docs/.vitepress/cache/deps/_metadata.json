@@ -1,29 +1,53 @@
 {
-  "hash": "6a36b953",
-  "browserHash": "d65a0ba1",
+  "hash": "75cbd0a6",
+  "browserHash": "032862cc",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "ed62e376",
+      "fileHash": "706331a5",
       "needsInterop": false
     },
     "@he3-kit/ui": {
       "src": "../../../../node_modules/.pnpm/@he3-kit+ui@0.0.5/node_modules/@he3-kit/ui/dist/index.js",
       "file": "@he3-kit_ui.js",
-      "fileHash": "c4a1ca7a",
+      "fileHash": "d13ef174",
       "needsInterop": false
     },
     "ant-design-vue": {
-      "src": "../../../../node_modules/.pnpm/ant-design-vue@3.2.15_vue@3.2.47/node_modules/ant-design-vue/es/index.js",
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+ant-design-vue@3.2.15_vue@3.2.47/node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "e20fcdae",
+      "fileHash": "7eaedcca",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+element-plus@2.2.32_vue@3.2.47/node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "e5446197",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+@element-plus+icons-vue@2.0.10_vue@3.2.47/node_modules/@element-plus/icons-vue/dist/index.js",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "9a08d09d",
+      "needsInterop": false
+    },
+    "vue-i18n": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue-i18n@9.2.2_vue@3.2.47/node_modules/vue-i18n/dist/vue-i18n.esm-bundler.js",
+      "file": "vue-i18n.js",
+      "fileHash": "a4ce8c4e",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-SUYGMFRK": {
-      "file": "chunk-SUYGMFRK.js"
+    "chunk-44H3CIET": {
+      "file": "chunk-44H3CIET.js"
+    },
+    "chunk-TSNMUU5K": {
+      "file": "chunk-TSNMUU5K.js"
+    },
+    "chunk-IWMFQYWG": {
+      "file": "chunk-IWMFQYWG.js"
     }
   }
 }

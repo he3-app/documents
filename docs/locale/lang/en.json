@@ -1,0 +1,26 @@
+{
+  "hui": {
+    "select": "Select file",
+    "saveAsFile": "Save as file",
+    "copySuccess": "Copy success",
+    "copy": "Copy",
+    "pure": "Pure",
+    "gradient": "Gradient",
+    "pressC": "Press C or",
+    "upload": "Click or drag image to this area to upload",
+    "reselect": "Reselect",
+    "clipboardMac": "Find clipboard pictures, you can use command + v to paste",
+    "clipboardWin": "Find clipboard pictures, you can use ctrl + v to paste",
+    "choose": "Choose image",
+    "switchJson": "Switch to JSON Editor",
+    "switchKV": "Switch to Key Value Input",
+    "jsonFormat": "Please enter the correct json format",
+    "add": "Add",
+    "read_file": "Read file",
+    "chooseTextFile": "Please choose a text file",
+    "clear": "Clear",
+    "clearSuccess": "clear successfully",
+    "paste": "Paste",
+    "pasteSuccess": "Text from clipboard pasted successfully"
+  }
+}

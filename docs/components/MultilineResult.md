@@ -10,17 +10,13 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <template>
-  <h-multiline-result :result="text" result-desc="" />
-</template>
+<h-multiline-result :result="text" result-desc="" />
 
 <script setup lang="ts">
-import {ref} from 'vue'
+import { ref } from 'vue'
 
 const text = ref('请输入多行文本')
-</script> -->
-
-![1677219181368](image/MultilineResult/1677219181368.png)
+</script>
 
 ::: details 查看源代码
 
@@ -30,6 +26,8 @@ const text = ref('请输入多行文本')
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const text = ref('请输入多行文本')
 </script>
 
@@ -41,10 +39,10 @@ const text = ref('请输入多行文本')
 
 ### Props
 
-| 属性       | 说明         | 类型                             | 默认值 |
-| ---------- | ------------ | -------------------------------- | ------ |
-| title      | 标题         | string                           | result       |
-| result     | 结果展示     | string                           |        |
-| height     | 高度         | string                           |        |
-| fileType   | 导出文件类型 | [BlobPropertyBag](#BlobPropertyBag) |        |
-| outputFile | 导出文件     | any                              |        |
+| 属性       | 说明         | 类型                                                                               | 默认值 |
+| ---------- | ------------ | ---------------------------------------------------------------------------------- | ------ |
+| title      | 标题         | string                                                                             | result |
+| result     | 结果展示     | string                                                                             |        |
+| height     | 高度         | string                                                                             |        |
+| fileType   | 导出文件类型 | [FileType](https://developer.mozilla.org/zh-CN/docs/Web/Media/Formats/Image_types) |        |
+| outputFile | 导出文件     | any                                                                                |        |

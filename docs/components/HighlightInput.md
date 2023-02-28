@@ -34,10 +34,12 @@ const page = 'He3 is a free, modern developer toolbox. Check it out: https://he3
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const testStr = ref(
   'He3 is a free, modern developer toolbox. Check it out: https://he3.app',
 )
-const matchArray = reactive<string[]>(['He3','https://he3.app'])
+const matchArray = ref<string[]>(['He3','https://he3.app'])
 const rightRegex = ref('gi')
 </script>
 
@@ -53,5 +55,5 @@ const rightRegex = ref('gi')
 | ------------- | ---------- | ------ | ------ |
 | modelValue    | 绑定文本   | string |        |
 | title         | 标题       | string |        |
-| highlightText | 高亮文字   | Array  |        |
+| highlightText | 高亮文字   | Array\<string\>  |        |
 | regexModifier | 正则修饰符 | string |        |

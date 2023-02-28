@@ -4,7 +4,7 @@ import {
   Text,
   Transition,
   TransitionGroup,
-  computed,
+  computed2 as computed,
   createBaseVNode,
   createBlock,
   createCommentVNode,
@@ -50,7 +50,7 @@ import {
   withDirectives,
   withKeys,
   withModifiers
-} from "./chunk-SUYGMFRK.js";
+} from "./chunk-IWMFQYWG.js";
 
 // node_modules/.pnpm/@he3-kit+ui@0.0.5/node_modules/@he3-kit/ui/dist/index.js
 var Be = (t, e) => {

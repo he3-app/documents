@@ -10,9 +10,7 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <template>
-  <h-k-v-result :result="outputValue" :model-switch="true" />
-</template>
+<!-- <h-k-v-result :result="outputValue" :model-switch="true" />
 
 <script setup lang="ts">
 import {ref} from 'vue'
@@ -32,6 +30,7 @@ const outputValue = ref({
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 
 const outputValue = ref({})
 </script>
@@ -46,7 +45,7 @@ const outputValue = ref({})
 
 | 属性        | 说明             | 类型                    | 默认值 |
 | ----------- | ---------------- | ----------------------- | ------ |
-| result      | 需要展示的对象   | Record `<string,any>` |        |
+| result      | 需要展示的对象   | ^[Object]`Record<string,any>` |        |
 | width       | 宽度             | number                  |        |
 | model       | 展示模式         | list / json             | list   |
 | modelSwitch | 是否禁用模式切换 | boolean                 |        |

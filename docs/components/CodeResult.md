@@ -10,7 +10,7 @@ lang: zh-en
 
 ## 代码演示
 
-<HCodeResult code="console.log('He3')" />
+<h-code-result code="console.log('He3')" style="height: 300px" />
 
 ::: details 查看源代码
 
@@ -20,6 +20,8 @@ lang: zh-en
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const textInput = ref(`console.log('He3')`)
 </script>
 

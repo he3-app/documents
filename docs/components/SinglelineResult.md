@@ -10,15 +10,13 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <template>
-  <h-singleline-result :result="text" result-desc="" />
-</template>
+<h-singleline-result :result="text" result-desc="" />
 
 <script setup lang="ts">
-const text = ref('请输入多行文本')
-</script> -->
+import { ref } from 'vue'
 
-![1677219194511](image/SinglelineResult/1677219194511.png)
+const text = ref('可复制单行输出')
+</script>
 
 ::: details 查看源代码
 
@@ -28,6 +26,7 @@ const text = ref('请输入多行文本')
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 const text = ref('请输入多行文本')
 </script>
 

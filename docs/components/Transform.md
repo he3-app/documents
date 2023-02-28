@@ -10,9 +10,9 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <template>
-  <h-transform @change="handleChange" @mounted="handleMounted" />
-</template>
+<div style="height:500px">
+<h-transform @change="handleChange" @mounted="handleMounted" />
+</div>
 
 <script setup lang="ts">
 import { Ref } from 'vue';
@@ -25,9 +25,7 @@ const handleChange = (inputValue: Ref<string>) => {
 const handleMounted = (inputValue: Ref<string>) => {
   // Mounted hook
 }
-</script> -->
-
-![1677219268800](image/Transform/1677219268800.png)
+</script>
 
 ::: details 查看源代码
 
@@ -60,29 +58,27 @@ const initTemplate = (inputValue: Ref<string>) => {
 
 ### Props
 
-| 属性           | 说明             | 类型                                 | 默认值 |
-| -------------- | ---------------- | ------------------------------------ | ------ |
-| leftConfig     | 左编辑器配置     | [Config](#config)                       |        |
-| rightConfig    | 右编辑器配置     | [Config](#config)                       |        |
-| canChooseFile  | 是否支持选择文件 | boolean                              | true   |
-| onMounted      | 挂载钩子         | (inputValue:Ref `<string>`)=> void |        |
-| onChange       | 输入框改变时钩子 | (inputValue:Ref `<string>`)=> void |        |
-| onResultChange | 结果改变时钩子   | (inputValue:Ref `<string>`)=> void |        |
-| autoFill       | 是否自动填入     | boolean                              | false  |
-| autoFillType   | 自动填入类型     | [&#39;json&#39;](#'json')               |        |
-| clipboardValue | 剪切板值         | [JudgeType](#JudgeType)                 | null   |
+| 属性           | 说明             | 类型                                         | 默认值 |
+| -------------- | ---------------- | -------------------------------------------- | ------ |
+| leftConfig     | 左编辑器配置     | [Config](#config)                            |        |
+| rightConfig    | 右编辑器配置     | [Config](#config)                            |        |
+| canChooseFile  | 是否支持选择文件 | boolean                                      | true   |
+| onMounted      | 挂载钩子         | ^[Function]`(inputValue:Ref<string>)=> void` |        |
+| onChange       | 输入框改变时钩子 | ^[Function]`(inputValue:Ref<string>)=> void` |        |
+| onResultChange | 结果改变时钩子   | ^[Function]`(inputValue:Ref<string>)=> void` |        |
+| autoFill       | 是否自动填入     | boolean                                      | false  |
 
 #### Config
 
-| 属性        | 说明 | 类型                                               | 默认值 |
-| ----------- | ---- | -------------------------------------------------- | ------ |
-| placeholder |      | string                                             |        |
-| editorLang  |      | [CodeEditorLanguagesUnion](#CodeEditorLanguagesUnion) |        |
-| editorTheme |      | [CodeEditorThemesUnion](#CodeEditorThemesUnion)       |        |
+| 属性        | 说明 | 类型                                                                                                                                                                                                                                                                                                                           | 默认值 |
+| ----------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| placeholder |      | string                                                                                                                                                                                                                                                                                                                         |        |
+| editorLang  |      | ^[CodeEditorLanguagesUnio]`'HTML' \| 'PYTHON' \| 'RUST' \| 'C' \| 'CPP'  \| 'CSHARP' \| 'CRYSTAL' \| 'OBJECTIVE_C' \| 'KOTLIN' \| 'DART' \| 'PHP' \| 'PROPERTIES' \| 'JAVASCRIPT' \| 'TYPESCRIPT' \| 'JSX' \| 'TSX' \| 'SQL' \| 'SWIFT' \| 'SCALA' \| 'TSX' \| 'TYPESCRIPT' \| 'TOML' \| 'WEB_ASSEMBLY' \| 'XML' \| 'YAML' \|` |        |
+| editorTheme |      | ^[CodeEditorThemesUnio]`'ANDROID_STUDIO' \| 'ABCDEF' \| 'ATOMONE' \| 'BBEDIT' \| 'BESPIN' \| 'DARCULA' \| 'DRACULA' \| 'DUOTONE_LIGHT' \| 'DUOTONE_DARK' \| 'ECLIPSE' \| 'GITHUB_LIGHT' \| 'GITHUB_DARK' \| 'ONE_DARK' \| 'OKAIDIA' \| 'SUBLIME' \| 'X_CODE_LIGHT' \| 'X_CODE_DARK'`                                           |        |
 
 ### Slot
 
-| 插槽名      | 说明         | 类型   | 默认值 |
-| ----------- | ------------ | ------ | ------ |
-| left        | 左侧按钮插槽 | Button |        |
-| right       | 右侧按钮插槽 | Button |        |
+| 插槽名 | 说明         | 类型   | 默认值 |
+| ------ | ------------ | ------ | ------ |
+| left   | 左侧按钮插槽 | Button |        |
+| right  | 右侧按钮插槽 | Button |        |
