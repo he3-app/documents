@@ -1,5 +1,5 @@
 import { createI18n } from 'vue-i18n';
-import zh from './lang/zh-CN.json';
+import zh from './lang/zh-cn.json';
 import en from './lang/en.json';
 import de from './lang/de.json';
 import es from './lang/es.json';
