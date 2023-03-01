@@ -280,7 +280,8 @@ lang: zh-en
 
 ### Props
 
-| 属性  | 说明         | 类型                     | 默认值 |
-| ----- | ------------ | ------------------------ | ------ |
-| mode  | 模式选择     | left\| middle \| right | middle |
-| width | 固定局部宽度 | number                   | 300    |
+| 属性           | 说明                 | 类型                                  | 默认值 |
+| -------------- | -------------------- | ------------------------------------- | ------ |
+| mode           | 模式选择             | ^[enum]`'left'\| 'middle'\| 'right'`  | middle |
+| mode(vertical) | 模式选择（垂直布局） | ^[enum]`'above'\| 'middle'\| 'below'` | middle |
+| width          | 固定局部宽度         | number                                | 300    |
