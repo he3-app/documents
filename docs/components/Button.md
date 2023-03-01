@@ -10,9 +10,11 @@ lang: zh-en
 
 ## 代码演示
 
-<h-text-copy-button copy-content="He3" />
-<h-file-upload-button />
-<h-content-save-button url="https://he3.app/" />
+<a-space>
+  <h-text-copy-button copy-content="He3" />
+  <h-file-upload-button />
+  <h-content-save-button url="https://he3.app/" />
+</a-space>
 
 ::: details 查看源代码
 
