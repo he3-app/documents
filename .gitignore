@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 .idea
+
+# docs
+docs/.vitepress/cache
+docs/.vitepress/.temp
