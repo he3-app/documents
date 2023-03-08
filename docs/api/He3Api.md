@@ -21,12 +21,12 @@ lang: zh-en
   * `isMacOS` 当前设备是否是 Mac
   * `isWindows` 当前设备是否是 Windows
   * `isLinux` 当前设备是否是 Linux
-* 内部使用的能力，不对外
-  * `getLastClipboard` 获取当前的简体版内容（考虑用户信息安全，确认是否对外暴露）
-  * `getToolInfo` 获取工具参数
-  * `isPublish` 当前工具是否是公开的
-  * `getLang` 异步获取当前语言
-  * `getTheme` 异步获取当前主题
+  * `onSearch` 当前是否渲染在搜索框
+  * `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
+  * `getLastClipboard` 获取当前的剪贴版内容（考虑用户信息安全，确认是否对外暴露）
+  * `shellOpenExternal` 使用浏览器打开一个 URL
+  * `useClipboardCallBack` 使用了剪贴板的回调，触发该回调通知用户
+
 * 非通用能力，不对外，给工具使用
   * getJwtToken,
   * SCryptKDF,
@@ -72,6 +72,12 @@ lang: zh-en
   * isIP,
   * formulaParse,
   * imageResize,
+  
+* 内部使用的能力，不对外（工具勿用）
+  * `getToolInfo` 获取工具参数
+  * `isPublish` 当前工具是否是公开的
+  * `getLang` 异步获取当前语言
+  * `getTheme` 异步获取当前主题
 
 ### 触发全局的消息提示
 
@@ -82,7 +88,7 @@ $he3.message.info('提示');
 $he3.message.warning('警告');
 ```
 
-### 获取当前的简体版内容
+### 获取当前的剪贴板版内容
 
 ```js
 $he3.getLastClipboard().then((data) => {

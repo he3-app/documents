@@ -56,12 +56,12 @@ export default {
             { text: 'TerminalView', link: '/components/TerminalView.md' },
           ],
         },
-        {
-          text: '主题',
-          items: [
-            { text: '主题和样式', link: '/components/CommonCss.md' },
-          ],
-        },
+        // {
+        //   text: '主题',
+        //   items: [
+        //     { text: '主题和样式', link: '/components/CommonCss.md' },
+        //   ],
+        // },
       ],
       '/api': [
         {
