@@ -5,8 +5,8 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import ApiTyping from '../../VPComponents/vp-api-typing.vue';
 import i18n from '../../locale';
-import './style/global.less'
 import './style/antdTheme/light.less'
+import './style/global.less'
 
 export default {
   ...DefaultTheme,
