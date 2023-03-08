@@ -11,20 +11,19 @@ lang: zh-en
 ## 代码演示
 
 <a-space>
-  <h-text-copy-button copy-content="He3" />
+  <h-text-copy-button copy-content="He3" icon />
   <h-file-upload-button />
-  <h-content-save-button url="https://he3.app/" />
+  <h-content-save-button url="https://he3.app/" icon />
 </a-space>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <h-text-copy-button copy-content="He3" />
+  <h-text-copy-button copy-content="He3" icon />
   <h-file-upload-button />
-  <h-content-save-button url="https://he3.app/" />
+  <h-content-save-button url="https://he3.app/" icon />
 </template>
-
 ```
 
 :::

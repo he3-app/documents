@@ -10,17 +10,16 @@ lang: zh-en
 
 ## 代码演示
 
-<!-- <h-k-v-result :result="outputValue" :model-switch="true" />
+<h-k-v-result :result="outputValue" :model-switch="true" />
 
 <script setup lang="ts">
 import {ref} from 'vue'
 
 const outputValue = ref({
-  a:1
+  key1: 1,
+  key2: 2
 })
-</script> -->
-
-![1677219143582](image/KVResult/1677219143582.png)
+</script>
 
 ::: details 查看源代码
 
@@ -32,9 +31,11 @@ const outputValue = ref({
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const outputValue = ref({})
+const outputValue = ref({
+  key1: 1,
+  key2: 2,
+})
 </script>
-
 ```
 
 :::

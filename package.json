@@ -10,7 +10,9 @@
   "author": "evilmu",
   "license": "ISC",
   "dependencies": {
-    "@he3-kit/ui": "^0.0.7",
+    "@he3-kit/ui": "^0.0.11",
+    "@vue/runtime-dom": "^3.2.47",
+    "@vueuse/core": "^9.13.0",
     "ant-design-vue": "^3.2.15",
     "markdown-it": "^13.0.1",
     "vitepress": "1.0.0-alpha.49",
@@ -19,6 +21,8 @@
   },
   "devDependencies": {
     "@types/node": "^18.14.2",
-    "markdown-it-container": "^3.0.0"
+    "less": "^4.1.3",
+    "markdown-it-container": "^3.0.0",
+    "vite": "^4.1.4"
   }
 }
