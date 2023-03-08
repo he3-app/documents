@@ -21,7 +21,7 @@ lang: zh-en
   * `isMacOS` 当前设备是否是 Mac
   * `isWindows` 当前设备是否是 Windows
   * `isLinux` 当前设备是否是 Linux
-  * `onSearch` 当前是否渲染在搜索框
+  * `renderOnSearch` 当前是否渲染在搜索框
   * `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
   * `getLastClipboard` 获取当前的剪贴版内容（考虑用户信息安全，确认是否对外暴露）
   * `shellOpenExternal` 使用浏览器打开一个 URL
