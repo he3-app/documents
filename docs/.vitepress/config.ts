@@ -8,7 +8,7 @@ export default {
       { text: 'Guide', link: '/guide/index.md' },
       { text: 'Components', link: '/components/index.md' },
       { text: 'API', link: '/api/He3Api.md' },
-      { text: 'Changelog', link: 'https://he3.app/' },
+      { text: 'Official', link: 'https://he3.app/' },
     ],
     sidebar: {
       '/guide': [
@@ -36,7 +36,10 @@ export default {
             { text: 'HighlightInput', link: '/components/HighlightInput.md' },
             { text: 'ColorPicker', link: '/components/ColorPicker.md' },
             { text: 'ColorInput', link: '/components/ColorInput.md' },
+            { text: 'DigitalSizeView', link: '/components/DigitalSizeView.md' },
             { text: 'ImagePicker', link: '/components/ImagePicker.md' },
+            { text: 'Input', link: '/components/Input.md' },
+            { text: 'InputNumber', link: '/components/InputNumber.md' },
             { text: 'KVInput', link: '/components/KVInput.md' },
             { text: 'MultilineInput', link: '/components/MultilineInput.md' },
             { text: 'Transform', link: '/components/Transform.md' },
