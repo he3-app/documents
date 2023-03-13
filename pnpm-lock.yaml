@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@he3-kit/ui': ^0.2.1
+  '@he3-kit/ui': ^0.2.2
   '@types/node': ^18.14.2
   '@vue/runtime-dom': ^3.2.47
   '@vueuse/core': ^9.13.0
@@ -15,7 +15,7 @@ specifiers:
   vue-i18n: ^9.2.2
 
 dependencies:
-  '@he3-kit/ui': 0.2.1_@vueuse+core@9.13.0
+  '@he3-kit/ui': 0.2.2_@vueuse+core@9.13.0
   '@vue/runtime-dom': 3.2.47
   '@vueuse/core': 9.13.0_vue@3.2.47
   ant-design-vue: 3.2.15_vue@3.2.47
@@ -624,8 +624,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@he3-kit/ui/0.2.1_@vueuse+core@9.13.0:
-    resolution: {integrity: sha512-1l4TnuwCQEUFf+HrGD39z8m+Dbq/niVL5FnRGgAXv7CcfOnoZR7WxisNZvlr0JXcsRFcm2RxGj9gkiBIWeADWQ==}
+  /@he3-kit/ui/0.2.2_@vueuse+core@9.13.0:
+    resolution: {integrity: sha512-Gbis0ajqaypC0ac3GsuSiSu9TqJvAhK7EPwZmYXpRgjSMARVtoY7uZv+jmWcXP2pM5lBB5/EGn8v0d6wTug3ng==}
     dependencies:
       '@codemirror/lang-cpp': 6.0.2
       '@codemirror/lang-css': 6.0.2_@codemirror+view@6.9.1

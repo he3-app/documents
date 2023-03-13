@@ -21,7 +21,7 @@ const screen = ref('He3')
 
 ```vue
 <template>
-  <h-terminal-view :result="screen" />
+  <h-terminal-view :value="screen" />
 </template>
 
 <script setup lang="ts">
