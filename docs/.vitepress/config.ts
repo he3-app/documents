@@ -7,7 +7,7 @@ export default {
     nav: [
       { text: 'Guide', link: '/guide/index.md' },
       { text: 'Components', link: '/components/index.md' },
-      { text: 'API', link: '/api/He3Api.md' },
+      { text: 'API', link: '/api/api.md' },
       { text: 'Official', link: 'https://he3.app/' },
     ],
     sidebar: {
@@ -69,7 +69,14 @@ export default {
       '/api': [
         {
           text: 'API',
-          items: [{ text: 'He3 API', link: '/api/He3Api.md' }],
+          items: [{ text: '通用能力', link: '/api/api.md' }],
+        },
+        {
+          text: 'CLI',
+          items: [{ text: '基本能力', link: '/api/cli.md' },{
+            text: '高级能力',
+            link: '/api/cli-advanced.md',
+          }],
         },
       ],
     },
