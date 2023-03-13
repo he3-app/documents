@@ -1,4 +1,4 @@
-import { mdPlugin } from './config/plugins';
+import { mdPlugin } from './config/plugins'
 
 export default {
   title: 'He3SDK',
@@ -13,8 +13,20 @@ export default {
     sidebar: {
       '/guide': [
         {
-          text: 'introduce',
-          // items: [{ text: 'what is He3?', link: '/components/CodeEditor.md' }],
+          text: '入门',
+        },
+        {
+          text: '高级',
+          items: [
+            {
+              text: '多种形式组件',
+              link: '/guide/advance/multi-form-component.md',
+            },
+            {
+              text: '批量工具',
+              link: '/guide/advance/index.md',
+            },
+          ],
         },
       ],
       '/components/': [
@@ -72,10 +84,13 @@ export default {
         },
         {
           text: 'CLI',
-          items: [{ text: '基本能力', link: '/api/cli.md' },{
-            text: '高级能力',
-            link: '/api/cli-advanced.md',
-          }],
+          items: [
+            { text: '基本能力', link: '/api/cli.md' },
+            {
+              text: '高级能力',
+              link: '/api/cli-advanced.md',
+            },
+          ],
         },
       ],
     },
@@ -83,4 +98,4 @@ export default {
   markdown: {
     config: (md) => mdPlugin(md),
   },
-};
+}
