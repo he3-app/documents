@@ -45,11 +45,11 @@ MultilineInput不支持code输入，请使用CodeEditor
 
 | 属性        | 说明                              | 类型    | 默认值    |
 | ----------- | --------------------------------- | ------- | --------- |
+| id          | 用于获取DOM时使用                 | string  |           |
 | title       | 标题                              | string  |           |
 | modelValue  | 绑定ref                           | string  |           |
-| autofocus   | 自动聚焦                          | boolean | autofocus |
 | placeholder | 占位文字                          | string  |           |
-| id          | 用于获取DOM时使用                 | string  |           |
+| autofocus   | 自动聚焦                          | boolean | autofocus |
 | autoSelect  | 组件挂载时自动选中input框中的内容 | boolean | false     |
 
 ### 事件
@@ -57,3 +57,7 @@ MultilineInput不支持code输入，请使用CodeEditor
 | 事件名 | 说明               | 类型                    | 默认值 |
 | ------ | ------------------ | ----------------------- | ------ |
 | change | 键值对改变触发事件 | ^[Function]`()=>void` |        |
+
+::: warning 参数修改
+selectAllOnMount -> autoSelect
+:::

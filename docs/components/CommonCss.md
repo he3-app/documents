@@ -61,6 +61,3 @@ $he3.subscribeThemeChange((data) => {
     color: #000;
 }
 ```
-
-
-

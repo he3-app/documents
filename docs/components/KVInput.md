@@ -52,14 +52,20 @@ function handleChange(obj: Record<string, string>[]) {
 
 ### Props
 
-| 属性         | 说明       | 类型                               | 默认值 |
-| ------------ | ---------- | ---------------------------------- | ------ |
-| modelValue   | 绑定值     | string                             |        |
+| 属性         | 说明       | 类型                             | 默认值 |
+| ------------ | ---------- | -------------------------------- | ------ |
+| modelValue   | 绑定值     | string                           |        |
 | defaultValue | 默认键值对 | ^[Object]`Record<string,string>` |        |
-| mode         | 展示模式   | list / json                        | list   |
+| mode         | 展示模式   | ^[enum]`'list'\| 'json'`         | list   |
 
 ### 事件
 
-| 事件名 | 说明               | 类型                               | 默认值 |
-| ------ | ------------------ | ---------------------------------- | ------ |
+| 事件名 | 说明               | 类型                             | 默认值 |
+| ------ | ------------------ | -------------------------------- | ------ |
 | change | 键值对改变触发事件 | ^[Function]`(changeProps)=>void` |        |
+
+::: warning 参数修改
+defaultRow -> defaultValue
+
+changeProps 已废弃，请在change事件中传入参数
+:::

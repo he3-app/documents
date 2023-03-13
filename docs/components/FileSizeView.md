@@ -4,6 +4,11 @@ lang: zh-en
 ---
 # FileSizeView
 
+::: warning
+DigitalSizeView 改名后组件
+:::
+
+
 ## 何时使用
 
 在需要展示文件大小时，该组件可以提供一定的兼容性展示
@@ -11,7 +16,7 @@ lang: zh-en
 ## 代码演示
 
 <div>
-  <h-digital-size-view :size="originalSize" />
+  <h-file-size-view :size="originalSize" />
 </div>
 
 <script setup lang="ts">

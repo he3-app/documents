@@ -11,7 +11,7 @@ lang: zh-en
 ## 代码演示
 
 <a-space>
-  <h-text-copy-button copy-content="He3" icon />
+  <h-text-copy-button content="He3" icon />
   <h-file-upload-button />
   <h-content-save-button url="https://he3.app/" icon />
 </a-space>
@@ -20,7 +20,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <h-text-copy-button copy-content="He3" icon />
+  <h-text-copy-button content="He3" icon />
   <h-file-upload-button />
   <h-content-save-button url="https://he3.app/" icon />
 </template>
@@ -49,6 +49,12 @@ lang: zh-en
 | content        | 需要复制的内容 | string |        |
 | successMessage | 成功信息       | string |        |
 
+::: warning 参数修改
+copy-content -> content
+
+successText -> successMessage
+:::
+
 #### FileUpload
 
 | 属性   | 说明                                                                                                                   | 类型   | 默认值 |
@@ -63,13 +69,17 @@ lang: zh-en
 | fileType | 保存文件类型 | [FileType](https://developer.mozilla.org/zh-CN/docs/Web/Media/Formats/Image_types) |        |
 | url      | 文件链接     | string                                                                          |        |
 
+::: warning 参数修改
+saveText -> content
+:::
+
 ### 事件
 
 #### FileUpload
 
 | 属性               | 说明             | 类型                             | 默认值 |
 | ------------------ | ---------------- | -------------------------------- | ------ |
-| handleFileSelected | 文件选择回调函数 | ^[Function]`(file:File)=>void` |        |
+| afterSelected | 文件选择回调函数 | ^[Function]`(file:File)=>void` |        |
 
 ::: warning
 url与saveText两个参数选择其中一个传入，前者保存链接中的文件，后者保存传入文本为文本文件
