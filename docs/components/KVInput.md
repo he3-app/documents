@@ -1,8 +1,8 @@
 ---
-title: KVInput
+title: KvInput
 lang: zh-en
 ---
-# KVInput
+# KvInput
 
 ## 何时使用
 
@@ -10,7 +10,7 @@ lang: zh-en
 
 ## 代码演示
 
-<h-k-v-input v-model="payload" @change="handleChange" />
+<h-kv-input :modelValue="payload"  @change="handleChange" />
 
 <script setup lang="ts">
 import { ref } from 'vue'
@@ -28,7 +28,7 @@ function handleChange(obj: Record<string, string>[]) {
 
 ```vue
 <template>
-  <h-k-v-input v-model="payload" @change="handleChange" />
+  <h-kv-input :modelValue="payload" @change="handleChange" />
 </template>
 
 <script setup lang="ts">
@@ -52,14 +52,14 @@ function handleChange(obj: Record<string, string>[]) {
 
 ### Props
 
-| 属性        | 说明         | 类型                             | 默认值 |
-| ----------- | ------------ | -------------------------------- | ------ |
-| modelValue  | 绑定值       | string                           |        |
-| defaultRow  | 默认键值对   | ^[Object]`Record<string,string>` |        |
-| changeProps | 回调函数参数 | unknown[]                        |        |
+| 属性         | 说明       | 类型                               | 默认值 |
+| ------------ | ---------- | ---------------------------------- | ------ |
+| modelValue   | 绑定值     | string                             |        |
+| defaultValue | 默认键值对 | ^[Object]`Record<string,string>` |        |
+| mode         | 展示模式   | list / json                        | list   |
 
 ### 事件
 
-| 事件名 | 说明               | 类型                  | 默认值 |
-| ------ | ------------------ | --------------------- | ------ |
-| change | 键值对改变触发事件 | ^[Function]`()=>void` |        |
+| 事件名 | 说明               | 类型                               | 默认值 |
+| ------ | ------------------ | ---------------------------------- | ------ |
+| change | 键值对改变触发事件 | ^[Function]`(changeProps)=>void` |        |

@@ -1,8 +1,8 @@
 ---
-title: InputNumber
+title: NumberInput
 lang: zh-en
 ---
-# InputNumber
+# NumberInput
 
 ## 何时使用
 
@@ -15,7 +15,7 @@ lang: zh-en
 ## 代码演示
 
 <div>
-  <h-input-number
+  <h-number-input
     select-all-on-mount
     @blur="cronChange"
   />
@@ -25,7 +25,7 @@ lang: zh-en
 
 ```vue
 <template>
-  <h-input-number
+  <h-number-input
     v-model:value="userInput"
     select-all-on-mount
   />
@@ -45,6 +45,6 @@ const userInput = ref('')
 
 ### Props
 
-| 属性             | 说明                              | 类型    | 默认值 |
-| ---------------- | --------------------------------- | ------- | ------ |
-| selectAllOnMount | 组件挂载时自动选中input框中的内容 | boolean | false  |
+| 属性       | 说明                              | 类型    | 默认值 |
+| ---------- | --------------------------------- | ------- | ------ |
+| autoSelect | 组件挂载时自动选中input框中的内容 | boolean | false  |

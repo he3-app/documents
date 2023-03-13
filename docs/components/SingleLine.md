@@ -1,8 +1,8 @@
 ---
-title: SinglelineResult
+title: SingleLine
 lang: zh-en
 ---
-# MultilineResult
+# SingleLine
 
 ## 何时使用
 
@@ -22,7 +22,7 @@ const text = ref('可复制单行输出')
 
 ```vue
 <template>
-  <h-singleline-result :result="text" result-desc="" />
+  <h-singleline :result="text" result-desc="" />
 </template>
 
 <script setup lang="ts">
@@ -38,9 +38,9 @@ const text = ref('请输入多行文本')
 
 ### Props
 
-| 属性           | 说明             | 类型    | 默认值 |
-| -------------- | ---------------- | ------- | ------ |
-| title          | 标题             | string  |        |
-| result         | 结果展示         | string  |        |
-| size           | 复制按钮大小     | string  | middle |
-| showCopyButton | 是否显示复制按钮 | boolean | true   |
+| 属性     | 说明             | 类型    | 默认值 |
+| -------- | ---------------- | ------- | ------ |
+| title    | 标题             | string  |        |
+| value    | 结果展示         | string  |        |
+| size     | 复制按钮大小     | string  | middle |
+| copyable | 是否显示复制按钮 | boolean | true   |

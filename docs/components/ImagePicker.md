@@ -44,12 +44,26 @@ lang: zh-en
 
 ### Props
 
-| 属性                    | 说明         | 类型                           | 默认值 |
-| ----------------------- | ------------ | ------------------------------ | ------ |
-| width（单张选择）       | 宽度         | string                         | 100%   |
-| height（单张选择）      | 高度         | string                         | 100%   |
-| imageHeight（单张选择） | 图片高度     | string                         | 78vh   |
-| pickHook                | 图片选择钩子 | ^[Function]`(file:File)=>void` |        |
-| onLoadHook              | 图片挂载钩子 | ^[Function]`(file:File)=>void` |        |
-| resetHook（单张选择）   | 图片重置钩子 | ^[Function]`(file:File)=>void` |        |
-| removeHook（批量选择）  | 图片移除钩子 | ^[Function]`(file:File)=>void` |        |
+| 属性                    | 说明     | 类型   | 默认值 |
+| ----------------------- | -------- | ------ | ------ |
+| width（单张选择）       | 宽度     | string | 100%   |
+| height（单张选择）      | 高度     | string | 100%   |
+| imageHeight（单张选择） | 图片高度 | string | 78vh   |
+
+### 事件
+
+单张选择
+
+| 事件名 | 说明         | 类型                             | 默认值 |
+| ------ | ------------ | -------------------------------- | ------ |
+| pick   | 图片选择钩子 | ^[Function]`(file:File)=>void` |        |
+| load   | 图片挂载钩子 | ^[Function]`(file:File)=>void` |        |
+| reset  | 图片重置钩子 | ^[Function]`(file:File)=>void` |        |
+
+批量选择
+
+| 事件名 | 说明         | 类型                             | 默认值 |
+| ------ | ------------ | -------------------------------- | ------ |
+| pick   | 图片选择钩子 | ^[Function]`(file:File)=>void` |        |
+| load   | 图片挂载钩子 | ^[Function]`(file:File)=>void` |        |
+| remove | 图片重置钩子 | ^[Function]`(file:File)=>void` |        |

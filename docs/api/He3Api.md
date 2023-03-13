@@ -2,7 +2,6 @@
 title: He3 APi
 lang: zh-en
 ---
-
 # He3 Api
 
 我们提供了一些通用能力，方便在开发中使用。命名为 `$he3`, 您可以通过 `window.$he3` 访问。
@@ -10,6 +9,7 @@ lang: zh-en
 如下是 api 列表，具体的调用方式请参考下方的演示代码。
 
 * 对外提供
+
   * `message` 触发全局的消息提示
   * `copyText` 复制一段文本
   * `subscribeThemeChange` 订阅主题变化
@@ -21,13 +21,13 @@ lang: zh-en
   * `isMacOS` 当前设备是否是 Mac
   * `isWindows` 当前设备是否是 Windows
   * `isLinux` 当前设备是否是 Linux
-  * `renderOnSearch` 当前是否渲染在搜索框
+  * `isRenderOnSearchbar` 当前是否渲染在搜索框
   * `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
   * `getLastClipboard` 获取当前的剪贴版内容（考虑用户信息安全，确认是否对外暴露）
-  * `shellOpenExternal` 使用浏览器打开一个 URL
-  * `useClipboardCallBack` 使用了剪贴板的回调，触发该回调通知用户
-
+  * `shellOpenExternal` 系统默认的协议打开URL, 主要场景是通过浏览器打开一个url网址
+  * `onUseClipboardValue` 使用了剪贴板的回调，触发该回调通知用户
 * 非通用能力，不对外，给工具使用
+
   * getJwtToken,
   * SCryptKDF,
   * PasetoDecode,
@@ -68,8 +68,8 @@ lang: zh-en
   * isIP,
   * formulaParse,
   * imageResize,
-  
 * 内部使用的能力，不对外（工具勿用）
+
   * `getToolInfo` 获取工具参数
   * `isPublish` 当前工具是否是公开的
   * `getLang` 异步获取当前语言

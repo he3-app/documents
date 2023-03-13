@@ -10,7 +10,7 @@
   "author": "evilmu",
   "license": "ISC",
   "dependencies": {
-    "@he3-kit/ui": "^0.1.0",
+    "@he3-kit/ui": "^0.2.1",
     "@vue/runtime-dom": "^3.2.47",
     "@vueuse/core": "^9.13.0",
     "ant-design-vue": "^3.2.15",
