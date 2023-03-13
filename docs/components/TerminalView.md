@@ -40,3 +40,7 @@ const screen = ref('请输入多行文本')
 | 属性  | 说明     | 类型   | 默认值 |
 | ----- | -------- | ------ | ------ |
 | value | 结果展示 | string |        |
+
+::: warning
+result -> value
+:::

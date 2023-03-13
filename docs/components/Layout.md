@@ -8,6 +8,11 @@ lang: zh-en
 
 在He3 App开发中使用约定的布局，可以更快上手
 
+::: warning
+所有布局名称都改成\<h-xxx-layout\>形式
+:::
+
+
 ## 代码演示
 
 ### 水平两栏布局
@@ -103,27 +108,27 @@ lang: zh-en
 
 #### 中等宽（默认）
 
-<h-layout-vertical mode="middle">
-  <template #above>
+<h-vertical-layout mode="middle">
+  <template #top>
     <div style="background-color: #7dbcea; height: 400px"></div>
   </template>
-  <template #below>
+  <template #bottom>
     <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
   </template>
-</h-layout-vertical>
+</h-vertical-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <h-layout-vertical mode="middle">
-    <template #above>
+  <h-vertical-layout mode="middle">
+    <template #top>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
-    <template #below>
+    <template #bottom>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </h-layout-vertical>
+  </h-vertical-layout>
 </template>
 
 ```
@@ -132,27 +137,27 @@ lang: zh-en
 
 #### 上固定
 
-<h-layout-vertical mode="above" :width="200">
-  <template #above>
+<h-vertical-layout mode="top" :width="200">
+  <template #top>
     <div style="background-color: #7dbcea; height: 100%"></div>
   </template>
-  <template #below>
+  <template #bottom>
     <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
   </template>
-</h-layout-vertical>
+</h-vertical-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <h-layout-vertical mode="above" :width="200">
-    <template #above>
+  <h-vertical-layout mode="top" :width="200">
+    <template #top>
       <div style="background-color: #7dbcea; height: 100%"></div>
     </template>
-    <template #below>
+    <template #bottom>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </h-layout-vertical>
+  </h-vertical-layout>
 </template>
 
 ```
@@ -161,27 +166,27 @@ lang: zh-en
 
 #### 下固定
 
-<h-layout-vertical mode="below" :width="200">
-  <template #above>
+<h-vertical-layout mode="bottom" :width="200">
+  <template #top>
     <div style="background-color: #7dbcea; height: 400px"></div>
   </template>
-  <template #below>
+  <template #bottom>
     <div style="background-color: rgba(16, 142, 233, 1); height: 100%"></div>
   </template>
-</h-layout-vertical>
+</h-vertical-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <h-layout-vertical mode="below" :width="200">
-    <template #above>
+  <h-vertical-layout mode="bottom" :width="200">
+    <template #top>
       <div style="background-color: #7dbcea;"></div>
     </template>
-    <template #below>
+    <template #bottom>
       <div style="background-color: rgba(16, 142, 233, 1);"></div>
     </template>
-  </h-layout-vertical>
+  </h-vertical-layout>
 </template>
 
 ```
@@ -249,27 +254,27 @@ lang: zh-en
 
 ### 可调节布局
 
-<h-splitPane-layout>
+<h-layout-split-pane>
   <template #left>
     <div style="background-color: #7dbcea; height: 400px"></div>
   </template>
   <template #right>
     <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
   </template>
-</h-splitPane-layout>
+</h-layout-split-pane>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <h-splitPane-layout>
+  <h-layout-split-pane>
     <template #left>
       <div style="background-color: #7dbcea; height: 400px"></div>
     </template>
     <template #right>
       <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
     </template>
-  </h-splitPane-layout>
+  </h-layout-split-pane>
 </template>
 
 ```

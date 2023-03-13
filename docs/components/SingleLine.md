@@ -10,7 +10,7 @@ lang: zh-en
 
 ## 代码演示
 
-<h-singleline-result :result="text" result-desc="" />
+<h-singleline :value="text" result-desc="" />
 
 <script setup lang="ts">
 import { ref } from 'vue'
@@ -22,7 +22,7 @@ const text = ref('可复制单行输出')
 
 ```vue
 <template>
-  <h-singleline :result="text" result-desc="" />
+  <h-singleline :value="text" result-desc="" />
 </template>
 
 <script setup lang="ts">
@@ -44,3 +44,8 @@ const text = ref('请输入多行文本')
 | value    | 结果展示         | string  |        |
 | size     | 复制按钮大小     | string  | middle |
 | copyable | 是否显示复制按钮 | boolean | true   |
+
+::: warning
+result -> value
+showCopyButton -> copyable
+:::

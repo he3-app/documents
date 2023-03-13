@@ -21,7 +21,6 @@ const outputValue = ref({
 })
 </script>
 
-
 ::: details 查看源代码
 
 ```vue
@@ -45,9 +44,15 @@ const outputValue = ref({
 
 ### Props
 
-| 属性              | 说明             | 类型                            | 默认值 |
-| ----------------- | ---------------- | ------------------------------- | ------ |
+| 属性              | 说明             | 类型                          | 默认值 |
+| ----------------- | ---------------- | ----------------------------- | ------ |
 | value             | 需要展示的对象   | ^[Object]`Record<string,any>` |        |
-| width             | 宽度             | number                          |        |
-| mode              | 展示模式         | list / json                     | list   |
-| disableModeSwitch | 是否禁用模式切换 | boolean                         |        |
+| width             | 宽度             | number                        |        |
+| mode              | 展示模式         | ^[enum]`'list'\| 'json'`      | list   |
+| disableModeSwitch | 是否禁用模式切换 | boolean                       |        |
+
+::: warning
+result -> value
+model -> mode
+modelSwitch -> disableModeSwitch (注意这里是禁用)
+:::

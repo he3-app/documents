@@ -16,7 +16,7 @@ lang: zh-en
 
 <div>
   <h-input
-    select-all-on-mount
+    autoSelect
     @blur="cronChange"
   />
 </div>
@@ -27,7 +27,7 @@ lang: zh-en
 <template>
   <h-input
     v-model:value="userInput"
-    select-all-on-mount
+    autoSelect
   />
 </template>
 
