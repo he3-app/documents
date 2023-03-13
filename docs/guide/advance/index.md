@@ -1,6 +1,6 @@
 ## 批量工具
 
-He3 支持在一个项目中创建多个工具。
+He3 支持在单个项目中一次性创建多个工具。
 
 ## 1. 改造 package.json
 
@@ -100,4 +100,22 @@ export default config.he3.map((tool) => {
 })
 ```
 
+## 3. 开发
 
+执行 `npm run dev` 后，He3 客户端开发工具菜单会显示所有批量工具：
+
+![](/public/guide/advance/2.png)
+
+## 4. 上传
+
+执行 `npm run publish` 会全量上传你的所有工具，当然你也可以指定上传的哪几个工具：
+
+```shell
+npm run publish --include=tool1,tool2
+```
+
+也可以排除不需要上传的工具：
+
+```shell
+npm run publish --exclude=tool3,tool4
+```
