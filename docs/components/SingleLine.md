@@ -45,7 +45,8 @@ const text = ref('请输入多行文本')
 | size     | 复制按钮大小     | string  | middle |
 | copyable | 是否显示复制按钮 | boolean | true   |
 
-::: warning
+::: warning 参数修改
 result -> value
+
 showCopyButton -> copyable
 :::

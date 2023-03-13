@@ -49,7 +49,8 @@ const text = ref('请输入多行文本')
 | fileType         | 导出文件类型 | [FileType](https://developer.mozilla.org/zh-CN/docs/Web/Media/Formats/Image_types) |        |
 | enableOutputFile | 导出文件     | boolean                                                                             |        |
 
-::: warning
+::: warning 参数修改
 result -> value
+
 outputFile -> enableOutputFile
 :::

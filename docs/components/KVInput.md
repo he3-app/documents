@@ -64,7 +64,8 @@ function handleChange(obj: Record<string, string>[]) {
 | ------ | ------------------ | -------------------------------- | ------ |
 | change | 键值对改变触发事件 | ^[Function]`(changeProps)=>void` |        |
 
-::: warning
+::: warning 参数修改
 defaultRow -> defaultValue
+
 changeProps 已废弃，请在change事件中传入参数
 :::

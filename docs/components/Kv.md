@@ -51,8 +51,10 @@ const outputValue = ref({
 | mode              | 展示模式         | ^[enum]`'list'\| 'json'`      | list   |
 | disableModeSwitch | 是否禁用模式切换 | boolean                       |        |
 
-::: warning
+::: warning 参数修改
 result -> value
+
 model -> mode
+
 modelSwitch -> disableModeSwitch (注意这里是禁用)
 :::

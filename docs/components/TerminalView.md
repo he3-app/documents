@@ -41,6 +41,6 @@ const screen = ref('请输入多行文本')
 | ----- | -------- | ------ | ------ |
 | value | 结果展示 | string |        |
 
-::: warning
+::: warning 参数修改
 result -> value
 :::

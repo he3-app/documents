@@ -78,8 +78,9 @@ const initTemplate = (inputValue: Ref<string>) => {
 | title       |      | string                                                                                                                                                                                                                                                                                                  |        |
 | isTitleShow |      | boolean
 
-::: warning
+::: warning 参数修改
 editorLang -> lang
+
 editorTheme -> theme
 :::
 

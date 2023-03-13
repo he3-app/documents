@@ -58,6 +58,6 @@ MultilineInput不支持code输入，请使用CodeEditor
 | ------ | ------------------ | ----------------------- | ------ |
 | change | 键值对改变触发事件 | ^[Function]`()=>void` |        |
 
-::: warning
+::: warning 参数修改
 selectAllOnMount -> autoSelect
 :::

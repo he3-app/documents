@@ -49,8 +49,9 @@ lang: zh-en
 | content        | 需要复制的内容 | string |        |
 | successMessage | 成功信息       | string |        |
 
-::: warning
+::: warning 参数修改
 copy-content -> content
+
 successText -> successMessage
 :::
 
@@ -68,7 +69,7 @@ successText -> successMessage
 | fileType | 保存文件类型 | [FileType](https://developer.mozilla.org/zh-CN/docs/Web/Media/Formats/Image_types) |        |
 | url      | 文件链接     | string                                                                          |        |
 
-::: warning
+::: warning 参数修改
 saveText -> content
 :::
 
