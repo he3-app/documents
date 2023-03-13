@@ -2,7 +2,11 @@
 title: He3 APi
 lang: zh-en
 ---
+<<<<<<< HEAD:docs/api/He3Api.md
 # He3 Api
+=======
+# API
+>>>>>>> d2ba6a3328373d2d6133b8b7baab4032e2b7948e:docs/api/api.md
 
 我们提供了一些通用能力，方便在开发中使用。命名为 `$he3`, 您可以通过 `window.$he3` 访问。
 
@@ -16,15 +20,18 @@ lang: zh-en
   * `downloadByUrl` 通过url下载文件
   * `lang` 当前语言
   * `theme` 当前主题
+  * `shellOpenExternal` 系统默认的协议打开URL, 主要场景是通过浏览器打开一个url网址
   * `isDev` 当前是否是开发环境
-  * `shellOpenExternal` 系统默认的协议打开URL
   * `isMacOS` 当前设备是否是 Mac
   * `isWindows` 当前设备是否是 Windows
   * `isLinux` 当前设备是否是 Linux
   * `isRenderOnSearchbar` 当前是否渲染在搜索框
   * `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
   * `getLastClipboard` 获取当前的剪贴版内容（考虑用户信息安全，确认是否对外暴露）
+<<<<<<< HEAD:docs/api/He3Api.md
   * `shellOpenExternal` 系统默认的协议打开URL, 主要场景是通过浏览器打开一个url网址
+=======
+>>>>>>> d2ba6a3328373d2d6133b8b7baab4032e2b7948e:docs/api/api.md
   * `onUseClipboardValue` 使用了剪贴板的回调，触发该回调通知用户
 * 非通用能力，不对外，给工具使用
 
