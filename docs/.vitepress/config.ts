@@ -26,6 +26,10 @@ export default {
               text: '批量工具',
               link: '/guide/advance/index.md',
             },
+            {
+              text: '工具元信息国际化',
+              link: '/guide/advance/i18n.md',
+            },
           ],
         },
       ],
