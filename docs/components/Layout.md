@@ -196,17 +196,17 @@ lang: zh-en
 
 #### 居中（默认）
 
-<H-single-layout mode="middle" :width="400">
+<h-single-layout mode="middle" :width="400">
   <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</H-single-layout>
+</h-single-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <H-single-layout mode="middle" :width="400">
+  <h-single-layout mode="middle" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </H-single-layout>
+  </h-single-layout>
 </template>
 
 ```
@@ -215,17 +215,17 @@ lang: zh-en
 
 #### 居左
 
-<H-single-layout mode="left" :width="400">
+<h-single-layout mode="left" :width="400">
   <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</H-single-layout>
+</h-single-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <H-single-layout mode="left" :width="400">
+  <h-single-layout mode="left" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </H-single-layout>
+  </h-single-layout>
 </template>
 
 ```
@@ -234,17 +234,17 @@ lang: zh-en
 
 #### 居右
 
-<H-single-layout mode="right" :width="400">
+<h-single-layout mode="right" :width="400">
   <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</H-single-layout>
+</h-single-layout>
 
 ::: details 查看源代码
 
 ```vue
 <template>
-  <H-single-layout mode="right" :width="400">
+  <h-single-layout mode="right" :width="400">
     <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </H-single-layout>
+  </h-single-layout>
 </template>
 
 ```
