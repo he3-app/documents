@@ -1,4 +1,4 @@
-import { mdPlugin } from './config/plugins'
+import { mdPlugin } from './config/plugins';
 
 export default {
   title: 'He3SDK',
@@ -46,6 +46,13 @@ export default {
           ],
         },
         {
+          text: '专用',
+          items: [
+            { text: 'Transform', link: '/components/Transform.md' },
+            { text: 'TextTransform', link: '/components/TextTransform.md' },
+          ],
+        },
+        {
           text: '数据录入',
           items: [
             { text: 'CodeEditor', link: '/components/CodeEditor.md' },
@@ -58,7 +65,6 @@ export default {
             { text: 'NumberInput', link: '/components/NumberInput.md' },
             { text: 'KvInput', link: '/components/KvInput.md' },
             { text: 'MultilineInput', link: '/components/MultilineInput.md' },
-            { text: 'Transform', link: '/components/Transform.md' },
           ],
         },
         {
@@ -102,4 +108,4 @@ export default {
   markdown: {
     config: (md) => mdPlugin(md),
   },
-}
+};

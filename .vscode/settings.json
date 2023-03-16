@@ -2,5 +2,5 @@
   "i18n-ally.localesPaths": [
     "docs/locale/lang"
   ],
-  "i18n-ally.sourceLanguage": "zh-tw"
+  "i18n-ally.sourceLanguage": "en"
 }

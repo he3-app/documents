@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@he3-kit/ui': ^0.2.2
+  '@he3-kit/ui': ^0.3.0
   '@types/node': ^18.14.2
   '@vue/runtime-dom': ^3.2.47
   '@vueuse/core': ^9.13.0
@@ -15,7 +15,7 @@ specifiers:
   vue-i18n: ^9.2.2
 
 dependencies:
-  '@he3-kit/ui': 0.2.2_@vueuse+core@9.13.0
+  '@he3-kit/ui': 0.3.0_@vueuse+core@9.13.0
   '@vue/runtime-dom': 3.2.47
   '@vueuse/core': 9.13.0_vue@3.2.47
   ant-design-vue: 3.2.15_vue@3.2.47
@@ -624,8 +624,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@he3-kit/ui/0.2.2_@vueuse+core@9.13.0:
-    resolution: {integrity: sha512-Gbis0ajqaypC0ac3GsuSiSu9TqJvAhK7EPwZmYXpRgjSMARVtoY7uZv+jmWcXP2pM5lBB5/EGn8v0d6wTug3ng==}
+  /@he3-kit/ui/0.3.0_@vueuse+core@9.13.0:
+    resolution: {integrity: sha512-t35oHouK7Ve1ZXjoimvzriiXubBfyiOIVMzEFdQq4E9RUu0pdhYlZO6I46tazjFs/ZQYXwU1ldj6aTtEvfIc6Q==}
     dependencies:
       '@codemirror/lang-cpp': 6.0.2
       '@codemirror/lang-css': 6.0.2_@codemirror+view@6.9.1
@@ -661,6 +661,7 @@ packages:
       '@uiw/codemirror-theme-xcode': 4.19.9_dtwlkgx6567fllxi7sgvnep6hy
       '@vue/compiler-sfc': 3.2.47
       '@vue/shared': 3.2.47
+      base-64: 1.0.0
       codemirror: 6.0.1
       colortranslator: 1.10.2
       validate-color: 2.2.4
@@ -1158,6 +1159,10 @@ packages:
 
   /async-validator/4.2.5:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/async-validator/-/async-validator-4.2.5.tgz}
+    dev: false
+
+  /base-64/1.0.0:
+    resolution: {integrity: sha512-kwDPIFCGx0NZHog36dj+tHiwP4QMzsZ3AgMViUBKI0+V5n4U0ufTCUMhnQ04diaRI8EX/QcPfql7zlhZ7j4zgg==}
     dev: false
 
   /body-scroll-lock/4.0.0-beta.0:
