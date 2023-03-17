@@ -58,25 +58,25 @@ const initTemplate = (inputValue: Ref<string>) => {
 
 ### Props
 
-| 属性           | 说明             | 类型                                           | 默认值 |
-| -------------- | ---------------- | ---------------------------------------------- | ------ |
-| leftConfig     | 左编辑器配置     | [Config](#config)                                 |        |
-| rightConfig    | 右编辑器配置     | [Config](#config)                                 |        |
-| canChooseFile  | 是否支持选择文件 | boolean                                        | true   |
-| onMounted      | 挂载钩子         | ^[Function]`(inputValue:Ref<string>)=> void` |        |
-| onChange       | 输入框改变时钩子 | ^[Function]`(inputValue:Ref<string>)=> void` |        |
-| onResultChange | 结果改变时钩子   | ^[Function]`(inputValue:Ref<string>)=> void` |        |
-| autoFill       | 是否自动填入     | boolean                                        | false  |
+| 属性                   | 说明                   | 类型                                          | 默认值 |
+| ---------------------- | ---------------------- | --------------------------------------------- | ------ |
+| leftConfig             | 左编辑器配置           | [Config](#config)                             |        |
+| rightConfig            | 右编辑器配置           | [Config](#config)                             |        |
+| canChooseFile          | 是否支持选择文件       | boolean                                       | true   |
+| onMounted              | 挂载钩子               | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
+| onChange               | 输入框改变时钩子       | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
+| onResultChange         | 结果改变时钩子         | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
+| autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`(str: string) => boolean \| null` | null   |
 
 #### Config
 
-| 属性        | 说明 | 类型                                                                                                                                                                                                                                                                                                    | 默认值 |
-| ----------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| placeholder |      | string                                                                                                                                                                                                                                                                                                  |        |
-| lang        |      | ^[CodeEditorLanguagesUnio]`'HTML' \| 'PYTHON' \| 'RUST' \| 'C' \| 'CPP'  \| 'CSHARP' \| 'CRYSTAL' \| 'OBJECTIVE_C' \| 'KOTLIN' \| 'DART' \| 'PHP' \| 'PROPERTIES' \| 'JAVASCRIPT' \| 'TYPESCRIPT' \| 'JSX' \| 'TSX' \| 'SQL' \| 'SWIFT' \| 'SCALA' \| 'TSX' \| 'TYPESCRIPT' \| 'TOML' \| 'WEB_ASSEMBLY' \| 'XML' \| 'YAML' \|` |        |
-| theme       |      | ^[CodeEditorThemesUnio]`'ANDROID_STUDIO' \| 'ABCDEF' \| 'ATOMONE' \| 'BBEDIT' \| 'BESPIN' \| 'DARCULA' \| 'DRACULA' \| 'DUOTONE_LIGHT' \| 'DUOTONE_DARK' \| 'ECLIPSE' \| 'GITHUB_LIGHT' \| 'GITHUB_DARK' \| 'ONE_DARK' \| 'OKAIDIA' \| 'SUBLIME' \| 'X_CODE_LIGHT' \| 'X_CODE_DARK'`                                  |        |
-| title       |      | string                                                                                                                                                                                                                                                                                                  |        |
-| isTitleShow |      | boolean
+| 属性        | 说明               | 类型                                                                                                                                                                                                                                                                                                                           | 默认值 |
+| ----------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+| placeholder | 空输入占位         | string                                                                                                                                                                                                                                                                                                                         |        |
+| lang        | 编辑器编程语言     | ^[CodeEditorLanguagesUnio]`'HTML' \| 'PYTHON' \| 'RUST' \| 'C' \| 'CPP'  \| 'CSHARP' \| 'CRYSTAL' \| 'OBJECTIVE_C' \| 'KOTLIN' \| 'DART' \| 'PHP' \| 'PROPERTIES' \| 'JAVASCRIPT' \| 'TYPESCRIPT' \| 'JSX' \| 'TSX' \| 'SQL' \| 'SWIFT' \| 'SCALA' \| 'TSX' \| 'TYPESCRIPT' \| 'TOML' \| 'WEB_ASSEMBLY' \| 'XML' \| 'YAML' \|` |        |
+| theme       | 编辑器主题         | ^[CodeEditorThemesUnio]`'ANDROID_STUDIO' \| 'ABCDEF' \| 'ATOMONE' \| 'BBEDIT' \| 'BESPIN' \| 'DARCULA' \| 'DRACULA' \| 'DUOTONE_LIGHT' \| 'DUOTONE_DARK' \| 'ECLIPSE' \| 'GITHUB_LIGHT' \| 'GITHUB_DARK' \| 'ONE_DARK' \| 'OKAIDIA' \| 'SUBLIME' \| 'X_CODE_LIGHT' \| 'X_CODE_DARK'`                                           |        |
+| title       | 编辑器标题         | string                                                                                                                                                                                                                                                                                                                         |        |
+| isTitleShow | 是否展示编辑器标题 | boolean                                                                                                                                                                                                                                                                                                                        |
 
 ::: warning 参数修改
 editorLang -> lang

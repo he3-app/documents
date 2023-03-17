@@ -43,19 +43,20 @@ MultilineInput不支持code输入，请使用CodeEditor
 
 :::
 
-| 属性        | 说明                              | 类型    | 默认值    |
-| ----------- | --------------------------------- | ------- | --------- |
-| id          | 用于获取DOM时使用                 | string  |           |
-| title       | 标题                              | string  |           |
-| modelValue  | 绑定ref                           | string  |           |
-| placeholder | 占位文字                          | string  |           |
-| autofocus   | 自动聚焦                          | boolean | autofocus |
-| autoSelect  | 组件挂载时自动选中input框中的内容 | boolean | false     |
+| 属性                   | 说明                              | 类型                                          | 默认值    |
+| ---------------------- | --------------------------------- | --------------------------------------------- | --------- |
+| id                     | 用于获取DOM时使用                 | string                                        |           |
+| title                  | 标题                              | string                                        |           |
+| modelValue             | 绑定ref                           | string                                        |           |
+| placeholder            | 占位文字                          | string                                        |           |
+| autofocus              | 自动聚焦                          | boolean                                       | autofocus |
+| autoSelect             | 组件挂载时自动选中input框中的内容 | boolean                                       | false     |
+| autoFillInputCondition | 剪切板自动回填判断函数            | ^[Function]`(str: string) => boolean \| null` | null      |
 
 ### 事件
 
-| 事件名 | 说明               | 类型                    | 默认值 |
-| ------ | ------------------ | ----------------------- | ------ |
+| 事件名 | 说明               | 类型                  | 默认值 |
+| ------ | ------------------ | --------------------- | ------ |
 | change | 键值对改变触发事件 | ^[Function]`()=>void` |        |
 
 ::: warning 参数修改

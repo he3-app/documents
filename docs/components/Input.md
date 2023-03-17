@@ -45,6 +45,7 @@ const userInput = ref('')
 
 ### Props
 
-| 属性       | 说明                              | 类型    | 默认值 |
-| ---------- | --------------------------------- | ------- | ------ |
-| autoSelect | 组件挂载时自动选中input框中的内容 | boolean | false  |
+| 属性                   | 说明                              | 类型                                          | 默认值 |
+| ---------------------- | --------------------------------- | --------------------------------------------- | ------ |
+| autoSelect             | 组件挂载时自动选中input框中的内容 | boolean                                       | false  |
+| autoFillInputCondition | 剪切板自动回填判断函数            | ^[Function]`(str: string) => boolean \| null` | null   |
