@@ -152,14 +152,14 @@ const reverseTransform = () => {
 | transform              | 转换函数               | ^[Function]`(inputValue: string)=> void`                    |                                              |
 | reverseTransform       | 反转换函数             | ^[Function]`(inputValue: string)=> void`                    |                                              |
 | fileOutputName         | 输出文件名字           | ^[Function]`(name: string) => string`                       | false                                        |
-| autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`isSomething?: (str: string) => boolean \| null` | null                                         |
+| autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`(str: string) => boolean \| null` | null                                         |
 
 ### Expose
 
-| 插槽名       | 说明                         | 类型      | 默认值 |
-| ------------ | ---------------------------- | --------- | ------ |
-| inputValue   | 输入框中的值                 | string    |        |
-| handleChange | 转换函数，可用于手动执行转换 | Component |        |
+| 插槽名       | 说明                         | 类型                                                        | 默认值 |
+| ------------ | ---------------------------- | ----------------------------------------------------------- | ------ |
+| inputValue   | 输入框中的值                 | string                                                      |        |
+| handleChange | 转换函数，可用于手动执行转换 | ^[Function]`() => void` |        |
 
 ### Slot
 
