@@ -22,7 +22,7 @@ const text = ref('可复制单行输出')
 
 ```vue
 <template>
-  <h-singleline :value="text" result-desc="" />
+  <h-singleline :value="text" title="" />
 </template>
 
 <script setup lang="ts">
@@ -49,4 +49,6 @@ const text = ref('请输入多行文本')
 result -> value
 
 showCopyButton -> copyable
+
+resultDesc -> title
 :::
