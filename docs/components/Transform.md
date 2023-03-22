@@ -11,7 +11,7 @@ lang: zh-en
 ## 代码演示
 
 <div style="height:500px">
-<h-transform :change="handleChange" :mounted="handleMounted" />
+<h-transform :onChange="handleChange" :onMounted="handleMounted" />
 </div>
 
 <script setup lang="ts">
@@ -31,7 +31,7 @@ const handleMounted = (inputValue: Ref<string>) => {
 
 ```vue
 <template>
-  <h-transform :change="transform" :mounted="initTemplate" />
+  <h-transform :onChange="transform" :onMounted="initTemplate" />
 </template>
 
 <script setup lang="ts">
