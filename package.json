@@ -20,7 +20,7 @@
     "escape-html": "^1.0.3",
     "markdown-it": "^13.0.1",
     "prismjs": "^1.29.0",
-    "vitepress": "1.0.0-alpha.49",
+    "vitepress": "1.0.0-alpha.61",
     "vue": "^3.2.47",
     "vue-i18n": "^9.2.2"
   },

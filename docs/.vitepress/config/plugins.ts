@@ -21,7 +21,7 @@ export const mdPlugin = (md) => {
         const sourceFile = sourceFileToken.children?.[0].content ?? '';
         if (sourceFileToken.type === 'inline') {
           source = fs.readFileSync(
-            resolve(__dirname, '../../demos', `${sourceFile}.vue`),
+            resolve('./docs/demos', `${sourceFile}.vue`),
             'utf-8'
           );
         }
