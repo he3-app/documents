@@ -1,26 +1,26 @@
 ---
-title:  主题与样式
-lang: zh-en
+title:  Themes and Styles
+lang: en
 ---
 
-# 主题与样式
+# Themes and Styles
 
-### 通用 Css 变量
+## Common css variables
 
-为了保持全局的设计风格一致，我们内置了一系列 Css 变量，如果您使用了 Hui，则无需关注样式的一致性问题，Hui 会根据主题的变化保持全局的风格一致。
-如果您自定义了一些样式，我们建议优先使用如下的 Css 变量。
+In order to keep the overall design style consistent, we built a series of css variables. If you use hui, you don’t need to pay attention to the consistency of the style. hui will keep the global style consistent according to the change of the theme.
+If you have customized some styles, we recommend using the following css variables first.
 
-* `--code-font-family` 定义代码的字体
-* `--base-border-radius` 全局通用的圆角
+* `--code-font-family`  Define the font of the code
+* `--base-border-radius` Global rounded corners
 
-如下为颜色相关变量，在 light 和 dark 下，被定义为了不同的值
+The following are color-related variables, which are defined as different values ​​under light and dark
 
-* `--base-color` 主色
-* `--border-color` 边框颜色
-* `--bg-color` 背景颜色
-* `--text-color` 文本颜色
+* `--base-color` main color
+* `--border-color` border color
+* `--bg-color` background color
+* `--text-color` text color
 
-在 css 代码中通过 var 来使用变量
+Using variables in css code through var
 
 ```css
 .class {
@@ -28,19 +28,19 @@ lang: zh-en
 }
 ```
 
-### 获取当前主题
+## Get the current theme
 
-获取当前的主题，返回 `dark` 或者 `light`
+Get the current theme, return `dark` or `light`
 
 ```js
 console.log($he3.theme)
 ```
 
-### 订阅主题变化
+## Subscribe to topic changes
 
-`subscribeThemeChange` 接收一个回调函数，当主题变化时，会触发回调函数，回调函数会返回当前的主题， `dark` 或者 `light`。
+`subscribeThemeChange` receives a callback function, when the theme changes, the callback function will be triggered, and the callback function will return the current theme, `dark` or `light`.
 
-开发者无需关注当前主题是跟随系统主题，还是用户自定义主题，只需要订阅该事件，然后根据主题变化来做相应的处理即可，我们会保持全局的主题相统一。
+Developers don't need to pay attention to whether the current theme follows the system theme or a user-defined theme. They only need to subscribe to the event, and then do corresponding processing according to the theme change. We will keep the global theme unified.
 
 ```js
 $he3.subscribeThemeChange((data) => {
@@ -48,9 +48,9 @@ $he3.subscribeThemeChange((data) => {
 });
 ```
 
-### 定义暗黑模式下的样式
+## Define styles in dark mode
 
-暗黑模式我们会为根标签添加一个 mode 为 dark的 attribute，开发者可以通过这个 attribute 来定义暗黑模式下的样式。
+In dark mode, we will add an attribute with mode as dark to the root tag. Developers can use this attribute to define the style in dark mode.
 
 ```css
 .class {

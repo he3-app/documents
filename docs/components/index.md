@@ -1,6 +1,6 @@
 ---
 title: He3Components
-lang: zh-en
+lang: en
 ---
 
 ## 组件总览

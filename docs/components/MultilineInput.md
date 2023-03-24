@@ -1,65 +1,36 @@
 ---
 title: MultilineInput
-lang: zh-en
+lang: en
 ---
 # MultilineInput
 
-## 何时使用
+## When To Use
 
-在有需要使用多行输入时，该输入框使输入更加简单
+This input box makes typing easier when multi-line input is required
 
-## 代码演示
+## Examples
 
-<h-multiline-input v-model="text" autofocus title="标题" />
-
-<script setup lang="ts">
-import { ref } from 'vue'
-const text = ref('请输入多行文本')
-</script>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-multiline-input v-model="text" autofocus title="标题" />
-</template>
-
-<script setup lang="ts">
-import { ref } from 'vue'
-const text = ref('请输入多行文本')
-</script>
-
-```
-
+:::demo
+multiline/input
 :::
 
 ## API
 
 ### Props
 
-::: danger
+| Property               | Description                                                                     | Type                                          | default   |
+| ---------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- | --------- |
+| id                     | Used when getting dom                                                           | string                                        |           |
+| title                  | title                                                                           | string                                        |           |
+| modelValue             | input value                                                                     | string                                        |           |
+| placeholder            | Placeholder of input                                                            | string                                        |           |
+| autofocus              | auto focus input                                                                | boolean                                       | autofocus |
+| autoSelect             | Automatically select the content in the input box when the component is mounted | boolean                                       | false     |
+| noChangeOnMounted      | Change events are not triggered when the component is mounted                   | boolean                                       | false     |
+| autoFillInputCondition | Clipboard automatic backfill judgment function                                  | ^[Function]`(str: string) => boolean \| null` | null      |
 
-MultilineInput不支持code输入，请使用CodeEditor
+### Events
 
-:::
-
-| 属性                   | 说明                              | 类型                                          | 默认值    |
-| ---------------------- | --------------------------------- | --------------------------------------------- | --------- |
-| id                     | 用于获取DOM时使用                 | string                                        |           |
-| title                  | 标题                              | string                                        |           |
-| modelValue             | 绑定ref                           | string                                        |           |
-| placeholder            | 占位文字                          | string                                        |           |
-| autofocus              | 自动聚焦                          | boolean                                       | autofocus |
-| autoSelect             | 组件挂载时自动选中input框中的内容 | boolean                                       | false     |
-| noChangeOnMounted      | 组件挂载时不触发change事件        | boolean                                       | false     |
-| autoFillInputCondition | 剪切板自动回填判断函数            | ^[Function]`(str: string) => boolean \| null` | null      |
-
-### 事件
-
-| 事件名 | 说明               | 类型                  | 默认值 |
-| ------ | ------------------ | --------------------- | ------ |
-| change | 键值对改变触发事件 | ^[Function]`()=>void` |        |
-
-::: warning 参数修改
-selectAllOnMount -> autoSelect
-:::
+| Events Name | Description                                              | Type                  | default |
+| ----------- | -------------------------------------------------------- | --------------------- | ------- |
+| change      | The key-value pair change triggers the callback function | ^[Function]`()=>void` |         |

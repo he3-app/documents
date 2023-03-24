@@ -1,92 +1,46 @@
 ---
 title: Transform
-lang: zh-en
+lang: en
 ---
 # Transform
 
-## 何时使用
+## When To Use
 
-代码转换专用组件（自带布局），直接使用可快速生成ui布局以及简单的转换逻辑
+Special component for code conversion (with its own layout), which can be used directly to quickly generate ui layout and simple conversion logic, suitable for most code conversion situations, such as json to yaml
 
-## 代码演示
+## Examples
 
-<div style="height:500px">
-<h-transform :onChange="handleChange" :onMounted="handleMounted" />
-</div>
-
-<script setup lang="ts">
-import { Ref } from 'vue';
-
-const handleChange = (inputValue: Ref<string>) => {
-  // do something
-  return ''
-}
-
-const handleMounted = (inputValue: Ref<string>) => {
-  // Mounted hook
-}
-</script>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-transform :onChange="transform" :onMounted="initTemplate" />
-</template>
-
-<script setup lang="ts">
-import { Ref } from 'vue';
-
-const transform = (inputValue: Ref<string>):string => {
-  // do something
-  // 将转换结果返回即可在右边进行展示，注意返回结果必须是字符串
-  return ''
-}
-
-const initTemplate = (inputValue: Ref<string>) => {
-  // Mounted hook
-  // 用于初始化左边编辑器模板
-  inputValue.value = example
-}
-</script>
-
-```
-
+:::demo Out-of-the-box plug-in solution, developers only need to pay attention to the conversion logic
+transform/basic
 :::
 
 ## API
 
 ### Props
 
-| 属性                   | 说明                   | 类型                                          | 默认值 |
-| ---------------------- | ---------------------- | --------------------------------------------- | ------ |
-| leftConfig             | 左编辑器配置           | [Config](#config)                             |        |
-| rightConfig            | 右编辑器配置           | [Config](#config)                             |        |
-| canChooseFile          | 是否支持选择文件       | boolean                                       | true   |
-| onMounted              | 挂载钩子               | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
-| onChange               | 输入框改变时钩子       | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
-| onResultChange         | 结果改变时钩子         | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
-| autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`(str: string) => boolean \| null` | null   |
+| Property               | Description                                    | Type                                          | default |
+| ---------------------- | ---------------------------------------------- | --------------------------------------------- | ------- |
+| leftConfig             | left editor configuration                      | [Config](#config)                             |         |
+| rightConfig            | Right editor configuration                     | [Config](#config)                             |         |
+| canChooseFile          | Whether to support file selection              | boolean                                       | true    |
+| onMounted              | Callback function when mounted                 | ^[Function]`(inputValue:Ref<string>)=> void`  |         |
+| onChange               | Callback function when the input box changes   | ^[Function]`(inputValue:Ref<string>)=> void`  |         |
+| onResultChange         | Callback function when the result changes      | ^[Function]`(inputValue:Ref<string>)=> void`  |         |
+| autoFillInputCondition | Clipboard automatic backfill judgment function | ^[Function]`(str: string) => boolean \| null` | null    |
 
 #### Config
 
-| 属性        | 说明               | 类型                                                                                                                                                                                                                                                                                                                           | 默认值 |
-| ----------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| placeholder | 空输入占位         | string                                                                                                                                                                                                                                                                                                                         |        |
-| lang        | 编辑器编程语言     | ^[CodeEditorLanguagesUnio]`'HTML' \| 'PYTHON' \| 'RUST' \| 'C' \| 'CPP'  \| 'CSHARP' \| 'CRYSTAL' \| 'OBJECTIVE_C' \| 'KOTLIN' \| 'DART' \| 'PHP' \| 'PROPERTIES' \| 'JAVASCRIPT' \| 'TYPESCRIPT' \| 'JSX' \| 'TSX' \| 'SQL' \| 'SWIFT' \| 'SCALA' \| 'TSX' \| 'TYPESCRIPT' \| 'TOML' \| 'WEB_ASSEMBLY' \| 'XML' \| 'YAML' \|` |        |
-| theme       | 编辑器主题         | ^[CodeEditorThemesUnio]`'ANDROID_STUDIO' \| 'ABCDEF' \| 'ATOMONE' \| 'BBEDIT' \| 'BESPIN' \| 'DARCULA' \| 'DRACULA' \| 'DUOTONE_LIGHT' \| 'DUOTONE_DARK' \| 'ECLIPSE' \| 'GITHUB_LIGHT' \| 'GITHUB_DARK' \| 'ONE_DARK' \| 'OKAIDIA' \| 'SUBLIME' \| 'X_CODE_LIGHT' \| 'X_CODE_DARK'`                                           |        |
-| title       | 编辑器标题         | string                                                                                                                                                                                                                                                                                                                         |        |
-| isTitleShow | 是否展示编辑器标题 | boolean                                                                                                                                                                                                                                                                                                                        |
-
-::: warning 参数修改
-editorLang -> lang
-
-editorTheme -> theme
-:::
+| Property    | Description                      | Type                                                                                                                                                                                                                                                                                                                           | default |
+| ----------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| placeholder | Placeholder of input             | string                                                                                                                                                                                                                                                                                                                         |         |
+| lang        | editor programming language      | ^[CodeEditorLanguagesUnio]`'HTML' \| 'PYTHON' \| 'RUST' \| 'C' \| 'CPP'  \| 'CSHARP' \| 'CRYSTAL' \| 'OBJECTIVE_C' \| 'KOTLIN' \| 'DART' \| 'PHP' \| 'PROPERTIES' \| 'JAVASCRIPT' \| 'TYPESCRIPT' \| 'JSX' \| 'TSX' \| 'SQL' \| 'SWIFT' \| 'SCALA' \| 'TSX' \| 'TYPESCRIPT' \| 'TOML' \| 'WEB_ASSEMBLY' \| 'XML' \| 'YAML' \|` |         |
+| theme       | editor theme                     | ^[CodeEditorThemesUnio]`'ANDROID_STUDIO' \| 'ABCDEF' \| 'ATOMONE' \| 'BBEDIT' \| 'BESPIN' \| 'DARCULA' \| 'DRACULA' \| 'DUOTONE_LIGHT' \| 'DUOTONE_DARK' \| 'ECLIPSE' \| 'GITHUB_LIGHT' \| 'GITHUB_DARK' \| 'ONE_DARK' \| 'OKAIDIA' \| 'SUBLIME' \| 'X_CODE_LIGHT' \| 'X_CODE_DARK'`                                           |         |
+| title       | editor title                     | string                                                                                                                                                                                                                                                                                                                         |         |
+| isTitleShow | Whether to show the editor title | boolean                                                                                                                                                                                                                                                                                                                        |
 
 ### Slot
 
-| 插槽名 | 说明         | 类型   | 默认值 |
-| ------ | ------------ | ------ | ------ |
-| left   | 左侧按钮插槽 | Button |        |
-| right  | 右侧按钮插槽 | Button |        |
+| Slot Name | Description       | Type   | default |
+| --------- | ----------------- | ------ | ------- |
+| left      | left button slot  | Button |         |
+| right     | right button slot | Button |         |

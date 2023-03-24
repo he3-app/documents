@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   type: string;
   details: string;
 }>();
@@ -14,11 +14,3 @@ const props = defineProps<{
   </a-popover>
 </template>
 
-<style>
-.font {
-  font-family: 'JetBrains Mono';
-}
-code {
-  font-family: 'JetBrains Mono';
-}
-</style>

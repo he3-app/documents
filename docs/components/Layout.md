@@ -1,291 +1,87 @@
 ---
 title: Layout
-lang: zh-en
+lang: en
 ---
 # Layout
 
-## 何时使用
+## When To Use
 
-在He3 App开发中使用约定的布局，可以更快上手
+Use the agreed layout in he 3 app development, you can get started faster
 
-::: warning
-所有布局名称都改成\<h-xxx-layout\>形式
+## Examples
+
+### Horizontal two-column layout
+
+#### medium width (default)
+
+:::demo horizontal middle layout
+layout/horizontal
 :::
 
-## 代码演示
+#### left fixed
 
-### 水平两栏布局
-
-#### 中等宽（默认）
-
-<h-horizontal-layout mode="middle">
-  <template #left>
-    <div style="background-color: #7dbcea; height: 400px"></div>`
-  </template>`
-  <template #right>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-horizontal-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-horizontal-layout mode="middle">
-    <template #left>
-      <div style="background-color: #7dbcea; height: 400px"></div>
-    </template>
-    <template #right>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-horizontal-layout>
-</template>
-
-```
-
+:::demo Horizontal layout with fixed edge left
+layout/horizontalLeft
 :::
 
-#### 左固定
+#### right fixed
 
-<h-horizontal-layout mode="left" :width="200">
-  <template #left>
-    <div style="background-color: #7dbcea; height: 400px"></div>
-  </template>
-  <template #right>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-horizontal-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-horizontal-layout mode="left" :width="200">
-    <template #left>
-      <div style="background-color: #7dbcea; height: 400px"></div>
-    </template>
-    <template #right>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-horizontal-layout>
-</template>
-
-```
-
+:::demo Horizontal layout with fixed edge right
+layout/horizontalRight
 :::
 
-#### 右固定
+### Vertical two-column layout
 
-<h-horizontal-layout mode="right" :width="200">
-  <template #left>
-    <div style="background-color: #7dbcea; height: 400px"></div>
-  </template>
-  <template #right>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-horizontal-layout>
+#### medium width (default)
 
-::: details 查看源代码
-
-```vue
-<template>
-  <h-horizontal-layout mode="right" :width="200">
-    <template #left>
-      <div style="background-color: #7dbcea; height: 400px"></div>
-    </template>
-    <template #right>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-horizontal-layout>
-</template>
-
-```
-
+:::demo Top and bottom middle layout
+layout/vertical
 :::
 
-### 垂直两栏布局
+#### Top fixed
 
-#### 中等宽（默认）
-
-<h-vertical-layout mode="middle">
-  <template #top>
-    <div style="background-color: #7dbcea; height: 400px"></div>
-  </template>
-  <template #bottom>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-vertical-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-vertical-layout mode="middle">
-    <template #top>
-      <div style="background-color: #7dbcea; height: 400px"></div>
-    </template>
-    <template #bottom>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-vertical-layout>
-</template>
-
-```
-
+:::demo Vertical layout fixed on top
+layout/verticalTop
 :::
 
-#### 上固定
+#### Lower fixed
 
-<h-vertical-layout mode="top" :width="200">
-  <template #top>
-    <div style="background-color: #7dbcea; height: 100%"></div>
-  </template>
-  <template #bottom>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-vertical-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-vertical-layout mode="top" :width="200">
-    <template #top>
-      <div style="background-color: #7dbcea; height: 100%"></div>
-    </template>
-    <template #bottom>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-vertical-layout>
-</template>
-
-```
-
+:::demo Fixed vertical layout below
+layout/verticalBottom
 :::
 
-#### 下固定
+### Single column layout
 
-<h-vertical-layout mode="bottom" :width="200">
-  <template #top>
-    <div style="background-color: #7dbcea; height: 400px"></div>
-  </template>
-  <template #bottom>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 100%"></div>
-  </template>
-</h-vertical-layout>
+#### Middle (default)
 
-::: details 查看源代码
-
-```vue
-<template>
-  <h-vertical-layout mode="bottom" :width="200">
-    <template #top>
-      <div style="background-color: #7dbcea;"></div>
-    </template>
-    <template #bottom>
-      <div style="background-color: rgba(16, 142, 233, 1);"></div>
-    </template>
-  </h-vertical-layout>
-</template>
-
-```
-
+:::demo Single Column Centered Layout
+layout/single
 :::
 
-### 单栏布局
+#### Left
 
-#### 居中（默认）
-
-<h-single-layout mode="middle" :width="400">
-  <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</h-single-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-single-layout mode="middle" :width="400">
-    <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </h-single-layout>
-</template>
-
-```
-
+:::demo Single Column Left Layout
+layout/singleLeft
 :::
 
-#### 居左
+#### Right
 
-<h-single-layout mode="left" :width="400">
-  <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</h-single-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-single-layout mode="left" :width="400">
-    <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </h-single-layout>
-</template>
-
-```
-
+:::demo Single Column Right Layout
+layout/singleRight
 :::
 
-#### 居右
+### Split pane
 
-<h-single-layout mode="right" :width="400">
-  <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-</h-single-layout>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-single-layout mode="right" :width="400">
-    <div style="background-color: #7dbcea; height:400px; width:400px"></div>
-  </h-single-layout>
-</template>
-
-```
-
-:::
-
-### 可调节布局
-
-<h-layout-split-pane>
-  <template #left>
-    <div style="background-color: #7dbcea; height: 400px"></div>
-  </template>
-  <template #right>
-    <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-  </template>
-</h-layout-split-pane>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-layout-split-pane>
-    <template #left>
-      <div style="background-color: #7dbcea; height: 400px"></div>
-    </template>
-    <template #right>
-      <div style="background-color: rgba(16, 142, 233, 1); height: 400px"></div>
-    </template>
-  </h-layout-split-pane>
-</template>
-
-```
-
+:::demo Layout with adjustable ratio of left and right width
+layout/splitPane
 :::
 
 ## API
 
 ### Props
 
-| 属性           | 说明                 | 类型                                  | 默认值 |
-| -------------- | -------------------- | ------------------------------------- | ------ |
-| mode           | 模式选择             | ^[enum]`'left'\| 'middle'\| 'right'`  | middle |
-| mode(vertical) | 模式选择（垂直布局） | ^[enum]`'top'\| 'middle'\| 'bottom'` | middle |
-| width          | 固定局部宽度         | number                                | 300    |
+| Property       | Description           | Type                                 | default |
+| -------------- | --------------------- | ------------------------------------ | ------- |
+| mode           | layout mode           | ^[enum]`'left'\| 'middle'\| 'right'` | middle  |
+| mode(vertical) | layout mode(vertical) | ^[enum]`'top'\| 'middle'\| 'bottom'` | middle  |
+| width          | fixed local width     | number                               | 300     |

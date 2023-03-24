@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "newLine": "LF",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "removeComments": false,
+    "useDefineForClassFields": false,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vite/client", "node"],
+    "include": ["**/*", ".vitepress/**/*"]
+  }
+}

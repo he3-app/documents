@@ -13,6 +13,6 @@ hero:
       text: Get Started
       link: /guide/index.md
     - theme: alt
-      text: View on GitHub
+      text: He3 App
       link: https://he3.app/
 ---

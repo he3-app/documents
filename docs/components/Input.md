@@ -1,51 +1,28 @@
 ---
 title: Input
-lang: zh-en
+lang: en
 ---
 # Input
 
-## 何时使用
+## When To Use
 
-在打开插件需要自动选中内容时(有example情况下需要选中方便用户键入清空)，该输入框可以提供基本能力，
+When opening the plug-in, the content needs to be automatically selected. In the case of an example, it needs to be selected to facilitate the user to type and clear. This input box can provide basic capabilities
 
 ::: tip
-该组件完全支持AntDV的a-input属性
+This component fully supports the input attribute of ant design
 :::
 
-## 代码演示
+## Examples
 
-<div>
-  <h-input
-    autoSelect
-    @blur="cronChange"
-  />
-</div>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-input
-    v-model:value="userInput"
-    autoSelect
-  />
-</template>
-
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const userInput = ref('')
-</script>
-
-```
-
+:::demo
+input/basic
 :::
 
 ## API
 
 ### Props
 
-| 属性                   | 说明                              | 类型                                          | 默认值 |
-| ---------------------- | --------------------------------- | --------------------------------------------- | ------ |
-| autoSelect             | 组件挂载时自动选中input框中的内容 | boolean                                       | false  |
-| autoFillInputCondition | 剪切板自动回填判断函数            | ^[Function]`(str: string) => boolean \| null` | null   |
+| Property               | Description                                                                     | Type                                          | default |
+| ---------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- | ------- |
+| autoSelect             | Automatically select the content of the input box when the component is mounted | boolean                                       | false   |
+| autoFillInputCondition | Clipboard automatic backfill judgment function                                  | ^[Function]`(str: string) => boolean \| null` | null    |

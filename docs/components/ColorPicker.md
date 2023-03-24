@@ -1,63 +1,41 @@
 ---
 title: ColorPicker
-lang: zh-en
+lang: en
 ---
 # ColorPicker
 
-## 何时使用
+## When To Use
 
-在有颜色输入时，该颜色输入框可提供颜色的Input框和颜色选择器
+When there is a color input, the color input box can provide a color input box and a color selector
 
-## 代码演示
+## Examples
 
-<h4>点击该色块</h4>
-<div style="width:25px;height:300px">
-  <h-color-picker pure-color="#111" />
-</div>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-color-picker v-model:pure-color="shadowColor" />
-</template>
-
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const shadowColor = ref(isDark() ? '#cccccc' : '#6D2ACA')
-</script>
-
-```
-
+:::demo Click on the color block to choose a color
+color/picker
 :::
 
 ## API
 
 ### Props
 
-| 属性           | 说明             | 类型                                                                  | 默认值     |
-| -------------- | ---------------- | --------------------------------------------------------------------- | ---------- |
-| pureColor      | 颜色绑定         | string                                                                | rgb(0,0,0) |
-| gradientColor  | 渐变色绑定       | string                                                                |            |
-| activeKey      |                  | ^[enum]`'pure' \| 'gradient'`                                         | pure       |
-| isWidget       |                  | boolean                                                               | false      |
-| pickerType     | 颜色选择类型     | ^[enum]`'fk' \| 'chrome'`                                             | fk         |
-| useType        |                  | ^[enum]`'pure' \| 'gradient' \| 'both'`                               | false      |
-| disableHistory | 是否禁用历史记录 | boolean                                                               | false      |
-| roundHistory   |                  | boolean                                                               | false      |
-| disableAlpha   | 是否禁用透明值   | boolean                                                               |            |
-| closeBtnCorner | 关闭按钮位置     | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'` | TOP_RIGHT  |
-| position       | 选择器位置       | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`             |            |
+| Property       | Description                           | Type                                                                  | default    |
+| -------------- | ------------------------------------- | --------------------------------------------------------------------- | ---------- |
+| pureColor      | color binding                         | string                                                                | rgb(0,0,0) |
+| gradientColor  | gradient binding                      | string                                                                |            |
+| activeKey      |                                       | ^[enum]`'pure' \| 'gradient'`                                         | pure       |
+| isWidget       |                                       | boolean                                                               | false      |
+| pickerType     | color Picker type                     | ^[enum]`'fk' \| 'chrome'`                                             | fk         |
+| useType        |                                       | ^[enum]`'pure' \| 'gradient' \| 'both'`                               | false      |
+| disableHistory | Whether to disable history            | boolean                                                               | false      |
+| roundHistory   |                                       | boolean                                                               | false      |
+| disableAlpha   | Whether to disable transparent values | boolean                                                               |            |
+| closeBtnCorner | close button position                 | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'` | TOP_RIGHT  |
+| position       | selector position                     | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`             |            |
 
-## 事件
+## Events
 
-| 事件名              | 说明             | 类型                                 | 默认值 |
-| ------------------- | ---------------- | ------------------------------------ | ------ |
-| pureColorChange     | 颜色改变回调     | ^[Function]`(value: string) => void` |        |
-| gradientColorChange | 渐变色改变回调   | ^[Function]`(value: string) => void` |        |
-| activeKeyChange     | 颜色选择改变回调 | ^[Function]`(value: string) => void` |        |
-
-::: warning
-移除colorCallBack props，请使用pureColorChange事件
-:::
+| Events Name         | Description                     | Type                                 | default |
+| ------------------- | ------------------------------- | ------------------------------------ | ------- |
+| pureColorChange     | Color change callback           | ^[Function]`(value: string) => void` |         |
+| gradientColorChange | Gradient color change callback  | ^[Function]`(value: string) => void` |         |
+| activeKeyChange     | Color selection change callback | ^[Function]`(value: string) => void` |         |

@@ -38,14 +38,32 @@ body {
 
 // Dark theme
 [mode='dark']:root {
-  // Scroll bars appear consistently with the dark theme.
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
   color-scheme: dark;
 }
 
-.vp-doc .custom-block div[class*=language-] code{
-  font-family: 'JetBrains Mono';
-  font-size: 14px;
+body,
+aside,
+pre {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: white;
+  }
+  &::-webkit-scrollbar-corner,
+  /* 滚动条角落 */
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+  }
+
+  // &::-webkit-scrollbar-corner,
+  // &::-webkit-scrollbar-track {
+  //   /* 滚动条轨道 */
+  //   background-color: rgba(180, 160, 120, 0.1);
+  //   box-shadow: inset 0 0 1px rgba(180, 160, 120, 0.5);
+  // }
+  &::-webkit-scrollbar-thumb {
+    /* 滚动条手柄 */
+    background-color: var(--gray-6);
+  }
 }
-
-

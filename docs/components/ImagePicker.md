@@ -1,71 +1,53 @@
 ---
 title: ImagePicker
-lang: zh-en
+lang: en
 ---
 # ImagePicker
 
-## 何时使用
+## When To Use
 
-在有选择图片需求时使用
+Use when there is a need to select a picture
 
-## 代码演示
+## Examples
 
-### 单张选择
+### single image selection
 
-<h-image-picker />
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-image-picker />
-</template>
-
-```
-
+:::demo Select a single image
+image/basic
 :::
 
-### 批量选择
+### Batch image selection
 
-<h-multi-image-picker />
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-multi-image-picker />
-</template>
-
-```
-
+:::demo select multiple images
+image/multi
 :::
 
 ## API
 
-## 单张选择
+### single image selection
 
-### Props
+#### Props
 
-| 属性                    | 说明     | 类型   | 默认值 |
-| ----------------------- | -------- | ------ | ------ |
-| width（单张选择）       | 容器宽度     | string | 100%   |
-| height（单张选择）      | 容器高度     | string | 100%   |
-| imageHeight（单张选择） | 图片高度 | string | 78vh   |
+| Property    | Description      | Type   | default |
+| ----------- | ---------------- | ------ | ------- |
+| width       | container width  | string | 100%    |
+| height      | container height | string | 100%    |
+| imageHeight | image height     | string | 78vh    |
 
-### 事件
+#### Events
 
-| 事件名 | 说明         | 类型                             | 默认值 |
-| ------ | ------------ | -------------------------------- | ------ |
-| pick   | 图片选择钩子 | ^[Function]`(file:File)=>void` |        |
-| load   | 图片挂载钩子 | ^[Function]`(file:File)=>void` |        |
-| reset  | 图片重置钩子 | ^[Function]`(file:File)=>void` |        |
+| Events Name | Description                       | Type                           | default |
+| ----------- | --------------------------------- | ------------------------------ | ------- |
+| pick        | Image selection callback function | ^[Function]`(file:File)=>void` |         |
+| load        | Image mount callback function     | ^[Function]`(file:File)=>void` |         |
+| reset       | Image reset callback              | ^[Function]`(file:File)=>void` |         |
 
-#### 批量选择
+### 批量图像选择
 
-### 事件
+#### Events
 
-| 事件名 | 说明         | 类型                             | 默认值 |
-| ------ | ------------ | -------------------------------- | ------ |
-| pick   | 图片选择钩子 | ^[Function]`(file:File)=>void` |        |
-| load   | 图片挂载钩子 | ^[Function]`(file:File)=>void` |        |
-| remove | 图片重置钩子 | ^[Function]`(file:File)=>void` |        |
+| Events Name | Description                       | Type                           | default |
+| ----------- | --------------------------------- | ------------------------------ | ------- |
+| pick        | Image selection callback function | ^[Function]`(file:File)=>void` |         |
+| load        | Image mount callback function     | ^[Function]`(file:File)=>void` |         |
+| remove      | Image removal callback function   | ^[Function]`(file:File)=>void` |         |

@@ -1,59 +1,26 @@
 ---
 title: HighlightInput
-lang: zh-en
+lang: en
 ---
 # HighlightInput
 
-## 何时使用
+## When To Use
 
-在有需要将输入框中的文字高亮时，该组件可以高亮传入的字符串数组，当输入框中字符与之匹配时自动高亮
+When it is necessary to highlight the text in the input box, this component can highlight the incoming string array, and automatically highlight when the characters in the input box match it
 
-## 代码演示
+## Examples
 
-<script setup>
-const page = 'He3 is a free, modern developer toolbox. Check it out: https://he3.app'
-</script>
-
-<HHighlightInput
-  v-model="page"
-  title="标题"
-  :highlight-text="['He3','https://he3.app']"
-  regex-modifier="g"
-/>
-
-::: details 查看源代码
-
-```vue
-<template>
-  <h-highlight-input
-    v-model="testStr"
-    title="标题"
-    :highlight-text="matchArray"
-    :regex-modifier="rightRegex"
-  />
-</template>
-
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const testStr = ref(
-  'He3 is a free, modern developer toolbox. Check it out: https://he3.app',
-)
-const matchArray = ref<string[]>(['He3','https://he3.app'])
-const rightRegex = ref('gi')
-</script>
-
-```
-
+:::demo
+highlightInput/basic
 :::
 
 ## API
 
 ### Props
 
-| 属性          | 说明       | 类型   | 默认值 |
-| ------------- | ---------- | ------ | ------ |
-| modelValue    | 绑定文本   | string |        |
-| title         | 标题       | string |        |
-| highlightText | 高亮文字   | Array\<string\>  |        |
-| regexModifier | 正则修饰符 | string |        |
+| Property      | Description      | Type            | default |
+| ------------- | ---------------- | --------------- | ------- |
+| modelValue    | bind text        | string          |         |
+| title         | title            | string          |         |
+| highlightText | highlight text   | Array\<string\> |         |
+| regexModifier | regular modifier | string          |         |
