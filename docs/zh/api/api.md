@@ -8,22 +8,20 @@ lang: zh-en
 
 如下是 api 列表，具体的调用方式请参考下方的演示代码。
 
-* 对外提供
-
-  * `message` 触发全局的消息提示
-  * `copyText` 复制一段文本
-  * `subscribeThemeChange` 订阅主题变化
-  * `downloadByUrl` 通过url下载文件
-  * `lang` 当前语言
-  * `theme` 当前主题
-  * `shellOpenExternal` 系统默认的协议打开URL, 主要场景是通过浏览器打开一个url网址
-  * `isDev` 当前是否是开发环境
-  * `isMacOS` 当前设备是否是 Mac
-  * `isWindows` 当前设备是否是 Windows
-  * `isLinux` 当前设备是否是 Linux
-  * `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
-  * `getLastClipboard` 获取当前的剪贴版内容
-  * `onUseClipboardValue` 使用了剪贴板的回调，触发该回调通知用户
+* `message` 触发全局的消息提示
+* `copyText` 复制一段文本
+* `subscribeThemeChange` 订阅主题变化
+* `downloadByUrl` 通过url下载文件
+* `lang` 当前语言
+* `theme` 当前主题
+* `shellOpenExternal` 系统默认的协议打开URL, 主要场景是通过浏览器打开一个url网址
+* `isDev` 当前是否是开发环境
+* `isMacOS` 当前设备是否是 Mac
+* `isWindows` 当前设备是否是 Windows
+* `isLinux` 当前设备是否是 Linux
+* `getSearchValue` 获取当前搜索框输入的内容（渲染在搜索框才需要）
+* `getLastClipboard` 获取当前的剪贴版内容
+* `onUseClipboardValue` 使用了剪贴板的回调，触发该回调通知用户
 
 ### 触发全局的消息提示
 

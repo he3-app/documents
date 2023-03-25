@@ -6,7 +6,6 @@ lang: zh-en
 We provide some common capabilities for easy use in development. Named `$he3`, you can access it through `window.$he3`.
 
 The following is a list of APIs. Please refer to the demonstration code below for specific calling methods.
-We Provided to the outside world:
 
 * `message` triggers global message prompts
 * `copyText` copies a piece of text
