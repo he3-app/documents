@@ -1,28 +1,28 @@
-# 创建你的第一个工具
+# Create your first tool
 
-## Step 1: 安装 He3 客户端
+## Step 1: Install he 3 client
 
-如果你已经安装 He3 客户端，请忽略此步骤。如果还没有，可以到官网「[https://he3.app/](https://he3.app/)」下载。
+If you have already installed the he 3 client, please ignore this step. If not, you can go to the official website to download「[https://he3.app/](https://he3.app/)」
 
-![](/guide/1-1.png)
+![step1](/guide/1-1.png)
 
-## Step 2: 创建工具
+## Step 2: build tool
 
-打开 He3 客户端，进入到开发工具菜单：
+Open the he 3 client and enter the development tool menu:
 
-![](/guide/1.png)
+![step2](/guide/1.png)
 
-点击「创建」按钮后，会打开浏览器 Portal 网站，登录后点击左侧「创建工具」菜单，按提示填写表单。
+After clicking the "Create" button, the browser portal website will open. After logging in, click the "Create Tools" menu on the left, and fill in the form according to the prompts.
 
-![](/guide/2.png)
+![step2](/guide/2.png)
 
-提交后表单后点击「下载工程文件」。
+After submitting the form, click 「"Download Project File"」.
 
-![](/guide/3.png)
+![step2](/guide/3.png)
 
-### Step 3: 安装依赖并进入开发
+### Step 3: Install dependencies and enter development
 
-解压 zip 文件，进入工程目录，安装依赖。
+Unzip the zip file, enter the project directory, and install dependencies.
 
 ```shell
 npm install
@@ -30,20 +30,20 @@ npm install
 npm run dev
 ```
 
-打开 He3 客户端，在「开发工具」菜单里查看。
+Open the he 3 client and check it in the 「"Developer"」 menu.
 
-![](/guide/1-2.png)
+![step3](/guide/1-2.png)
 
-### Step 4: 发布工具
+### Step 4: publishing tool
 
-回到工具的工程目录下，通过 npm 来发布工具。
+Go back to the project directory of the tool and publish the tool through npm.
 
 ```shell
 npm run publish
 ```
 
-### Step 5: 使用工具
+### Step 5: use tools
 
-返回 Portal，打开“我的工具”菜单栏，点击工具详情，点击“打开工具”按钮。
+Return to the portal, open the My Tools menu bar, click Tool Details, and click the Open Tool button.
 
-![](/guide/use-tools.png)
+![step5](/guide/use-tools.png)

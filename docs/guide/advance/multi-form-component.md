@@ -1,8 +1,10 @@
-# 多种形式组件
-Vue 组件目前支持三种格式：SFC（单文件组件）、JSX/TSX、Setup 函数
+# Various form components
+
+Vue components currently support three formats: sfc (single file component), jsx tsx, setup function
 
 ## SFC
-[单文件组件](https://vuejs.org/guide/scaling-up/sfc.html) 将 HTML、JS、CSS 代码封装在一个文件里去写，是 Vue 最常用的一种写法，也是最方便的一种写法：
+
+[single file component](https://vuejs.org/guide/scaling-up/sfc.html) Encapsulating html, js, and css codes in one file is the most commonly used and most convenient way of writing vue:
 
 ```vue
 <script>
@@ -29,7 +31,7 @@ export default {
 
 ## JSX/TSX
 
-[JSX/TSX](https://vuejs.org/guide/extras/render-function.html#jsx-tsx) 是一种类 XML 写法，支持 JS 代码直接操作组件，比如：
+[JSX/TSX](https://vuejs.org/guide/extras/render-function.html#jsx-tsx) It is an xml-like writing method that supports js code to directly operate components, such as:
 
 ```tsx
 <ul>
@@ -39,7 +41,7 @@ export default {
 </ul>
 ```
 
-He3 支持 JSX/TSX，如同 SFC 一样，写一个 `index.tsx` 文件，并在入口文件 `index.ts` 导出该组件即可:
+he 3 supports jsx tsx, just like sfc, just write an `index.tsx` file and export the component in the entry file `index.ts`
 
 `src/index.tsx`
 
@@ -60,9 +62,9 @@ import Index from './index.tsx'
 export default Index
 ```
 
-## Setup 函数
+## Setup Function
 
-如果你的工具非常轻量，仅需一两个 DOM 元素或者复用 He3 提供的 `<h-transform>` 组件，可以考虑用 Setup 函数方式，在入口文件 `index.ts` 导出一个含有 setup 函数的对象即可：
+If your tool is very lightweight and only needs one or two dom elements or reuse the `<h-transform>` component provided by he 3, you can consider using the setup function method and export an object containing the setup function in the entry file `index.ts`:
 
 ```ts
 import { Ref, h, resolveComponent } from 'vue'
@@ -84,6 +86,6 @@ export default {
 }}
 ```
 
-Setup 函数中实际用到了 vue 用于生成虚拟 DOM 的 [`h` 函数](https://vuejs.org/api/render-function.html#h)，如上代码就为我们生成一个将小写字符转为全大写的转换工具：
+Vue is actually used in the setup function to generate virtual dom[`h` Function](https://vuejs.org/api/render-function.html#h), the above code will generate a conversion tool for converting lowercase characters to all uppercase for us:
 
 ![](/guide/advance/1.png)

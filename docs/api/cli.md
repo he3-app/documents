@@ -1,14 +1,15 @@
 ---
 title: He3 CLI
-lang: zh-en
+lang: en
 ---
 
-## 概述
-He3 CLI 提供一个 NodeJS 编写的命令行工具，可以帮助你开发、翻译、发布工具。
+## overview
 
-## 安装
+He3 CLI provide a command-line tool written in nodeJs, which can help you develop, translate, and publish tools.
 
-我们已经将该 CLI 作为项目工程文件的依赖，并且 `package.json` 运行脚本添加上了常用命令，你可以通过 `npm run <command>` 直接运行这些命令：
+## Install
+
+We have made the cli a dependency of the project project file, and the `package.json` running script has added common commands, you can run these commands directly through `npm run command`:
 
 ```json
 ...
@@ -20,35 +21,35 @@ He3 CLI 提供一个 NodeJS 编写的命令行工具，可以帮助你开发、�
 ...
 ```
 
-当然你可以选择全局安装：
+Of course you can choose to install globally:
 
 ```shell
 npm i -g he3
 ```
 
-## 开发
+## Develop
 
-He3 CLI 提供 `dev` 命令，你可以在工具项目中运行：
+He3 CLI Provides a `dev` command that you can run in a tools project:
 
 ```shell
 npm run dev
 ```
 
-此时，客户端自动跳转到你正在开发的工具中。
+At this point, the client automatically jumps to the tool you are developing.
 
-## 上传
+## Upload
 
-执行如下命令，你的工具就可以上传到 Portal 官网上:
+Execute the following command, and your tool can be uploaded to the portal official website
 
 ```shell
 npm run publish
 ```
 
-上传之后，如果你的工具是公开状态，那么其他人就可以从 Tool Store 中下载你的工具。
+After uploading, if your tool is public, others can download your tool from the tool store.
 
-## 翻译
+## Translate
 
-翻译命令支持将你的工具名称、描述和关键词这几项元信息翻译成 11 种语言并写入根目录的 `meta.locale.json` 文件中，这样有助于你的工具被其他国家开发者检索得到并使用：
+The translation command supports translating the meta information of your tool name, description, and keywords into 11 languages ​​and writing it into the `meta.locale.json` file in the root directory, which will help your tools be retrieved by developers in other countries and use:
 
 ```shell
 npm run i18n

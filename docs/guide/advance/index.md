@@ -1,10 +1,10 @@
-## 批量工具
+## Batch tools
 
-He3 支持在单个项目中一次性创建多个工具。
+He 3 supports creating multiple tools at once in a single project.
 
-## 1. 改造 package.json
+## 1. Retrofit package.json
 
-将 `he3` 字段改为数组，字段和单个工具一致：
+Change the `he3` field to an array, and the field is consistent with a single tool:
 
 ```json
 //...
@@ -52,9 +52,9 @@ He3 支持在单个项目中一次性创建多个工具。
 //...
 ```
 
-## 2. 改造 `index.ts` 入口文件
+## 2. Retrofit `index.ts` entry file
 
-`src/index.ts` 默认导出的需要为一个数组，元素为一个对象，字段直接取自 `package.json#he3`，同时用 `component` 去指定你的 `vue` 组件即可：
+The default export of `src.index.ts` needs to be an array, the element is an object, and the fields are directly taken from `package.json#he3`, and you can use `component` to specify your `vue` component:
 
 ```typescript
 import config from '../package.json'
@@ -100,21 +100,21 @@ export default config.he3.map((tool) => {
 })
 ```
 
-## 3. 开发
+## 3. Development
 
-执行 `npm run dev` 后，He3 客户端开发工具菜单会显示所有批量工具：
+After executing `npm run dev`, the he 3 client development tool menu will display all batch tools:
 
 ![](/guide/advance/2.png)
 
-## 4. 上传
+## 4. Upload
 
-执行 `npm run publish` 会全量上传你的所有工具，当然你也可以指定上传的哪几个工具：
+Executing `npm run publish` will upload all your tools in full. Of course, you can also specify which tools to upload:
 
 ```shell
 npm run publish --include=tool1,tool2
 ```
 
-也可以排除不需要上传的工具：
+It is also possible to exclude tools that do not need to be uploaded:
 
 ```shell
 npm run publish --exclude=tool3,tool4
