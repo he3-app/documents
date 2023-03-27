@@ -1,6 +1,6 @@
 <template>
   <div style="height: 500px">
-    <h-transform :onChange="handleChange" :onMounted="handleMounted" />
+    <h-transform  :onChange="handleChange" :onMounted="handleMounted" />
   </div>
 </template>
 
