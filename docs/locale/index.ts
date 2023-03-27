@@ -10,10 +10,18 @@ import ko from './lang/ko.json';
 import pt from './lang/pt.json';
 import ru from './lang/ru.json';
 import zh_tw from './lang/zh-tw.json';
+import { ref } from 'vue';
+
+export const language = ref('en');
+
+export function changeLocale(lang: 'zh' | 'en') {
+  if (lang === 'zh') language.value = 'zh';
+  else language.value = 'en';
+}
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'zh', // 初始化配置语言
+  locale: language.value, // 初始化配置语言
   messages: {
     zh,
     en,

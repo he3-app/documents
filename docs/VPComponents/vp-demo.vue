@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref, watchEffect } from 'vue';
 import Example from './vp-example.vue';
 import SourceCode from './vp-source-code.vue';
 import { useClipboard, useToggle } from '@vueuse/core';
+import { useData } from 'vitepress';
+import { setDarkMode, setLightMode } from '../.vitepress/theme/utils/mode';
+import { changeLocale } from '../locale';
 
 const props = defineProps<{
   source: string;
@@ -10,6 +13,15 @@ const props = defineProps<{
   rawSource: string;
   description?: string;
 }>();
+
+const { isDark, lang } = useData();
+
+watchEffect(() => {
+  isDark.value ? setDarkMode() : setLightMode();
+});
+watchEffect(() => {
+  lang.value === 'zh' ? changeLocale('zh') : changeLocale('en');
+});
 
 const decodedDescription = computed(() =>
   decodeURIComponent(props.description!)
