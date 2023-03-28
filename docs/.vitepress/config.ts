@@ -10,7 +10,7 @@ export default {
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/guide/index.md' },
-          { text: 'Components', link: '/components/index.md' },
+          { text: 'Components', link: '/components/Button.md' },
           { text: 'API', link: '/api/api.md' },
           { text: 'Official', link: 'https://he3.app/' },
         ],
@@ -122,7 +122,7 @@ export default {
       themeConfig: {
         nav: [
           { text: '引导', link: '/zh/guide/index.md' },
-          { text: '组件', link: '/zh/components/index.md' },
+          { text: '组件', link: '/zh/components/Button.md' },
           { text: 'API', link: '/zh/api/api.md' },
           { text: 'Official', link: 'https://he3.app/' },
         ],
