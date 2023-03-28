@@ -3,6 +3,7 @@ title: He3 APi
 lang: zh-en
 ---
 # API
+
 We provide some common capabilities for easy use in development. Named `$he3`, you can access it through `window.$he3`.
 
 The following is a list of APIs. Please refer to the demonstration code below for specific calling methods.
@@ -22,7 +23,7 @@ The following is a list of APIs. Please refer to the demonstration code below fo
 * `getLastClipboard` gets the current contents of the clipboard
 * `onUseClipboardValue` callback function triggered after using the clipboard, notifying the user
 
-### Global message prompts
+## Global message prompts
 
 ```js
 $he3.message.success('Success');
@@ -31,7 +32,7 @@ $he3.message.info('Tip');
 $he3.message.warning('Warning');
 ```
 
-### Get current clipboard content
+## Get current clipboard content
 
 ```js
 $he3.getLastClipboard().then((data) => {
@@ -39,34 +40,33 @@ $he3.getLastClipboard().then((data) => {
 });
 ```
 
-### Copy text
+## Copy text
 
 ```js
 $he3.copyText('copy text');
 ```
 
-### Get current theme
-
+## Get current theme
 
 Gets the current theme, returns dark or light
-
 
 ```js
 console.log($he3.theme)
 ```
 
-### Subscribe theme changes
+## Subscribe theme changes
 
 `subscribeThemeChange` accepts a callback function. When the theme changes, it will trigger the callback function, which will return the current theme, dark or light.
 
 Developers don't need to pay attention to whether the current theme follows the system theme or the user-defined theme. Just subscribe to this event, and then make corresponding processing according to the theme change. We will keep the global themes consistent.
+
 ```js
 $he3.subscribeThemeChange((data) => {
     console.log(data);
 });
 ```
 
-### Get current language
+## Get current language
 
 The following is a list of languages we currently support:
 
@@ -86,7 +86,7 @@ The following is a list of languages we currently support:
 console.log($he3.lang);
 ```
 
-### Download file by URL
+## Download file by URL
 
 ```js
 $he3.downloadByUrl('https://www.baidu.com/img/bd_logo1.png');

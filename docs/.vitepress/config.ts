@@ -9,16 +9,16 @@ export default {
       lang: 'en',
       themeConfig: {
         nav: [
-          { text: 'Guide', link: '/guide/index.md' },
+          { text: 'Guide', link: '/guide/advance/multi-form-component.md' },
           { text: 'Components', link: '/components/Button.md' },
           { text: 'API', link: '/api/api.md' },
           { text: 'Official', link: 'https://he3.app/' },
         ],
         sidebar: {
           '/guide': [
-            {
-              text: 'getting Started',
-            },
+            // {
+            //   text: 'getting Started',
+            // },
             {
               text: 'advanced',
               items: [
@@ -121,16 +121,16 @@ export default {
       lang: 'zh',
       themeConfig: {
         nav: [
-          { text: '引导', link: '/zh/guide/index.md' },
+          { text: '引导', link: '/zh/guide/advance/multi-form-component.md' },
           { text: '组件', link: '/zh/components/Button.md' },
           { text: 'API', link: '/zh/api/api.md' },
           { text: 'Official', link: 'https://he3.app/' },
         ],
         sidebar: {
           '/zh/guide': [
-            {
-              text: '入门',
-            },
+            // {
+            //   text: '入门',
+            // },
             {
               text: '高级',
               items: [
