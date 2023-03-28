@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/index.md
+      link: /zh/guide/index.md
     - theme: alt
       text: He3 App
       link: https://he3.app/
