@@ -9,16 +9,16 @@ export default {
       lang: 'en',
       themeConfig: {
         nav: [
-          { text: 'Guide', link: '/guide/advance/multi-form-component.md' },
+          { text: 'Guide', link: '/guide/index.md' },
           { text: 'Components', link: '/components/Button.md' },
           { text: 'API', link: '/api/api.md' },
           { text: 'Official', link: 'https://he3.app/' },
         ],
         sidebar: {
           '/guide': [
-            // {
-            //   text: 'getting Started',
-            // },
+            {
+              text: 'getting Started',
+            },
             {
               text: 'advanced',
               items: [
@@ -128,9 +128,9 @@ export default {
         ],
         sidebar: {
           '/zh/guide': [
-            // {
-            //   text: '入门',
-            // },
+            {
+              text: '入门',
+            },
             {
               text: '高级',
               items: [
