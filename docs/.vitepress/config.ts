@@ -17,7 +17,8 @@ export default {
         sidebar: {
           '/guide': [
             {
-              text: 'getting Started',
+              text: 'Create your first tool',
+              link: '/guide/index.md',
             },
             {
               text: 'advanced',
@@ -129,7 +130,8 @@ export default {
         sidebar: {
           '/zh/guide': [
             {
-              text: '入门',
+              text: '构建你的第一个工具',
+              link: '/zh/guide/index.md',
             },
             {
               text: '高级',
@@ -164,25 +166,52 @@ export default {
             {
               text: '专用',
               items: [
-                { text: 'Transform 代码转换', link: '/zh/components/Transform.md' },
-                { text: 'TextTransform 文本转换', link: '/zh/components/TextTransform.md' },
+                {
+                  text: 'Transform 代码转换',
+                  link: '/zh/components/Transform.md',
+                },
+                {
+                  text: 'TextTransform 文本转换',
+                  link: '/zh/components/TextTransform.md',
+                },
               ],
             },
             {
               text: '数据录入',
               items: [
-                { text: 'CodeEditor 代码编辑器', link: '/zh/components/CodeEditor.md' },
+                {
+                  text: 'CodeEditor 代码编辑器',
+                  link: '/zh/components/CodeEditor.md',
+                },
                 {
                   text: 'HighlightInput 高亮编辑器',
                   link: '/zh/components/HighlightInput.md',
                 },
-                { text: 'ColorPicker 取色器', link: '/zh/components/ColorPicker.md' },
-                { text: 'ColorInput 颜色输入', link: '/zh/components/ColorInput.md' },
-                { text: 'FileSizeView 文件大小', link: '/zh/components/FileSizeView.md' },
-                { text: 'ImagePicker 图片选择器', link: '/zh/components/ImagePicker.md' },
+                {
+                  text: 'ColorPicker 取色器',
+                  link: '/zh/components/ColorPicker.md',
+                },
+                {
+                  text: 'ColorInput 颜色输入',
+                  link: '/zh/components/ColorInput.md',
+                },
+                {
+                  text: 'FileSizeView 文件大小',
+                  link: '/zh/components/FileSizeView.md',
+                },
+                {
+                  text: 'ImagePicker 图片选择器',
+                  link: '/zh/components/ImagePicker.md',
+                },
                 { text: 'Input 输入框', link: '/zh/components/Input.md' },
-                { text: 'NumberInput 数字输入框', link: '/zh/components/NumberInput.md' },
-                { text: 'KvInput 键值对输入框', link: '/zh/components/KvInput.md' },
+                {
+                  text: 'NumberInput 数字输入框',
+                  link: '/zh/components/NumberInput.md',
+                },
+                {
+                  text: 'KvInput 键值对输入框',
+                  link: '/zh/components/KvInput.md',
+                },
                 {
                   text: 'MultilineInput 多行输入框',
                   link: '/zh/components/MultilineInput.md',
@@ -194,12 +223,18 @@ export default {
               items: [
                 { text: 'Code 代码展示', link: '/zh/components/Code.md' },
                 { text: 'Kv 键值对展示', link: '/zh/components/Kv.md' },
-                { text: 'Multiline 多行文本展示', link: '/zh/components/Multiline.md' },
+                {
+                  text: 'Multiline 多行文本展示',
+                  link: '/zh/components/Multiline.md',
+                },
                 {
                   text: 'SingleLine 单行文本展示',
                   link: '/zh/components/SingleLine.md',
                 },
-                { text: 'TerminalView 终端文字展示', link: '/zh/components/TerminalView.md' },
+                {
+                  text: 'TerminalView 终端文字展示',
+                  link: '/zh/components/TerminalView.md',
+                },
               ],
             },
             // {
