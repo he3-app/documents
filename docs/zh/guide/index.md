@@ -1,49 +1,55 @@
 # 创建你的第一个工具
 
-## Step 1: 安装 He3 客户端
+## Step 1: 安装客户端
 
-如果你已经安装 He3 客户端，请忽略此步骤。如果还没有，可以到官网「[https://he3.app/](https://he3.app/)」下载。
+如果你已经安装了 He3 客户端，请忽略。如果没有，请前往 [https://he3.app/](https://he3.app/) 下载。
 
-![](/guide/1-1.png)
+## Step 2: 登录客户端
 
-## Step 2: 创建工具
-
-打开 He3 客户端，进入到开发工具菜单：
+打开 He3 客户端，在右上角选择登录账户。
 
 ![](/guide/1.png)
 
-点击「创建」按钮后，会打开浏览器 Portal 网站，登录后点击左侧「创建工具」菜单，按提示填写表单。
+### Step 3: 创建工具
+
+有两种方法可以创建工具：
+
+- Fork 示例仓库
+- 通过表单创建
+
+#### Option1: Fork 示例仓库
+
+Fork [https://github.com/he3-app/he3-tool-demo](https://github.com/he3-app/he3-tool-demo) 仓库，并将其克隆到本地。
+
+#### Option2: 通过 Portal 表单创建
+
+Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools)，在表单中填写工具信息，然后点击 "Download Tool Template" 下载工具模板。
 
 ![](/guide/2.png)
 
-提交后表单后点击「下载工程文件」。
+### Step 4: 开发工具
 
-![](/guide/3.png)
-
-### Step 3: 安装依赖并进入开发
-
-解压 zip 文件，进入工程目录，安装依赖。
+进入项目目录，安装依赖项并开发工具。
 
 ```shell
 npm install
-
 npm run dev
 ```
 
-打开 He3 客户端，在「开发工具」菜单里查看。
+打开 He3 客户端并查看。
 
-![](/guide/1-2.png)
+![step3](/guide/3.png)
 
-### Step 4: 发布工具
+### Step 5: 发布工具
 
-回到工具的工程目录下，通过 npm 来发布工具。
+完成工具开发后，您可以将其发布到 He3 商店。
+
+您可以通过运行以下命令发布工具。
 
 ```shell
 npm run publish
 ```
 
-### Step 5: 使用工具
+发布后，您将获得工具的 URL 链接，可以通过打开它使用工具或分享。
 
-返回 Portal，打开“我的工具”菜单栏，点击工具详情，点击“打开工具”按钮。
-
-![](/guide/use-tools.png)
+此外，您可以在 [My tools](https://portal.he3app.com/my-tools) 菜单栏以及 [He3 Store](https://portal.he3app.com/tools?page=1)

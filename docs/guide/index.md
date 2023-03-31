@@ -1,49 +1,55 @@
 # Create your first tool
 
-## Step 1: Install he 3 client
+## Step 1: Install He3 client
 
-If you have already installed the he 3 client, please ignore this step. If not, you can go to the official website to download「[https://he3.app/](https://he3.app/)」
+If you have already installed the He3 client, please ignore this step. If not, you can go to the official website to download [https://he3.app/](https://he3.app/)
 
-![step1](/guide/1-1.png)
+## Step 2: Login He3 client
 
-## Step 2: build tool
+Open the He3 client, and select the login account in the top right corner.
 
-Open the he 3 client and enter the development tool menu:
+![](/guide/1.png)
 
-![step2](/guide/1.png)
+### Step 3: Create a tool
 
-After clicking the "Create" button, the browser portal website will open. After logging in, click the "Create Tools" menu on the left, and fill in the form according to the prompts.
+There are two ways to create a tool:
 
-![step2](/guide/2.png)
+- Fork the Demo repository
+- Create through a form
 
-After submitting the form, click 「"Download Project File"」.
+#### Option1: Fork demo repository
 
-![step2](/guide/3.png)
+Fork [https://github.com/he3-app/he3-tool-demo](https://github.com/he3-app/he3-tool-demo) repository, and clone it to your local.
 
-### Step 3: Install dependencies and enter development
+#### Option2: Create through portal
 
-Unzip the zip file, enter the project directory, and install dependencies.
+Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools), Fill in the tool information in the form, and click "Download Tool Template" to download the tool template.
+
+![](/guide/2.png)
+
+### Step 4: Develop tool
+
+Enter the project directory, install dependencies and develop tool with hot reload.
 
 ```shell
 npm install
-
 npm run dev
 ```
 
-Open the he 3 client and check it in the 「"Developer"」 menu.
+Open the He3 client and check it out.
 
-![step3](/guide/1-2.png)
+![step3](/guide/3.png)
 
-### Step 4: publishing tool
+### Step 5: Publish tool
 
-Go back to the project directory of the tool and publish the tool through npm.
+Once you are finished developing the tool, you can publish it to the He3 Store.
+
+You can publish tool by running the following command.
 
 ```shell
 npm run publish
 ```
 
-### Step 5: use tools
+After publishing, you will get the tool's URL link, which you can use by opening it or share with others.
 
-Return to the portal, open the My Tools menu bar, click Tool Details, and click the Open Tool button.
-
-![step5](/guide/use-tools.png)
+In addition, You can see the tool in [My tools](https://portal.he3app.com/my-tools) menu and [He3 Store](https://portal.he3app.com/tools?page=1)
