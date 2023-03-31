@@ -23,6 +23,8 @@ input/number
 
 ### Props
 
-| Property       | Description                              | Type    | default |
-| ---------- | --------------------------------- | ------- | ------ |
-| autoSelect | 组件挂载时自动选中input框中的内容 | boolean | false  |
+| Property   | Description                       | Type    | default |
+| ---------- | --------------------------------- | ------- | ------- |
+| autoSelect | 组件挂载时自动选中input框中的内容 | boolean | false   |
+| saveOptions | 自动保存组件数据，在组件挂载时自动同步数据作为input框中的初始值，在input输入改变时，自动同步该值到数据库（只有在登录后并且开启了自动同步功能之后才能生效）注意⚠️：同一个工具下多个使用该能力的组件的key值不可重复。 | object | {autoSave:false,key:""}   |
+
