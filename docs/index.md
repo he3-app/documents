@@ -1,4 +1,4 @@
 <script>
 if (typeof window !== 'undefined')
-window.location.href = 'https://docs.he3.app/guide/index.html'
+window.location.href = `${window.location.protocol}//${window.location.host}/guide/index.html`
 </script>
