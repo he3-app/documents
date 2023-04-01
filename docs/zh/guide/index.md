@@ -12,7 +12,7 @@
 
 ![](/guide/1.png)
 
-### Step 3: 创建工具
+## Step 3: 创建工具
 
 有两种方法可以创建工具：
 
@@ -29,7 +29,7 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 ![](/guide/2.png)
 
-### Step 4: 开发工具
+## Step 4: 开发工具
 进入项目目录，安装依赖项并开发工具。
 
 ::: tip 注意
@@ -45,7 +45,7 @@ npm run dev
 
 ![step3](/guide/3.png)
 
-### Step 5: 发布工具
+## Step 5: 发布工具
 
 完成工具开发后，您可以将其发布到 He3 商店。
 
