@@ -1,5 +1,5 @@
 ---
-title: He3 APi
+title: He3 API
 lang: zh-en
 ---
 # API
