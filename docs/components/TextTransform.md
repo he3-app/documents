@@ -22,7 +22,7 @@ transform/text
 transform/file
 :::
 
-### Double Transform
+### Two-way Transform
 
 :::demo Start the bidirectional conversion mode through property enableReverse, which can support bidirectional text conversion at the same time
 transform/double
