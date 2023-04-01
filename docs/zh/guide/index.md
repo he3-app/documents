@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-打开 He3 客户端并查看。
+打开 He3 客户端并查看正在开发中的工具。
 
 ![step3](/guide/3.png)
 

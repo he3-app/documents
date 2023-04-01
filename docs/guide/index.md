@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Open the He3 client and check it out.
+Then, open the He3 client and check it out.
 
 ![step3](/guide/3.png)
 
