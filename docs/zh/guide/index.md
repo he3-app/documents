@@ -52,4 +52,4 @@ npm run publish
 
 发布后，您将获得工具的 URL 链接，可以通过打开它使用工具或分享。
 
-此外，您可以在 [My tools](https://portal.he3app.com/my-tools) 菜单栏以及 [He3 Store](https://portal.he3app.com/tools?page=1)
+此外，您可以在 [My tools](https://portal.he3app.com/my-tools) 菜单栏以及 [He3 Store](https://portal.he3app.com/tools?page=1)找到你发布的工具。
