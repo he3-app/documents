@@ -50,6 +50,6 @@ You can publish tool by running the following command.
 npm run publish
 ```
 
-After publishing, you will get the tool's URL link, which you can use by opening it or share with others.
+After publishing, you will get the tool's URL link, which you can use by opening tool or share with others.
 
 In addition, You can see the tool in [My tools](https://portal.he3app.com/my-tools) menu and [He3 Store](https://portal.he3app.com/tools?page=1)
