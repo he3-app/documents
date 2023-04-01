@@ -12,7 +12,7 @@ Open the He3 client, and select the login account in the top right corner.
 
 ![](/guide/1.png)
 
-### Step 3: Create a tool
+## Step 3: Create a tool
 
 There are two ways to create a tool:
 
@@ -29,7 +29,7 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 ![](/guide/2.png)
 
-### Step 4: Develop tool
+## Step 4: Develop tool
 
 Enter the project directory, install dependencies and develop tool with hot reload.
 
@@ -46,7 +46,7 @@ Then, open the He3 client and check it out.
 
 ![step3](/guide/3.png)
 
-### Step 5: Publish tool
+## Step 5: Publish tool
 
 Once you are finished developing the tool, you can publish it to the He3 Store.
 
