@@ -15,7 +15,7 @@ Open the He3 client, and select the login account in the top right corner.
 There are two ways to create a tool:
 
 - Fork the Demo repository
-- Create through a form
+- Create through portal form
 
 #### Option1: Fork demo repository
 
