@@ -29,7 +29,10 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 ![](/guide/2.png)
 
+> 同时，我们还准备了一些开源工具供你参考：[tools-example](https://github.com/he3-app/tools-example)
+
 ## Step 4: 开发工具
+
 进入项目目录，安装依赖项并开发工具。
 
 ::: tip 注意
@@ -59,4 +62,4 @@ npm run publish
 
 发布后，您将获得工具的 URL 链接，可以通过打开它使用工具或分享。
 
-此外，您可以在 [My tools](https://portal.he3app.com/my-tools) 菜单栏以及 [He3 Store](https://portal.he3app.com/tools?page=1)找到你发布的工具。
+此外，您可以在 [My tools](https://portal.he3app.com/my-tools) 菜单栏以及 [He3 Store](https://portal.he3app.com/tools?page=1) 找到你发布的工具。

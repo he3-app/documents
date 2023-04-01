@@ -29,6 +29,8 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 ![](/guide/2.png)
 
+> In addition, we have also prepared some open-source tools for your reference: [tools-example](https://github.com/he3-app/tools-example)
+
 ## Step 4: Develop tool
 
 Enter the project directory, install dependencies and develop tool with hot reload.
