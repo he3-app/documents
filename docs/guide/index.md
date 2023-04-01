@@ -44,6 +44,8 @@ Then, open the He3 client and check it out.
 
 Once you are finished developing the tool, you can publish it to the He3 Store.
 
+> Before publishing, He3 can also automatically help you handle the internationalization of metadata. Refer to [Internationalization](./advance/i18n.md)
+
 You can publish tool by running the following command.
 
 ```shell

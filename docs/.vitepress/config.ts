@@ -24,6 +24,10 @@ export default {
               text: 'advanced',
               items: [
                 {
+                  text: 'Tool internationalization',
+                  link: '/guide/advance/i18n.md',
+                },
+                {
                   text: 'Various form components',
                   link: '/guide/advance/multi-form-component.md',
                 },
@@ -31,10 +35,6 @@ export default {
                 //   text: 'Batch tools',
                 //   link: '/guide/advance/index.md',
                 // },
-                {
-                  text: 'Tool meta information internationalization',
-                  link: '/guide/advance/i18n.md',
-                },
               ],
             },
           ],
@@ -137,6 +137,10 @@ export default {
               text: '高级',
               items: [
                 {
+                  text: '工具国际化',
+                  link: '/zh/guide/advance/i18n.md',
+                },
+                {
                   text: '多种形式组件',
                   link: '/zh/guide/advance/multi-form-component.md',
                 },
@@ -144,10 +148,6 @@ export default {
                 //   text: '批量工具',
                 //   link: '/zh/guide/advance/index.md',
                 // },
-                {
-                  text: '工具元信息国际化',
-                  link: '/zh/guide/advance/i18n.md',
-                },
               ],
             },
           ],
