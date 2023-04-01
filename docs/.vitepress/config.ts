@@ -12,7 +12,10 @@ export default {
           { text: "Guide", link: "/guide/index.md" },
           { text: "Components", link: "/components/Button.md" },
           { text: "API", link: "/api/api.md" },
-          { text: "Examples", link: "https://github.com/he3-app/tools" },
+          {
+            text: "Examples",
+            link: "https://github.com/he3-app/tools-example",
+          },
           { text: "Portal", link: "https://portal.he3app.com/" },
           { text: "Home", link: "https://he3.app/" },
         ],
@@ -127,7 +130,10 @@ export default {
           { text: "引导", link: "/zh/guide/advance/multi-form-component.md" },
           { text: "组件", link: "/zh/components/Button.md" },
           { text: "API", link: "/zh/api/api.md" },
-          { text: "代码示例", link: "https://github.com/he3-app/tools" },
+          {
+            text: "代码示例",
+            link: "https://github.com/he3-app/tools-example",
+          },
           { text: "Portal", link: "https://portal.he3app.com/" },
           { text: "Home", link: "https://he3.app/" },
         ],
