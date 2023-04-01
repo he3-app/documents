@@ -29,29 +29,17 @@ export default {
               text: "advanced",
               items: [
                 {
-<<<<<<< HEAD
                   text: 'Tool internationalization',
                   link: '/guide/advance/i18n.md',
                 },
                 {
                   text: 'Various form components',
                   link: '/guide/advance/multi-form-component.md',
-=======
-                  text: "Various form components",
-                  link: "/guide/advance/multi-form-component.md",
->>>>>>> ce65239ff8b1b4bd6fffa58d5ba7fe005f3a0d03
-                },
+                }
                 // {
                 //   text: 'Batch tools',
                 //   link: '/guide/advance/index.md',
                 // },
-<<<<<<< HEAD
-=======
-                {
-                  text: "Tool meta information internationalization",
-                  link: "/guide/advance/i18n.md",
-                },
->>>>>>> ce65239ff8b1b4bd6fffa58d5ba7fe005f3a0d03
               ],
             },
           ],
@@ -159,29 +147,17 @@ export default {
               text: "高级",
               items: [
                 {
-<<<<<<< HEAD
                   text: '工具国际化',
                   link: '/zh/guide/advance/i18n.md',
                 },
                 {
                   text: '多种形式组件',
                   link: '/zh/guide/advance/multi-form-component.md',
-=======
-                  text: "多种形式组件",
-                  link: "/zh/guide/advance/multi-form-component.md",
->>>>>>> ce65239ff8b1b4bd6fffa58d5ba7fe005f3a0d03
-                },
+                }
                 // {
                 //   text: '批量工具',
                 //   link: '/zh/guide/advance/index.md',
                 // },
-<<<<<<< HEAD
-=======
-                {
-                  text: "工具元信息国际化",
-                  link: "/zh/guide/advance/i18n.md",
-                },
->>>>>>> ce65239ff8b1b4bd6fffa58d5ba7fe005f3a0d03
               ],
             },
           ],
