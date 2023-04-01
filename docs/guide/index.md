@@ -2,7 +2,9 @@
 
 ## Step 1: Install He3 client
 
-If you have already installed the He3 client, please ignore this step. If not, you can go to the official website to download [https://he3.app/](https://he3.app/)
+If you have already installed the latest He3 client, please ignore this step. If not, you can go to the official website to download [https://he3.app/](https://he3.app/)
+
+> He3 client version requirement: v1.3.0+
 
 ## Step 2: Login He3 client
 
