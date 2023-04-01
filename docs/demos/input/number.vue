@@ -1,5 +1,5 @@
 <template>
-  <h-number-input v-model:value="userInput" autoSelect  :save-options="{autoSave:true,key:'userInput'}"/>
+  <h-number-input v-model:value="userInput" select-all-on-mount />
 </template>
 
 <script setup lang="ts">
