@@ -33,6 +33,10 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 Enter the project directory, install dependencies and develop tool with hot reload.
 
+::: tip Notice
+**npm** command needs to be executed in **node** environment, please click [nodejs](https://nodejs.org/) to install
+:::
+
 ```shell
 npm install
 npm run dev

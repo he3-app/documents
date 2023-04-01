@@ -30,8 +30,11 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 ![](/guide/2.png)
 
 ### Step 4: 开发工具
-
 进入项目目录，安装依赖项并开发工具。
+
+::: tip 注意
+**npm** 命令需要在 **node** 环境中执行，安装请点击 [nodejs](https://nodejs.org/)
+:::
 
 ```shell
 npm install
