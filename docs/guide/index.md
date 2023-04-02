@@ -25,7 +25,7 @@ Fork [https://github.com/he3-app/he3-tool-demo](https://github.com/he3-app/he3-t
 
 #### Option2: Create through portal
 
-Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools), Fill in the tool information in the form, and click "Download Tool Template" to download the tool template.
+Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools), Fill in the tool information in the form, and click "Download Tool Template" to download the tool template zip file.
 
 ![](/guide/2.png)
 
@@ -33,7 +33,7 @@ Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-t
 
 ## Step 4: Develop tool
 
-Enter the project directory, install dependencies and develop tool with hot reload.
+Enter the tool directory downloaded in step 3, install dependencies and develop tool with hot reload.
 
 ::: tip Notice
 **npm** command needs to be executed in **node** environment, please click [nodejs](https://nodejs.org/) to install
