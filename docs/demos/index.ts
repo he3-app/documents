@@ -31,6 +31,11 @@ import DemoMultilineBasic from './multiline/basic.vue';
 import DemoMultilineInput from './multiline/input.vue';
 import DemoSingleLineBasic from './singleLine/basic.vue';
 import DemoTerminalViewBasic from './terminalView/basic.vue';
+import DemoSelectBasic from "./select/basic.vue";
+import DemoRadioBasic from "./radio/basic.vue";
+import DemoSwitchBasic from "./switch/basic.vue";
+import DemoCheckboxBasic from "./checkbox/basic.vue";
+
 
 export const Demos: [string, Component][] = [
   ['DemoButtonBasic', DemoButtonBasic],
@@ -65,4 +70,8 @@ export const Demos: [string, Component][] = [
   ['DemoMultilineInput', DemoMultilineInput],
   ['DemoSingleLineBasic', DemoSingleLineBasic],
   ['DemoTerminalViewBasic', DemoTerminalViewBasic],
+  ['DemoSelectBasic',DemoSelectBasic],
+  ['DemoRadioBasic',DemoRadioBasic],
+  ['DemoSwitchBasic',DemoSwitchBasic],
+  ['DemoCheckboxBasic',DemoCheckboxBasic],
 ];

@@ -42,6 +42,7 @@ transform/double
 | reverseTransform       | 反转换回调函数             | ^[Function]`(inputValue: string)=> void`                    |                                              |
 | fileOutputName         | 输出文件名字           | ^[Function]`(name: string) => string`                       | false                                        |
 | autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`(str: string) => boolean \| null` | null                                         |
+| saveOptions | 自动上传和初始化组件数据。<br />注意⚠️：同一个工具下的多个key值需要保证唯一性。 | object  | autoSave:false,key:"" |
 
 ### Expose
 

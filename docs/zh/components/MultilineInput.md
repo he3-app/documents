@@ -34,6 +34,7 @@ MultilineInput不支持code输入，请使用CodeEditor
 | autoSelect             | 组件挂载时自动选中input框中的内容 | boolean                                       | false     |
 | noChangeOnMounted      | 组件挂载时不触发change事件        | boolean                                       | false     |
 | autoFillInputCondition | 剪切板自动回填判断函数            | ^[Function]`(str: string) => boolean \| null` | null      |
+| saveOptions | 自动上传和初始化组件数据。<br />注意⚠️：同一个工具下的多个key值需要保证唯一性。 | object  | autoSave:false,key:"" |
 
 ### 事件
 

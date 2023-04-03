@@ -22,7 +22,8 @@ input/basic
 
 ### Props
 
-| Property               | Description                                                                     | Type                                          | default |
-| ---------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- | ------- |
-| autoSelect             | Automatically select the content of the input box when the component is mounted | boolean                                       | false   |
-| autoFillInputCondition | Clipboard automatic backfill judgment function                                  | ^[Function]`(str: string) => boolean \| null` | null    |
+| Property               | Description                                                                                                                    | Type                                           | default               |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | --------------------- |
+| autoSelect             | Automatically select the content of the input box when the component is mounted                                                | boolean                                        | false                 |
+| autoFillInputCondition | Clipboard automatic backfill judgment function                                                                                 | ^[Function]`(str: string) => boolean \| null` | null                  |
+| saveOptions            | Automatically upload and initialize component data.<br />Note ⚠️: Multiple key values under the same tool need to be unique. | object                                         | autoSave:false,key:"" |

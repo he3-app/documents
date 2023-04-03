@@ -66,17 +66,21 @@ export default {
               text: "Data Entry",
               items: [
                 { text: "CodeEditor", link: "/components/CodeEditor.md" },
+                { text: "ColorPicker", link: "/components/ColorPicker.md" },
+                { text: "ColorInput", link: "/components/ColorInput.md" },
+                {text:'Checkbox',link:"components/Checkbox.md"},
+                { text: "FileSizeView", link: "/components/FileSizeView.md" },
                 {
                   text: "HighlightInput",
                   link: "/components/HighlightInput.md",
                 },
-                { text: "ColorPicker", link: "/components/ColorPicker.md" },
-                { text: "ColorInput", link: "/components/ColorInput.md" },
-                { text: "FileSizeView", link: "/components/FileSizeView.md" },
                 { text: "ImagePicker", link: "/components/ImagePicker.md" },
                 { text: "Input", link: "/components/Input.md" },
                 { text: "NumberInput", link: "/components/NumberInput.md" },
                 { text: "KvInput", link: "/components/KvInput.md" },
+                {text:'Select',link:"components/Select.md"},
+                {text:'Switch',link:"components/Switch.md"},
+                {text:'Radio',link:"components/Radio.md"},
                 {
                   text: "MultilineInput",
                   link: "/components/MultilineInput.md",
@@ -205,6 +209,7 @@ export default {
                   text: "ColorInput 颜色输入",
                   link: "/zh/components/ColorInput.md",
                 },
+                {text:'Checkbox 多选框',link:"/zh/components/Checkbox.md"},
                 {
                   text: "FileSizeView 文件大小",
                   link: "/zh/components/FileSizeView.md",
@@ -226,6 +231,9 @@ export default {
                   text: "MultilineInput 多行输入框",
                   link: "/zh/components/MultilineInput.md",
                 },
+                {text:'Select 选择器',link:"/zh/components/Select.md"},
+                {text:'Switch 开关',link:"/zh/components/Switch.md"},
+                {text:'Radio 单选框',link:"/zh/components/Radio.md"},
               ],
             },
             {

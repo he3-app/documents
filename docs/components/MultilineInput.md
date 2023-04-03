@@ -28,6 +28,7 @@ multiline/input
 | autoSelect             | Automatically select the content in the input box when the component is mounted | boolean                                       | false     |
 | noChangeOnMounted      | Change events are not triggered when the component is mounted                   | boolean                                       | false     |
 | autoFillInputCondition | Clipboard automatic backfill judgment function                                  | ^[Function]`(str: string) => boolean \| null` | null      |
+| saveOptions | Automatically upload and initialize component data.<br />Note ⚠️: Multiple key values under the same tool need to be unique. | object  | autoSave:false,key:"" |
 
 ### Events
 

@@ -27,6 +27,7 @@ transform/basic
 | onChange               | 输入框改变时回调函数   | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
 | onResultChange         | 结果改变时回调函数     | ^[Function]`(inputValue:Ref<string>)=> void`  |        |
 | autoFillInputCondition | 剪切板自动回填判断函数 | ^[Function]`(str: string) => boolean \| null` | null   |
+| saveOptions | 自动上传和初始化组件数据。<br />注意⚠️：同一个工具下的多个key值需要保证唯一性。 | object  | autoSave:false,key:"" |
 
 #### Config
 

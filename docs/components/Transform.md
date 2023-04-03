@@ -27,6 +27,7 @@ transform/basic
 | onChange               | Callback function when the input box changes   | ^[Function]`(inputValue:Ref<string>)=> void`  |         |
 | onResultChange         | Callback function when the result changes      | ^[Function]`(inputValue:Ref<string>)=> void`  |         |
 | autoFillInputCondition | Clipboard automatic backfill judgment function | ^[Function]`(str: string) => boolean \| null` | null    |
+| saveOptions | Automatically upload and initialize component data.<br />Note ⚠️: Multiple key values under the same tool need to be unique. | object  | autoSave:false,key:"" |
 
 #### Config
 

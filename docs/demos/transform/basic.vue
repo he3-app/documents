@@ -1,6 +1,6 @@
 <template>
   <div style="height: 500px">
-    <h-transform  :onChange="handleChange" :onMounted="handleMounted" />
+    <h-transform  :onChange="handleChange" :onMounted="handleMounted" :save-options="{autoSave:true,key:'input1'}"/>
   </div>
 </template>
 

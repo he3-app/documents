@@ -28,13 +28,14 @@ const decodedDescription = computed(() =>
 );
 
 const resoleComponent = (path: string) => `demo-${path.replace('/', '-')}`;
-
+console.log('%cvp-demo.vue line:31 resoleComponent', 'color: #007acc;', resoleComponent(props.path));
 const [sourceVisible, toggleSourceVisible] = useToggle();
 const showCopySuccess = ref(false);
 const { copy } = useClipboard({
   source: decodeURIComponent(props.rawSource),
   read: false,
 });
+console.log('%cvp-demo.vue line:38 path', 'color: #007acc;', props.path);
 
 const handleCopy = () => {
   copy();
