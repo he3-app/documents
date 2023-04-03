@@ -68,7 +68,7 @@ export default {
                 { text: "CodeEditor", link: "/components/CodeEditor.md" },
                 { text: "ColorPicker", link: "/components/ColorPicker.md" },
                 { text: "ColorInput", link: "/components/ColorInput.md" },
-                {text:'Checkbox',link:"components/Checkbox.md"},
+                { text:"Checkbox",link:"/components/Checkbox.md"},
                 { text: "FileSizeView", link: "/components/FileSizeView.md" },
                 {
                   text: "HighlightInput",
@@ -78,9 +78,9 @@ export default {
                 { text: "Input", link: "/components/Input.md" },
                 { text: "NumberInput", link: "/components/NumberInput.md" },
                 { text: "KvInput", link: "/components/KvInput.md" },
-                {text:'Select',link:"components/Select.md"},
-                {text:'Switch',link:"components/Switch.md"},
-                {text:'Radio',link:"components/Radio.md"},
+                { text:'Select',link:"/components/Select.md"},
+                { text:'Switch',link:"/components/Switch.md"},
+                { text:'Radio',link:"/components/Radio.md"},
                 {
                   text: "MultilineInput",
                   link: "/components/MultilineInput.md",
