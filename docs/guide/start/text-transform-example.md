@@ -6,7 +6,7 @@ lang: en
 
 # Quickly build a text conversion tool
 
-This article will use a simple[官方示例 unicode 解码](https://github.com/he3-app/tools-example/blob/main/batch-utf/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
+This article will use a simple[official example unicode decode](https://github.com/he3-app/tools-example/blob/main/batch-utf/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
 
 ## Example
 
