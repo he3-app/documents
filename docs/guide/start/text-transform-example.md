@@ -6,30 +6,21 @@ lang: en
 
 # Quickly build a text conversion tool
 
-This article will use a simple[official example unicode decode](https://github.com/he3-app/tools-example/blob/main/batch-utf/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
+This article will use a simple[official example unicode decode](https://github.com/he3-app/start-sample/blob/main/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
 
 ## Example
 
-In this example, in addition to using`@he3-kit/ui` as the ui library,`@he3-kit/utils` is also used as the tool library. We encapsulate it based on the `<h-text-transform>` component in hui, and provide the `textTransformTool` function for developers to better design and develop.
+::: tip
+This example uses the  [TextTransform](../../components/TextTransform.md)  component in `@he3-kit/ui` for development. To facilitate secondary encapsulation, you can use our pre-encapsulated `textTransformTool` function for development. This function is in `@he3-kit/utils`. Run `npm i @he3-kit/utils` to add it to your local project.
+:::
 
 ```TYPESCRIPT
-// tool layer
 import { textTransformTool } from '@he3-kit/utils';
 import { decode, encode, likeUnicode } from './unicode';
 
 const sampleData = '\\u6c26\\u4e09\\u79d1\\u6280';
 
-export default textTransformTool({
-  inputHandler: decode, // conversion function
-  resultHandler: encode, // inverse conversion function
-  sampleData, // sample data
-  autoFillInputCondition: likeUnicode, // Automatic backfill function, to judge whether the text in the current clipboard conforms to the judgment of the regular function, and return true to automatically fill in
-});
-```
-
-```TYPESCRIPT
-// unicode.ts
-// Codec function and unicode inference function
+// unicode decoding function
 export const decode = (str: string): string => {
   //The unicode encoding range is \u000 - \ufffff
   const unicodeReg = /\\u([0-9a-fA-F]{3,5})/g;
@@ -44,7 +35,7 @@ export const decode = (str: string): string => {
     return match;
   });
 };
-
+// unicode encoding function
 export const encode = (str: string): string => {
   let result = '';
   for (const char of str) {
@@ -57,15 +48,21 @@ export const encode = (str: string): string => {
   }
   return result;
 };
-
+// Infer whether the current clipboard data is unicode or similar to unicode
 export function likeUnicode(text: string) {
   return text.split('\\u').length >= 5;
 }
 
+export default textTransformTool({
+  inputHandler: decode, // conversion function
+  resultHandler: encode, // inverse conversion function
+  sampleData, // sample data
+  autoFillInputCondition: likeUnicode, // Automatic backfill function, to judge whether the text in the current clipboard conforms to the judgment of the regular function, and return true to automatically fill in
+});
 ```
 
 ## Result
 
 Such a tool and you're done! ! !
 
-![1681466107129](/guide/example/1681466107129.png)
+![1681799731782](/guide/example/1681799731782.png)

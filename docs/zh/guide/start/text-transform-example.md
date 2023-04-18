@@ -6,30 +6,21 @@ lang: zh
 
 # 快速构建文本转换工具
 
-本文将用简单的[官方示例 unicode 解码](https://github.com/he3-app/tools-example/blob/main/batch-utf/src/unicode-decode.ts)来讲解如何如何快速编写构建一个文本转换类工具。
+本文将用简单的[官方示例 unicode 解码](https://github.com/he3-app/start-sample/blob/main/src/unicode-decode.ts)来讲解如何如何快速编写构建一个文本转换类工具。你可以点击上面链接 fork 相关代码进行本地开发调试。
 
 ## 示例
 
-本示例中除了使用`@he3-kit/ui`作为UI库外，还用到`@he3-kit/utils`作为工具库，我们基于HUI中的`<h-text-transform>`组件进行封装，提供`textTransformTool`函数供开发者们更好地进行设计开发。
+::: tip
+本示例使用 `@he3-kit/ui` 中的 [TextTransform](../../components/TextTransform.md) 组件进行开发，为了方便我们对其进行二次封装，你可以直接使用我们封装好的函数 `textTransformTool` 进行开发。该函数在 `@he3-kit/utils` 中，运行 `npm i @he3-kit/utils` 添加到您的本地项目中。
+:::
 
 ```TYPESCRIPT
-// 工具层
 import { textTransformTool } from '@he3-kit/utils';
 import { decode, encode, likeUnicode } from './unicode';
 
 const sampleData = '\\u6c26\\u4e09\\u79d1\\u6280';
 
-export default textTransformTool({
-  inputHandler: decode, // 转换函数
-  resultHandler: encode, // 逆转换函数
-  sampleData, // 示例
-  autoFillInputCondition: likeUnicode, // 自动回填函数，判断当前剪切板中的文本是否符合正则函数的判断，返回true则自动填入
-});
-```
-
-```TYPESCRIPT
-// unicode.ts
-// 编解码函数以及unicode推断函数
+// unicode 解码函数
 export const decode = (str: string): string => {
   // unicode 编码范围为 \u000 - \ufffff
   const unicodeReg = /\\u([0-9a-fA-F]{3,5})/g;
@@ -44,7 +35,7 @@ export const decode = (str: string): string => {
     return match;
   });
 };
-
+// unicode 编码函数
 export const encode = (str: string): string => {
   let result = '';
   for (const char of str) {
@@ -57,15 +48,25 @@ export const encode = (str: string): string => {
   }
   return result;
 };
-
+// 推断当前剪切板数据是否为 unicode 或者和 unicode 类似
 export function likeUnicode(text: string) {
   return text.split('\\u').length >= 5;
 }
 
+export default textTransformTool({
+  inputHandler: decode, // 转换函数
+  resultHandler: encode, // 逆转换函数
+  sampleData, // 示例
+  autoFillInputCondition: likeUnicode, // 自动回填函数，判断当前剪切板中的文本是否符合正则函数的判断，返回true则自动填入
+});
 ```
 
 ## 展示
 
 这样一个工具就大功告成了！！！
 
-![1681466107129](/guide/example/1681466107129.png)
+![1681799731782](/guide/example/1681799731782.png)
+
+:::tip
+如果你不希望工具进行逆转换，也可以将 `resultHandler` 字段置空，这样你会得到一个纯输入输出工具
+:::

@@ -3,89 +3,106 @@ title: Quickly build a transcoding tool
 lang: en
 ---
 
-# Quickly build a transcoding tool
+# Quickly Building Code Conversion Tool
 
-This article will use a simple[official example JSON to CSV](https://github.com/he3-app/tools-example/blob/main/batch-json/src/json-to-csv.ts) to explain how to quickly write and build a code conversion tool.
+This article explains how to quickly build a code conversion tool using a simple official example [Less to CSS](https://github.com/he3-app/start-sample/blob/main/src/less-to-css.ts). You can click the link above to fork the related code for local development and debugging.
 
 ## Example
 
-In this example, in addition to using `@he3-kit/ui` as the ui library, `@he3-kit/utils` is also used as the tool library. We encapsulate it based on the `<h-transform>` component in hui, and provide the `transformTool` function for developers to better design and develop.
+::: tip
+This example uses the  [Transform](../../components/Transform.md)  component in `@he3-kit/ui` for development. To facilitate secondary encapsulation, you can use our pre-encapsulated `transformTool` function for development. This function is in `@he3-kit/utils`. Run `npm i @he3-kit/utils` to add it to your local project.
+:::
 
 ```TYPESCRIPT
-// Because dozens of json files are processed in batches, in order to make the code well coupled, we first encapsulate it and simply configure the basic settings of json conversion
 import { transformTool } from '@he3-kit/utils';
-import { JsonExample } from '../example';
-import { i18n } from '../locale';
-import { isJson } from './isJson';
+import less from 'less';
 
-export default function register({
-  lang,
-  inputHandler,
-  resultHandler,
-  slot,
-  example,
-}: {
-  lang: string;
-  inputHandler: Function;
-  resultHandler?: Function;
-  slot?: {
-    left?: unknown;
-    right?: unknown;
-  };
-  example?: string;
-}) {
-  return transformTool({
-    inputLang: 'JSON', // The input language on the left is json
-    outputLang: lang, // Output language to be determined
-    inputHandler, // Conversion function to be determined
-    resultHandler, // Inverse conversion function to be determined
-    inputPlaceHolder: i18n.global.t('json.input.placeholder'), // Unite placeholder
-    sampleData: example || JsonExample, // The example is to be determined, if there is no example, the unified example will be used by default
-    autoFillInputCondition: isJson, // Automatic backfill unified judgment with json
-    slot: {
-      left: slot?.left,
-      right: slot?.right,
-    }, // Function button slot to be determined
-  });
+// less to css logic function
+const lessToCSS = async (input: string): Promise<string> => {
+  try {
+    const { css } = await less.render(input);
+    return css;
+  } catch (error) {
+    return Promise.reject(error);
+  }
+};
+// sample code
+const sampleData = `.units {
+  cancels-to-nothing: (1px / 1px);
+  cancels: ((((10px / 5em) / 1px) * 3em) * 1px);
 }
-```
+`;
 
-```TYPESCRIPT
-// tool layer
-import { revert } from './utils/json2Csv';
-import register from './utils/register';
-
-export default register({
-  inputHandler: revert, // Pass the logic function of converting json to csv to the inputHandler parameter
-  lang: 'CSV', // Output language selection CSV
+export default transformTool({
+  inputLang: 'CSS', // Left editor language
+  outputLang: 'CSS', // Right editor language
+  sampleData, // Sample code
+  inputHandler: lessToCSS, // Conversion logic
 });
 
 ```
 
-```TYPESCRIPT
-// CSV conversion logic
-import { parse as csvParse } from 'json2csv/dist/json2csv.umd.js';
+You can also use the result handler field to support two-way conversion, such as [css prettify](https://github.com/he3-app/start-sample/blob/main/src/css-prettify.ts), the code is as follows
 
-export function revert(str: string) {
-  // The parameter str is the input value for the code editor on the left
-  let value = '';
-  // Return the code input value after processing, and return the processed result to be displayed in the code display box on the right side of the component
-  try {
-    value = JSON.parse(str);
-  } catch {
-    return str;
-  }
-  try {
-    const csv = csvParse(value, {});
-    return csv.replace(/\"/g, '');
-  } catch {
-    return str;
-  }
+```TS
+import { transformTool } from '@he3-kit/utils';
+import beautify from 'js-beautify';
+import { minify } from 'csso';
+const prettifyCSS = (inputValue: string) =>
+  beautify.css(inputValue, {
+    indent_size: 2,
+  });
+
+const minifyCSS = (inputValue: string) => minify(inputValue).css;
+
+const sampleData = `:root {
+  --surface-color: #e9e9e9;
+  --curve: 40;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}`;
+
+export default transformTool({
+  inputLang: 'CSS',
+  outputLang: 'CSS',
+  sampleData: sampleData,
+  inputHandler: prettifyCSS,
+  resultHandler: minifyCSS, // inverse conversion function
+});
+
 ```
 
-## Result
+## Display
 
-Such a tool and you're done! ! !
+That's it! You've built a simple-to-use code conversion tool using the `Transform` component in `@he3-kit/ui` and the pre-encapsulated `transformTool` function. In this example, we used Less to CSS conversion as an example, wrote a `lessToCSS` function as the conversion logic, and passed it to the `transformTool` function for configuration, resulting in a simple and easy-to-use code conversion tool.
 
-![1681461906766](/guide/example/1681461906766.png)
+![1681789027870](/guide/example/1681789027870.png)
+
+::: tip
+If you don't want the tool to perform inverse conversion, you can also leave the result handler field empty, so you will get a pure input and output tool
+:::
