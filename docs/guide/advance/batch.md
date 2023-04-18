@@ -52,55 +52,72 @@ Change the `he3` field to an array, and the field is consistent with a single to
 //...
 ```
 
-## 2. Retrofit `index.ts` entry file
+## 2. create a new file
 
-The default export of `src.index.ts` needs to be an array, the element is an object, and the fields are directly taken from `package.json#he3`, and you can use `component` to specify your `vue` component:
+The tool id in the configuration file is consistent with the tool component file name, and the file can be a ts, tsx, or vue file
 
-```typescript
-import config from '../package.json'
-import { Ref, h, resolveComponent } from 'vue'
-import SFC from './index.vue'
-import TSX from './index.tsx'
+![1681782327907](/batch/1681782327907.png)
 
-export default config.he3.map((tool) => {
-  switch(tool.id) {
-    // 1. Use SFC.
-    case 'my-tool1':
-      return {
-        ...tool,
-        component: SFC
-      }
-    // 2. Use TSX.
-    case 'my-tool2':
-      return {
-        ...tool,
-        component: TSX
-      }
-    // 3. Or directly use `setup` function.
-    case 'my-tool3':
-      return {
-        ...tool,
-        component: {
-          setup() {
-          return () => h(resolveComponent('h-transform'), {
-            onChange:  (inputValue: Ref<string>):string => {
-              if(typeof inputValue.value === 'string') {
-                return inputValue.value.toUpperCase()
-              }
-
-              return inputValue.value
-            },
-            onMounted:  (inputValue: Ref<string>) => {
-              inputValue.value = 'Hello He3!'
-            }
-          })
-        }}
-      }
-  }
-})
+```json
+// package.json
+{
+  "id": "unicode-encode",
+  "name": "Unicode Encoding",
+  "icon": "block-outlined",
+  "version": "1.0.0",
+  "isPublic": true,
+  "repository": "",
+  "category": [
+    "encode"
+  ],
+  "description": "Encodes text into unicode",
+  "keywords": [
+    "unicode",
+    "encode"
+  ],
+  "relatedToolId": [
+    "unicode-decode"
+  ]
+},
+{
+  "id": "unicode-decode",
+  "name": "Unicode Decoding",
+  "icon": "block-outlined",
+  "version": "1.0.0",
+  "isPublic": true,
+  "repository": "",
+  "category": [
+    "encode"
+  ],
+  "description": "Decodes unicode into text",
+  "keywords": [
+    "unicode",
+    "decode"
+  ],
+  "relatedToolId": [
+    "unicode-encode"
+  ]
+}
 ```
 
 ## 3. Development
+
+Write the corresponding logic code in the file
+
+```TS
+// unicode-encode
+import { textTransformTool } from '@he3-kit/utils';
+import { decode, encode, likeUnicode } from './unicode';
+
+const sampleData = '\\u6c26\\u4e09\\u79d1\\u6280';
+
+export default textTransformTool({
+  inputHandler: decode,
+  resultHandler: encode,
+  sampleData,
+  autoFillInputCondition: likeUnicode,
+});
+```
 
 After executing `npm run dev`, the he 3 client development tool menu will display all batch tools:
 

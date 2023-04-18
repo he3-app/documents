@@ -47,10 +47,10 @@ export default {
               text: "多种形式组件",
               link: "/zh/guide/advance/multi-form-component.md",
             },
-            // {
-            //   text: '批量工具',
-            //   link: '/zh/guide/advance/index.md',
-            // },
+            {
+              text: '批量工具',
+              link: '/zh/guide/advance/batch.md',
+            },
           ],
         },
       ],
