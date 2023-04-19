@@ -104,5 +104,5 @@ That's it! You've built a simple-to-use code conversion tool using the `Transfor
 ![1681789027870](/guide/example/1681789027870.png)
 
 ::: tip
-If you don't want the tool to perform inverse conversion, you can also leave the result handler field empty, so you will get a pure input and output tool
+If you don't want the tool to perform inverse conversion, you can also leave the `resultHandler` param empty, so you will get a pure input and output tool
 :::

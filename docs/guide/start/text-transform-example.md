@@ -6,7 +6,7 @@ lang: en
 
 # Quickly build a text conversion tool
 
-This article will use a simple[official example unicode decode](https://github.com/he3-app/start-sample/blob/main/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
+This article will use a simple [official example unicode decode](https://github.com/he3-app/start-sample/blob/main/src/unicode-decode.ts) to explain how to quickly write and build a text conversion tool.
 
 ## Example
 
@@ -66,3 +66,7 @@ export default textTransformTool({
 Such a tool and you're done! ! !
 
 ![1681799731782](/guide/example/1681799731782.png)
+
+::: tip
+If you don't want the tool to perform inverse conversion, you can also leave the `resultHandler` param empty, so you will get a pure input and output tool
+:::
