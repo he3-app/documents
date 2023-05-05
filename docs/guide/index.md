@@ -23,6 +23,10 @@ There are two ways to create a tool:
 
 Fork [https://github.com/he3-app/he3-tool-demo](https://github.com/he3-app/he3-tool-demo) repository, and clone it to your local.
 
+:::warning
+Modify the tool information in the `package.json`(correspond to **he3** field configuration items) to ensure that the tool information is not duplicated with the remote tool warehouse, such as toolId, name, description and other fields
+:::
+
 #### Option2: Create through portal
 
 Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools), Fill in the tool information in the form, and click "Download Tool Template" to download the tool template zip file.

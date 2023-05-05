@@ -23,6 +23,10 @@
 
 Fork [https://github.com/he3-app/he3-tool-demo](https://github.com/he3-app/he3-tool-demo) 仓库，并将其克隆到本地。
 
+:::warning
+修改 **package.json** 中的工具信息(对应**he3**字段配置项)，确保工具信息不与远端的工具仓库重复，如工具id、名称、描述等字段
+:::
+
 #### Option2: 通过 Portal 表单创建
 
 Open [https://portal.he3app.com/create-tools](https://portal.he3app.com/create-tools)，在表单中填写工具信息，然后点击 "Download Tool Template" 下载工具模板。
