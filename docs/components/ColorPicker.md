@@ -18,19 +18,20 @@ color/picker
 
 ### Props
 
-| Property       | Description                           | Type                                                                  | default    |
-| -------------- | ------------------------------------- | --------------------------------------------------------------------- | ---------- |
-| pureColor      | color binding                         | string                                                                | rgb(0,0,0) |
-| gradientColor  | gradient binding                      | string                                                                |            |
-| activeKey      |                                       | ^[enum]`'pure' \| 'gradient'`                                         | pure       |
-| isWidget       |                                       | boolean                                                               | false      |
-| pickerType     | color Picker type                     | ^[enum]`'fk' \| 'chrome'`                                             | fk         |
-| useType        |                                       | ^[enum]`'pure' \| 'gradient' \| 'both'`                               | false      |
-| disableHistory | Whether to disable history            | boolean                                                               | false      |
-| roundHistory   |                                       | boolean                                                               | false      |
-| disableAlpha   | Whether to disable transparent values | boolean                                                               |            |
-| closeBtnCorner | close button position                 | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'` | TOP_RIGHT  |
-| position       | selector position                     | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`             |            |
+| Property       | Description                           | Type                                                                     | default    |
+| -------------- | ------------------------------------- | ------------------------------------------------------------------------ | ---------- |
+| pureColor      | color binding                         | string                                                                   | rgb(0,0,0) |
+| gradientColor  | gradient binding                      | string                                                                   |            |
+| colorType      | select color type                     | ^[enum]`'HEX' \| 'HEXA' \| 'RGB' \| 'RGBA' \| 'HSL' \| 'HSLA' \| 'CMYK'` | 'RGB'      |
+| activeKey      |                                       | ^[enum]`'pure' \| 'gradient'`                                            | pure       |
+| isWidget       |                                       | boolean                                                                  | false      |
+| pickerType     | color Picker type                     | ^[enum]`'fk' \| 'chrome'`                                                | fk         |
+| useType        |                                       | ^[enum]`'pure' \| 'gradient' \| 'both'`                                  | false      |
+| disableHistory | Whether to disable history            | boolean                                                                  | false      |
+| roundHistory   |                                       | boolean                                                                  | false      |
+| disableAlpha   | Whether to disable transparent values | boolean                                                                  |            |
+| closeBtnCorner | close button position                 | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'`    | TOP_RIGHT  |
+| position       | selector position                     | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`                |            |
 
 ## Events
 

@@ -18,19 +18,20 @@ color/picker
 
 ### Props
 
-| 属性           | 说明             | 类型                                                                  | 默认值     |
-| -------------- | ---------------- | --------------------------------------------------------------------- | ---------- |
-| pureColor      | 颜色绑定         | string                                                                | rgb(0,0,0) |
-| gradientColor  | 渐变色绑定       | string                                                                |            |
-| activeKey      |                  | ^[enum]`'pure' \| 'gradient'`                                         | pure       |
-| isWidget       |                  | boolean                                                               | false      |
-| pickerType     | 颜色选择类型     | ^[enum]`'fk' \| 'chrome'`                                             | fk         |
-| useType        |                  | ^[enum]`'pure' \| 'gradient' \| 'both'`                               | false      |
-| disableHistory | 是否禁用历史记录 | boolean                                                               | false      |
-| roundHistory   |                  | boolean                                                               | false      |
-| disableAlpha   | 是否禁用透明值   | boolean                                                               |            |
-| closeBtnCorner | 关闭按钮位置     | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'` | TOP_RIGHT  |
-| position       | 选择器位置       | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`             |            |
+| 属性           | 说明             | 类型                                                                     | 默认值     |
+| -------------- | ---------------- | ------------------------------------------------------------------------ | ---------- |
+| pureColor      | 颜色绑定         | string                                                                   | rgb(0,0,0) |
+| gradientColor  | 渐变色绑定       | string                                                                   |            |
+| colorType      | 选择颜色类型     | ^[enum]`'HEX' \| 'HEXA' \| 'RGB' \| 'RGBA' \| 'HSL' \| 'HSLA' \| 'CMYK'` | 'RGB'      |
+| activeKey      |                  | ^[enum]`'pure' \| 'gradient'`                                            | pure       |
+| isWidget       |                  | boolean                                                                  | false      |
+| pickerType     | 颜色选择类型     | ^[enum]`'fk' \| 'chrome'`                                                | fk         |
+| useType        |                  | ^[enum]`'pure' \| 'gradient' \| 'both'`                                  | false      |
+| disableHistory | 是否禁用历史记录 | boolean                                                                  | false      |
+| roundHistory   |                  | boolean                                                                  | false      |
+| disableAlpha   | 是否禁用透明值   | boolean                                                                  |            |
+| closeBtnCorner | 关闭按钮位置     | ^[enum]`'TOP_LEFT' \| 'TOP_RIGHT' \| 'BOTTOM_LEFT' \| 'BOTTOM_RIGHT'`    | TOP_RIGHT  |
+| position       | 选择器位置       | ^[Object]`Record<top\|right\|bottom\|left,CSSProperties>`                |            |
 
 ## 事件
 
