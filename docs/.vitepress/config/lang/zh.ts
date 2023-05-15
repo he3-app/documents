@@ -30,6 +30,10 @@ export default {
               text: "构建文本转换工具",
               link: "/zh/guide/start/text-transform-example.md",
             },
+            {
+              text: "使用 Ant Design Vue",
+              link: "/zh//guide/start/use-antdv.md",
+            },
           ],
         },
         {
@@ -48,8 +52,8 @@ export default {
               link: "/zh/guide/advance/multi-form-component.md",
             },
             {
-              text: '批量工具',
-              link: '/zh/guide/advance/batch.md',
+              text: "批量工具",
+              link: "/zh/guide/advance/batch.md",
             },
           ],
         },

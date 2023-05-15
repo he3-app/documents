@@ -30,6 +30,10 @@ export default {
               text: "Build text conversion tool",
               link: "/guide/start/text-transform-example.md",
             },
+            {
+              text: "Use Ant Design Vue",
+              link: "/guide/start/use-antdv.md",
+            },
           ],
         },
         {
