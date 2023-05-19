@@ -1,7 +1,7 @@
 export default {
   label: "简体中文",
   lang: "zh",
-  head: [["link", { rel: "shortcut icon", href: "/logo.svg" }]],
+  head: [["link", { rel: "shortcut icon", href: "/logo.png" }]],
   themeConfig: {
     nav: [
       { text: "引导", link: "/zh/guide/advance/multi-form-component.md" },
