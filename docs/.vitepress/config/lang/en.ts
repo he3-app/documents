@@ -1,6 +1,7 @@
 export default {
   label: "English",
   lang: "en",
+  head: [["link", { rel: "shortcut icon", href: "/logo.svg" }]],
   themeConfig: {
     nav: [
       { text: "Guide", link: "/guide/index.md" },
