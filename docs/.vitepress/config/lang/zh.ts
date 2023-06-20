@@ -82,6 +82,10 @@ export default {
               text: "TextTransform 文本转换",
               link: "/zh/components/TextTransform.md",
             },
+            {
+              text: "FileTransform 文件转换",
+              link: "/components/FileTransform.md",
+            },
           ],
         },
         {

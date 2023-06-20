@@ -76,6 +76,7 @@ export default {
           items: [
             { text: "Transform", link: "/components/Transform.md" },
             { text: "TextTransform", link: "/components/TextTransform.md" },
+            { text: "FileTransform", link: "/components/FileTransform.md" },
           ],
         },
         {
