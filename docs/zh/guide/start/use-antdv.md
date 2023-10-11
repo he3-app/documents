@@ -5,7 +5,14 @@ lang: zh
 
 # 直接在开发中使用 Ant Design Vue
 
-He3 底座中已经内置了对 Ant Design Vue 的支持，你可以通过下面的示例来更好更快地开发属于你的 He3 小工具
+He3 底座中已经内置了对 Ant Design Vue 的支持，不需要手动 install ant-design-vue ，你可以通过下面的示例来更好更快地开发属于你的 He3 小工具。
+注意 Ant Design Vue 的 message方法 不可以用，你可以使用 He3 底座提供的 message 方法，我们已经将该方法内置到 `window$he3` 中
+```javascript
+window.$he3.message.success('成功');
+window.$he3.message.error('失败');
+window.$he3.message.info('提示');
+window.$he3.message.warning('警告');
+```
 
 ## 示例
 

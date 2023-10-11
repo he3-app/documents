@@ -35,6 +35,10 @@ export default {
               text: "Use Ant Design Vue",
               link: "/guide/start/use-antdv.md",
             },
+            {
+              text: "Dark mode and built-in CSS variables",
+              link: "/guide/start/dark-mode.md",
+            },
           ],
         },
         {

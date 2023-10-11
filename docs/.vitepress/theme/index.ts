@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
-import HeUI from '@he3-kit/ui';
+import HeUI from '@he3-kit/ui/dist/index.umd.cjs';
 import '@he3-kit/ui/dist/style.css';
 import Antd from 'ant-design-vue';
 import i18n from '../../locale';

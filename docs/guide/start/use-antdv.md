@@ -5,7 +5,7 @@ lang: en
 
 # Use Ant Design Vue directly in development
 
-The He3 base has built-in support for Ant Design Vue, you can use the following examples to develop your own He3 gadgets better and faster
+He3 Platform has built-in support for Ant Design Vue, so you don't need to manually install `ant-design-vue`. You can develop your own He3 tool more efficiently with the following example. Note that the `message` method of Ant Design Vue is not available. Instead, you can use the `message` method provided by the He3 Platform, which is built-in `window.$he3`.
 
 ## Example
 

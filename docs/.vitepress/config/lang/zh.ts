@@ -33,7 +33,11 @@ export default {
             },
             {
               text: "使用 Ant Design Vue",
-              link: "/zh//guide/start/use-antdv.md",
+              link: "/zh/guide/start/use-antdv.md",
+            },
+            {
+              text: "暗黑模式和内置CSS变量",
+              link: "/zh/guide/start/dark-mode.md",
             },
           ],
         },

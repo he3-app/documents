@@ -1,11 +1,68 @@
 // 此文件 client 和 webview 共用
 
-@import 'ant-design-vue/dist/antd.less';
+@import '../../../../../node_modules/ant-design-vue/dist/antd.less';
 @import './common.less';
+@import '../var.less';
 
-@primary-color: #6b00b4; // 自定义全局主色
-@heading-color: rgba(0, 0, 0, 0.9); // 标题色
-@text-color: rgba(0, 0, 0, 0.8); // 主文本色
-@text-color-secondary: rgba(0, 0, 0, 0.6); // 次文本色
-@disabled-color: rgba(0, 0, 0, 0.4); // 失效色
-@slider-rail-background-color: var(--gray-5);
+// primary
+@primary-color: #191D23; // 全局主色
+
+@text-color: rgba(8, 23, 53, 0.85);
+
+@border-color-base: #D7DDE3;
+
+@item-hover-bg: #e6edf3;
+@item-active-bg: #e6edf3;
+@he3-primary-bg-color:#fff;
+@select-item-selected-bg: #CCDAE5;
+
+// 增加自定义的 ant-btn 样式类, 在 ant-btn 上添加该样式就可使用
+.colorful-btn {
+  border: @btn-border-width solid transparent;
+  border-radius: @btn-border-radius-base;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image:linear-gradient(to right, white , white), linear-gradient(to bottom, #1852E8, #17E4C4);
+  color: @text-color;
+  &:hover {
+    border: @btn-border-width solid transparent;
+    border-radius: @btn-border-radius-base;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image:linear-gradient(to right, #FAFFFE , #FAFFFE), linear-gradient(to bottom, #1852E8, #17E4C4);
+    color: @text-color;
+  }
+
+  &:focus {
+    color: @text-color;
+    border: @btn-border-width solid transparent;
+    border-radius: @btn-border-radius-base;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image:linear-gradient(to right, #FAFFFE , #FAFFFE), linear-gradient(to bottom, #1852E8, #17E4C4);
+  }
+}
+
+// <<<<<<<<<<<<< 重定义 popover <<<<<<<<<<<<<<<<<
+.ant-dropdown-menu{
+  background-color: #fff;
+}
+.ant-popover-inner-content {
+  box-shadow: 0 4px 12px 0 rgba(77, 97, 138, 0.15);
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+@input-placeholder-color:#CCD5DD;
+
+// radio button active focus-within 样式 ，仅有light模式下
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+  box-shadow: 0 0 0px 0.5px #5d6163!important;
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+// <<<<<<<<<<<<<<< table <<<<<<<<<<<<<<<
+@table-header-bg: #F4F8FB;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+

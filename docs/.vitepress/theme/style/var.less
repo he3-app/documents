@@ -1,249 +1,41 @@
-// 此文件 client 和 webview 共用
 :root {
-  // Public variables
+  --border-radius-md: 8px;
   --code-font-family: Monaco, Andale Mono, Ubuntu Mono, monospace;
-  --border-radius-base: 6px;
-  --gray-1: #ffffff;
-  --gray-2: #fafafa;
-  --gray-3: #f5f5f5;
-  --gray-4: #f0f0f0;
-  --gray-5: #d9d9d9;
-  --gray-6: #bfbfbf;
-  --gray-7: #8c8c8c;
-  --gray-8: #595959;
-  --gray-9: #434343;
-  --gray-10: #262626;
-  --gray-11: #1f1f1f;
-  --gray-12: #141414;
-  --gray-13: #000000;
+  --icon-color: #25314c;
+  --primary-font-color: rgba(8, 23, 53, 0.85);
+  --second-font-color: rgba(8, 23, 53, 0.45);
+  --link-font-color: #1865E4;
+  --primary-blue-font-color: #1865E4;
 
-  // z-index variable
-  --z-index-1: 1;
-  --z-index-2: 2;
-  --z-index-3: 3;
-  --z-index-4: 4;
-  --z-index-5: 5;
-  --z-index-6: 6;
-  --z-index-7: 7;
-  --z-index-8: 8;
-  --z-index-9: 9;
-  --z-index-max: 9999;
+  --primary-bg-color: #fff;
+  --second-bg-color: #feffff;
+  --thirty-bg-color: #E6EAF0;
+  --divider-color:#E6EAF0;
 
-  --extension-padding: 20px;
-}
+  //--primary-border-color:;
 
-:root {
-  // Light theme
-  --base-color: #6b00b4;
-  --color-1: #861fc2;
-  --color-2: #a042cf;
-  --color-3: #b969db;
-  --color-4: #d295e8;
-  --color-5: #efdcf5;
-  --color-6: #fdfcfe;
-  --extreme-color: #fff;
-
-  --primary-color: var(--base-color);
-  --body-bg-trans-color: #fbfbfb70;
-  --body-bg-color: #fbfbfb;
-
-  --primary-bg-color: var(--gray-4);
-  --secondary-bg-color: var(--gray-3);
-  --third-bg-color: var(--color-6);
-
-  --primary-border-color: var(--gray-7);
-  --secondary-border-color: var(--gray-5);
-
-  --header-border-bottom: 1px var(--gray-6) solid;
-  --header-box-shadow: 0px 0px 1px 1px var(--gray-5);
-  --header-bg-color: #e2e2e4;
-  --header-noActive-bg-color: var(--gray-5);
-  --menu-bg-color: #00000010;
-
-  --search-bar-bg-color: #f9f6f7;
-  --search-border-color: #b3b3b3;
-  --search-entries-bg-color: var(--gray-3);
-
-  --search-indicator-bg-color: var(--gray-5);
-  --menu-selected-bg-color: var(--color-6);
-
-  --icon-color: var(--base-color);
-  --icon-bg-color: var(--color-5);
-
-  --tab-like-header-bottom-line: var(--color-4);
-  --tab-like-header-title-color: var(--color-1);
-
-  --star-icon-color: var(--base-color);
-
-  --extension-box-shadow-color: var(--gray-6);
-  --extension-hover-bg-color: var(--base-color);
-  --extension-region-border-color: var(--gray-5);
-
-  --extension-card-bg-color: #dfdfdf;
-
-  --active-extension-title-bg-color: var(--gray-5);
-  --active-extension-title-color: var(--gray-10);
-  --active-extension-bg-color: var(--gray-3);
-
-  --preferences-bottom-bar-bg-color: var(--gray-4);
-
-  --scrollbar-color: var(--gray-6);
-
-  --splitpanes-splitter-bg-color: var(--gray-5);
-  --splitpanes-splitter-border-color: var(--gray-5);
-  --splitpanes-splitter-bar-color: var(--gray-8);
-
-  --scrollbar-thumb-color: var(--gray-6);
-  --scrollbar-thumb-hover-color: var(--gray-7);
-
-  --search-bg-color: #ddda;
-
-  --on-search-shadow-color: var(--gray-6);
-
-  --opposite-color: var(--gray-13);
-
-  --color-picker-bg-color: var(--gray-1);
-
-  --vc-colorpicker--tabs-bg-color: var(--gray-3);
-  --vc-colorpicker--tabs__inner-bg-color: var(--gray-3);
-  --vc-colorpicker--tabs__btn-bg-color: var(--gray-1);
-
-  --upload-background: #fafafa;
-  --output-bg-color: var(--gray-5);
-
-  --preferences-bg-color: var(--gray-1);
-  --card-wrapper-bg-color: var(--gray-3);
-
-  --hight-background: #f0c1a3;
-  --default-font-color: #000;
-  --error-line-background: #ffccc7;
-
-  --bulb-light: var(--base-color);
-
-  --static-text-color: rgba(0, 0, 0, 0.87);
-  --formula-background: #d9d9d9;
-
-  --text-diff-green: #abf2bc;
-  --text-diff-red: rgba(255, 129, 130, 0.4);
-  --text-diff-background-green: #e6ffec;
-  --text-diff-background-red: #ffebe9;
-
-  --small-box: #f3f0ec;
-  --focus-background: #ffeebf;
-
-  --tag-color: var(--gray-5);
-  --tag-color2: var(--color-5);
-
-  --search-text-color: #727272;
-  --search-text-focus-color: #000000;
+  --tools-bg-color-1: #f4f8fb;
+  --tools-bg-color-2: #E9EFF3;
+  --tools-bg-color-3: #E6EDF3;
 }
 
 [mode='dark']:root {
-  // Dark theme
-  --base-color: #7272c0;
-  --color-1: #999bcc;
-  --color-2: #c5c7d9;
-  --color-3: #d8d9e6;
-  --color-4: #e4e6f2;
-  --color-5: #f0f2ff;
-  --color-6: #fcfafd;
-  --color-darker-1: #555399;
-  --color-darker-2: #3c3873;
-  --color-darker-3: #26224d;
-  --color-darker-4: #131026;
-  --color-darker-5: #0d0b1b;
-  --color-darker-6: #0d0b0e;
-  --extreme-color: #000;
+  --icon-color: #96a0b5;
+  --primary-font-color: #ECEFF4;
+  --second-font-color: rgba(171, 183, 201, 0.45);
+  --link-font-color: #4D94FF;
+  --primary-blue-font-color: #4D94FF;
 
-  --primary-color: var(--base-color);
-  --body-bg-trans-color: #020202bb;
-  --body-bg-color: #131313;
 
-  --primary-bg-color: var(--gray-12);
-  --secondary-bg-color: var(--gray-10);
-  --third-bg-color: var(--color-darker-6);
+  --primary-bg-color: #2A2C38;
+  --second-bg-color: #292C38;
+  --thirty-bg-color: #4C4F5F;
 
-  --primary-border-color: var(--gray-8);
-  --secondary-border-color: var(--gray-8);
+  --divider-color: rgba(76, 79, 95, 0.45);
 
-  --header-border-bottom: 1px var(--gray-13) solid;
-  --header-box-shadow: 0px 0px 1px 1px var(--gray-12);
-  --header-bg-color: #303032;
-  --header-noActive-bg-color: var(--gray-12);
-  --menu-bg-color: #efefef10;
 
-  --search-bar-bg-color: #090912;
-  --search-border-color: #464646;
-  --search-entries-bg-color: transparent;
-  --search-indicator-bg-color: var(--gray-12);
+  --tools-bg-color-1: #343744;
+  --tools-bg-color-2: #3E4252;
+  --tools-bg-color-3: #4C4F5F;
 
-  --menu-selected-bg-color: var(--color-darker-4);
-
-  --icon-color: var(--color-2);
-  --icon-bg-color: var(--color-darker-2);
-
-  --tab-like-header-bottom-line: var(--color-darker-4);
-  --tab-like-header-title-color: var(--color-darker-1);
-
-  --star-icon-color: var(--base-color);
-
-  --extension-box-shadow-color: var(--gray-9);
-  --extension-hover-bg-color: var(--base-color);
-  --extension-region-border-color: var(--gray-9);
-
-  --extension-card-bg-color: var(--gray-10);
-
-  --active-extension-title-bg-color: var(--gray-8);
-  --active-extension-title-color: var(--gray-6);
-  --active-extension-bg-color: var(--color-darker-6);
-
-  --preferences-bottom-bar-bg-color: var(--gray-11);
-
-  --scrollbar-color: var(--gray-10);
-
-  --splitpanes-splitter-bg-color: var(--gray-10);
-  --splitpanes-splitter-border-color: var(--gray-10);
-  --splitpanes-splitter-bar-color: var(--gray-6);
-
-  --scrollbar-thumb-color: var(--gray-8);
-  --scrollbar-thumb-hover-color: var(--gray-7);
-
-  --search-bg-color: #000a;
-  --on-search-shadow-color: var(--gray-10);
-
-  --opposite-color: var(--gray-1);
-
-  --color-picker-bg-color: #1e2024;
-
-  --vc-colorpicker--tabs-bg-color: var(--gray-10);
-  --vc-colorpicker--tabs__inner-bg-color: var(--gray-10);
-  --vc-colorpicker--tabs__btn-bg-color: var(--gray-6);
-
-  --upload-background: rgba(255, 255, 255, 0.04);
-  --output-bg-color: var(--gray-9);
-
-  --preferences-bg-color: var(--gray-12);
-  --card-wrapper-bg-color: var(--gray-12);
-
-  --hight-background: #663719;
-  --default-font-color: #fff;
-  --error-line-background: #58181c;
-
-  --bulb-light: #fff;
-
-  --static-text-color: rgba(255, 255, 255, 0.75);
-  --formula-background: rgba(66, 66, 66, 0.9);
-
-  --text-diff-green: rgba(46, 160, 67, 0.4);
-  --text-diff-red: rgba(248, 81, 73, 0.4);
-  --text-diff-background-green: rgba(46, 160, 67, 0.15);
-  --text-diff-background-red: rgba(248, 81, 73, 0.15);
-  --small-box: rgba(255, 255, 255, 0.04);
-
-  --focus-background: #006c78;
-
-  --tag-color: var(--gray-10);
-  --tag-color2: var(--color-darker-3);
-  --search-text-color: #737373;
-  --search-text-focus-color: #eaeaea;
 }

@@ -1,16 +1,62 @@
 // 此文件 client 和 webview 共用
 
-@import "ant-design-vue/dist/antd.dark.less";
-@import "./common.less";
+@import '../../../../../node_modules/ant-design-vue/dist/antd.dark.less';
+@import './common.less';
 
-@primary-color: #7676c2; // 全局主色
-@heading-color: rgba(255, 255, 255, 0.9); // 标题色
-@text-color: rgba(255, 255, 255, 0.85); // 主文本色
-@text-color-secondary: rgba(255, 255, 255, 0.7); // 次文本色
-@disabled-color: rgba(255, 255, 255, 0.5); // 失效色
-@error-color: @red-8;
-@popover-background: #2d2d2d;
+// primary
+@primary-color: #4D94FF; // 全局主色
+// >>> Success
+//@success-color: #28BF37; // 成功色
+//// >>> Warning
+//@warning-color: #EC8814; // 警告色
+//// >>> Error
+//@error-color: #E93B15; // 错误色
 
-body {
-  background-color: #1e1e20;
+@text-color: rgba(224, 229, 237, 0.85);
+
+@border-color-base: #D7DDE3;
+
+@item-hover-bg: #7C829C;
+
+@item-active-bg: #565C70;
+
+@he3-primary-bg-color:#292c38;
+
+
+// <<<<<<<<<<<<< 重定义 popover <<<<<<<<<<<<<<<<<
+@dropdown-menu-bg: @he3-primary-bg-color;
+.ant-popover-inner-content {
+  background-color: @he3-primary-bg-color;;
+  box-shadow: 0 4px 12px 0 rgba(10, 24, 37, 0.10);
 }
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<< 重定义下拉输入框的placeholder <<<<<<<<<<<<<<<<<
+@input-placeholder-color:rgba(171, 183, 201, 0.2);
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+// <<<<<<<<<<<<< modal <<<<<<<<<<<<<<<<<<<<<<<<<
+@modal-header-bg: @he3-primary-bg-color;
+@modal-content-bg: @modal-header-bg;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<< table <<<<<<<<<<<<<<<
+//@table-header-bg: red;
+@table-bg: @he3-primary-bg-color;
+@table-header-bg: #343744;
+@table-row-hover-bg: #4C4F5F;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// >>>>>>>>>>>> message toast >>>>>>>>>>>>>>>>>>>>>
+@message-notice-content-bg: @he3-primary-bg-color;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// <<<<<<<<<<<<<<<<< Select <<<<<<<<<<<<<<
+@select-dropdown-bg: @he3-primary-bg-color;
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// input
+//@input-bg: red;
+
+
+//@component-background:red;
