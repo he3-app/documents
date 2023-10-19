@@ -113,6 +113,10 @@ export default {
               link: "/zh/components/FileSizeView.md",
             },
             {
+              text: "FileUpload 文件上传",
+              link: "/zh/components/Fileupload.md",
+            },
+            {
               text: "ImagePicker 图片选择器",
               link: "/zh/components/ImagePicker.md",
             },
@@ -142,6 +146,10 @@ export default {
             {
               text: "Multiline 多行文本展示",
               link: "/zh/components/Multiline.md",
+            },
+            {
+              text: "Cardbox 卡片展示",
+              link: "/zh/components/Cardbox.md",
             },
             {
               text: "SingleLine 单行文本展示",

@@ -35,6 +35,8 @@ import DemoSelectBasic from "./select/basic.vue";
 import DemoRadioBasic from "./radio/basic.vue";
 import DemoSwitchBasic from "./switch/basic.vue";
 import DemoCheckboxBasic from "./checkbox/basic.vue";
+import DemoFileUploadBasic from './fileUpload/basic.vue';
+import DemoCardBoxBasic from './cardBox/basic.vue';
 
 
 export const Demos: [string, Component][] = [
@@ -74,4 +76,6 @@ export const Demos: [string, Component][] = [
   ['DemoRadioBasic',DemoRadioBasic],
   ['DemoSwitchBasic',DemoSwitchBasic],
   ['DemoCheckboxBasic',DemoCheckboxBasic],
+  ['DemoFileUploadBasic',DemoFileUploadBasic],
+  ['DemoCardBoxBasic',DemoCardBoxBasic]
 ];

@@ -91,6 +91,10 @@ export default {
             { text: "Checkbox", link: "/components/Checkbox.md" },
             { text: "FileSizeView", link: "/components/FileSizeView.md" },
             {
+              text: "FileUpload",
+              link: "/components/Fileupload.md",
+            },
+            {
               text: "HighlightInput",
               link: "/components/HighlightInput.md",
             },
@@ -113,6 +117,10 @@ export default {
             { text: "Code", link: "/components/Code.md" },
             { text: "Kv", link: "/components/Kv.md" },
             { text: "Multiline", link: "/components/Multiline.md" },
+            {
+              text: "Cardbox",
+              link: "/components/Cardbox.md",
+            },
             {
               text: "SingleLine",
               link: "/components/SingleLine.md",
